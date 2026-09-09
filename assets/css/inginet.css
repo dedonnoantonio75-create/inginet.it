@@ -482,6 +482,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .timeline li { grid-template-columns: 1fr; gap: .2rem; }
   .ctiles { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
   .wa-float { width: 48px; height: 48px; }
+  /* Le illustrazioni sono decorative e su telefono si riducono di quattro
+     volte: le scritte interne diventerebbero illeggibili. Meglio toglierle:
+     si guadagna anche in velocita di caricamento. */
+  .hero-art, .page-hero-art { display: none; }
+  .hero-in, .page-hero-in { grid-template-columns: 1fr; }
   /* spazio in fondo: la linguetta cookie e il tasto WhatsApp sono fissi */
   .foot-bar { padding-bottom: 3.2rem; }
 }

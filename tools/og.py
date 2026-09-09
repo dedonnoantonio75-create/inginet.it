@@ -56,6 +56,7 @@ def orb(img, cx, cy, r, color, alpha=150):
 def hgrad_text(img, xy, text, fnt, c1, c2):
     """Testo con riempimento a gradiente orizzontale."""
     box = ImageDraw.Draw(img).textbbox(xy, text, font=fnt)
+    box = tuple(int(round(v)) for v in box)
     w = max(1, box[2] - box[0]); h = max(1, box[3] - box[1])
     mask = Image.new("L", (w + 8, h + 16), 0)
     ImageDraw.Draw(mask).text((0, 0), text, font=fnt, fill=255)
@@ -81,21 +82,16 @@ def logo_mark(d, x, y, s, color):
 
 
 TEXTS = {
-    "it": ("Software house AI, gestionali e siti su misura",
-           "Intelligenza artificiale · Gestionali · CRM · E-commerce · SEO",
-           "Dal 2000 · oltre 1.500 clienti · Maglie (LE), Italia"),
-    "en": ("AI software house, custom business software and websites",
-           "Artificial intelligence · ERP · CRM · E-commerce · SEO",
-           "Since 2000 · 1,500+ clients · Maglie (LE), Italy"),
-    "de": ("KI-Softwarehaus, individuelle Unternehmenssoftware und Websites",
-           "Künstliche Intelligenz · ERP · CRM · E-Commerce · SEO",
-           "Seit 2000 · über 1.500 Kunden · Maglie (LE), Italien"),
-    "fr": ("Éditeur de logiciels IA, gestion sur mesure et sites web",
-           "Intelligence artificielle · Gestion · CRM · E-commerce · SEO",
-           "Depuis 2000 · plus de 1 500 clients · Maglie (LE), Italie"),
-    "es": ("Software house de IA, software de gestión y webs a medida",
-           "Inteligencia artificial · Gestión · CRM · E-commerce · SEO",
-           "Desde 2000 · más de 1.500 clientes · Maglie (LE), Italia"),
+    "it": ("Intelligenza artificiale", "applicata alle imprese",
+           "Gestionali · CRM · Siti · E-commerce · SEO", "dal 2000 · Maglie (LE), Italia"),
+    "en": ("Artificial intelligence", "that works for business",
+           "Business software · CRM · Websites · E-commerce · SEO", "since 2000 · Italy"),
+    "de": ("Künstliche Intelligenz", "für Ihr Unternehmen",
+           "Branchensoftware · CRM · Websites · Shops · SEO", "seit 2000 · Italien"),
+    "fr": ("Intelligence artificielle", "au service des entreprises",
+           "Gestion · CRM · Sites · E-commerce · SEO", "depuis 2000 · Italie"),
+    "es": ("Inteligencia artificial", "aplicada a las empresas",
+           "Gestión · CRM · Webs · E-commerce · SEO", "desde 2000 · Italia"),
 }
 
 
@@ -115,45 +111,51 @@ def wrap(draw, text, fnt, maxw):
 
 
 def build_og(lang):
+    """1200x630. WhatsApp ritaglia l'anteprima al quadrato centrale, quindi
+    tutto cio che conta sta dentro i 630 px centrali (x da 285 a 915)."""
     W, H = 1200, 630
+    CX = W // 2
     img = Image.new("RGB", (W, H), BG)
-    orb(img, 120, 70, 380, ACC, 120)
-    orb(img, 1090, 210, 340, BLU, 110)
-    orb(img, 700, 640, 300, (120, 80, 255), 70)
+    orb(img, CX - 240, 60, 380, ACC, 110)
+    orb(img, CX + 260, 520, 360, BLU, 100)
 
     d = ImageDraw.Draw(img)
-    # griglia leggera
     for x in range(0, W, 60):
         d.line([(x, 0), (x, H)], fill=(19, 27, 45), width=1)
     for y in range(0, H, 60):
         d.line([(0, y), (W, y)], fill=(19, 27, 45), width=1)
 
-    # logo reale, in alto a sinistra
+    # marchio + logotipo, centrati in alto
     logo = Image.open(os.path.join(ICO, "inginet-logo.png")).convert("RGBA")
-    logo.thumbnail((420, 78), Image.LANCZOS)
-    img.paste(logo, (72, 58), logo)
-    d.text((76, 58 + logo.height + 8), "inginet.it", font=font(20, False), fill=TX2)
+    logo.thumbnail((430, 100), Image.LANCZOS)
+    img.paste(logo, (CX - logo.width // 2, 74), logo)
 
-    title, sub, foot = TEXTS[lang]
-    f_title = font(58)
-    lines = wrap(d, title, f_title, W - 150)
-    y = 215
-    for i, ln in enumerate(lines[:3]):
-        if i == 0:
-            hgrad_text(img, (72, y), ln, f_title, ACC2, (255, 255, 255))
-        else:
-            d.text((72, y), ln, font=f_title, fill=TX)
-        y += 72
+    riga1, riga2, servizi, piede = TEXTS[lang]
 
-    d.text((72, y + 18), sub, font=font(27, False), fill=TX2)
+    f1 = font(52)
+    w1 = d.textlength(riga1, font=f1)
+    hgrad_text(img, (int(CX - w1 / 2), 216), riga1, f1, ACC2, (255, 255, 255))
 
-    # barra inferiore
-    d.rounded_rectangle([72, H - 108, W - 72, H - 46], radius=31, fill=(15, 22, 38), outline=(36, 51, 82))
-    d.text((104, H - 90), foot, font=font(23, False), fill=(198, 210, 232))
-    for i, tag in enumerate(["IT", "EN", "DE", "FR", "ES"]):
-        bx = W - 100 - (4 - i) * 62
-        col = ACC if tag.lower() == lang else (123, 137, 165)
-        d.text((bx, H - 90), tag, font=font(22), fill=col)
+    f2 = font(52)
+    w2 = d.textlength(riga2, font=f2)
+    d.text((CX - w2 / 2, 284), riga2, font=f2, fill=TX)
+
+    f3 = font(24, False)
+    w3 = d.textlength(servizi, font=f3)
+    d.text((CX - w3 / 2, 376), servizi, font=f3, fill=TX2)
+
+    # riga inferiore centrata
+    f4 = font(26)
+    dom = "inginet.it"
+    wd = d.textlength(dom, font=f4)
+    f5 = font(22, False)
+    wp = d.textlength(piede, font=f5)
+    tot = wd + 26 + wp
+    x0 = CX - tot / 2
+    d.rounded_rectangle([x0 - 34, 470, x0 + tot + 34, 532], radius=31,
+                        fill=(15, 22, 38), outline=(36, 51, 82))
+    d.text((x0, 486), dom, font=f4, fill=ACC)
+    d.text((x0 + wd + 26, 489), piede, font=f5, fill=(178, 192, 214))
 
     path = os.path.join(OUT, "inginet-og-%s.png" % lang)
     img.save(path, "PNG", optimize=True)

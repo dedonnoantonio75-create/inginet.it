@@ -123,7 +123,7 @@ export function home(t, lang) {
   <div class="wrap">
     ${sectionHead(null, esc(p.whyTitle))}
     <div class="cards cards-2">
-      ${p.why.map((w, i) => `<article class="card card-why"><span class="why-n">0${i + 1}</span><h3>${esc(w.title)}</h3><p>${esc(w.text)}</p></article>`).join('')}
+      ${p.why.map(w => `<article class="card card-why"><h3>${esc(w.title)}</h3><p>${esc(w.text)}</p></article>`).join('')}
     </div>
   </div>
 </section>

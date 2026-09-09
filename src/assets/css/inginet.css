@@ -258,8 +258,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .card-link { display: inline-flex; align-items: center; gap: .4rem; font-weight: 600; font-size: .9rem; color: var(--acc); margin-top: auto; }
 .card-svc, .card-big { display: flex; flex-direction: column; }
 .card-plain p:last-child { margin-bottom: 0; }
-.card-why { padding-top: 2.4rem; }
-.why-n { position: absolute; top: 1.2rem; right: 1.4rem; font: 700 2.4rem/1 var(--fd); color: var(--line); }
 .tag { display: inline-block; margin-bottom: .8rem; padding: .28rem .7rem; border-radius: 999px; background: var(--grad-soft); border: 1px solid var(--line); font: 600 .72rem var(--fs); letter-spacing: .07em; text-transform: uppercase; color: var(--acc); }
 
 .ticks li { display: flex; gap: .6rem; align-items: flex-start; margin-bottom: .55rem; font-size: .92rem; color: var(--tx-2); }
@@ -469,6 +467,9 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 @media (max-width: 640px) {
   .cards, .cards-2, .cards-3, .cards-4, .steps { grid-template-columns: 1fr; }
+  /* bottoni a tutta larghezza e centrati: sul telefono si prendono meglio */
+  .hero-cta { justify-content: center; }
+  .hero-cta .btn, .cta-actions .btn, .cform .btn, .olvix-txt .btn { width: 100%; justify-self: stretch; }
   .stats { grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
   .f-row { grid-template-columns: 1fr; }
   .foot-in { grid-template-columns: 1fr; gap: 1.8rem; }

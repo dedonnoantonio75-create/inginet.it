@@ -87,7 +87,7 @@ ${win(id, 150, 210, 520, 340, 22)}
 <!-- scheda codice -->
 <g>
   <rect x="60" y="470" width="250" height="180" rx="20" fill="#101a2e" stroke="#2b3b5e" stroke-width="1.5"/>
-  <g font-family="monospace" font-size="15" fill="#7b89a5">
+  <g font-family="monospace" font-size="17" fill="#7b89a5">
     <text x="88" y="516">&lt;<tspan fill="#ffb43d">agent</tspan>&gt;</text>
     <text x="104" y="546" fill="#6aa5ff">read(dati)</text>
     <text x="104" y="576" fill="#6aa5ff">answer()</text>
@@ -98,7 +98,7 @@ ${win(id, 150, 210, 520, 340, 22)}
 <!-- badge lingue -->
 <g>
   <rect x="600" y="560" width="248" height="120" rx="20" fill="#101a2e" stroke="#2b3b5e" stroke-width="1.5"/>
-  <g font-family="'Segoe UI',sans-serif" font-size="17" font-weight="600" fill="#a6b3cc">
+  <g font-family="'Segoe UI',sans-serif" font-size="21" font-weight="600" fill="#a6b3cc">
     <text x="628" y="606">IT</text><text x="676" y="606">EN</text><text x="724" y="606">DE</text>
     <text x="628" y="646">FR</text><text x="676" y="646">ES</text>
   </g>
@@ -124,7 +124,7 @@ ${defs(id)}
 <!-- colonna sinistra: fonti -->
 <g>
   ${docRow(40, 120)}${docRow(40, 220)}${docRow(40, 320)}${docRow(40, 420)}
-  <text x="40" y="105" font-family="'Segoe UI',sans-serif" font-size="15" font-weight="600" fill="#a6b3cc">Dati e documenti</text>
+  <text x="40" y="105" font-family="'Segoe UI',sans-serif" font-size="19" font-weight="600" fill="#a6b3cc">Dati e documenti</text>
 </g>
 <g stroke="url(#${id}g1)" stroke-width="2" fill="none" opacity=".8">
   <path d="M158 155 C220 155 240 280 300 300"/>
@@ -144,7 +144,7 @@ ${defs(id)}
     const r = 112, rad = (deg * Math.PI) / 180;
     return `<circle cx="${(410 + r * Math.cos(rad)).toFixed(1)}" cy="${(300 + r * Math.sin(rad)).toFixed(1)}" r="6" fill="#6aa5ff"/>`;
   }).join('')}
-  <text x="410" y="446" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="16" font-weight="700" fill="#e9edf7">Agente AI</text>
+  <text x="410" y="446" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="21" font-weight="700" fill="#e9edf7">Agente AI</text>
 </g>
 
 <!-- gestionale sotto -->
@@ -152,17 +152,17 @@ ${defs(id)}
   <rect x="300" y="480" width="220" height="86" rx="16" fill="#101a2e" stroke="#2b3b5e" stroke-width="1.5"/>
   <path d="M330 512h32M330 532h60" stroke="#2b3b5e" stroke-width="7" stroke-linecap="round"/>
   <rect x="410" y="500" width="86" height="48" rx="10" fill="url(#${id}g3)" opacity=".35"/>
-  <text x="410" y="470" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="14" fill="#7b89a5">Gestionale · CRM · magazzino</text>
+  <text x="410" y="470" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="17" fill="#7b89a5">Gestionale · CRM · magazzino</text>
 </g>
 <path d="M410 412v68" stroke="url(#${id}g1)" stroke-width="2.5" stroke-dasharray="6 6"/>
 
 <!-- canali a destra -->
 <g>
-  <text x="620" y="105" font-family="'Segoe UI',sans-serif" font-size="15" font-weight="600" fill="#a6b3cc">Canali</text>
+  <text x="620" y="105" font-family="'Segoe UI',sans-serif" font-size="19" font-weight="600" fill="#a6b3cc">Canali</text>
   ${[['Sito', 130], ['WhatsApp', 240], ['Email', 350], ['Telefono', 460]].map(([label, y]) => `
   <rect x="620" y="${y}" width="164" height="76" rx="14" fill="#101a2e" stroke="#2b3b5e" stroke-width="1.4"/>
   <circle cx="654" cy="${y + 38}" r="15" fill="url(#${id}g1)" opacity=".25"/>
-  <text x="684" y="${y + 44}" font-family="'Segoe UI',sans-serif" font-size="15" fill="#c9d4e8">${label}</text>`).join('')}
+  <text x="680" y="${y + 45}" font-family="'Segoe UI',sans-serif" font-size="19" fill="#c9d4e8">${label}</text>`).join('')}
 </g>
 <g stroke="url(#${id}g3)" stroke-width="2" fill="none" opacity=".85">
   <path d="M522 300 C570 300 580 168 620 168"/>
@@ -180,7 +180,7 @@ export function serviziArt() {
   const layer = (y, label, color, w) => `
   <g>
     <rect x="${(820 - w) / 2}" y="${y}" width="${w}" height="72" rx="16" fill="#101a2e" stroke="${color}" stroke-width="1.8"/>
-    <text x="410" y="${y + 44}" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="17" font-weight="600" fill="#c9d4e8">${label}</text>
+    <text x="410" y="${y + 44}" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="23" font-weight="600" fill="#c9d4e8">${label}</text>
   </g>`;
   return `${head(820, 620, 'Architettura dei progetti software Inginet',
     'Illustrazione a livelli: interfaccia utente, applicazione, banca dati e integrazioni esterne come pagamenti, fatturazione elettronica e channel manager.')}
@@ -200,10 +200,10 @@ ${layer(306, 'Gestionale · CRM · CMS', '#2d7dff', 560)}
 ${layer(408, 'Banca dati · API · Automazioni AI', '#6aa5ff', 600)}
 
 <g>
-  <text x="410" y="516" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="14" fill="#7b89a5">Integrazioni</text>
+  <text x="410" y="514" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="18" fill="#7b89a5">Integrazioni</text>
   ${['Pagamenti', 'Fattura el.', 'Channel mgr', 'Corrieri'].map((l, i) => `
   <rect x="${58 + i * 180}" y="536" width="164" height="50" rx="12" fill="#0d1728" stroke="#243352" stroke-width="1.4"/>
-  <text x="${140 + i * 180}" y="566" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="14" fill="#a6b3cc">${l}</text>`).join('')}
+  <text x="${140 + i * 180}" y="567" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="17" fill="#a6b3cc">${l}</text>`).join('')}
   <g stroke="#243352" stroke-width="1.6">
     ${[140, 320, 500, 680].map(x => `<path d="M${x} 536 C${x} 500 410 500 410 480"/>`).join('')}
   </g>
@@ -232,7 +232,7 @@ ${defs(id)}
   <rect x="70" y="${y}" width="${i === 0 ? 210 : 168}" height="11" rx="5.5" fill="${i === 0 ? 'url(#' + id + 'g1)' : '#2b3b5e'}"/>
   <rect x="70" y="${y + 24}" width="280" height="8" rx="4" fill="#22304d"/>
   <rect x="70" y="${y + 42}" width="232" height="8" rx="4" fill="#1b2740"/>`).join('')}
-  <text x="210" y="580" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="15" font-weight="600" fill="#a6b3cc">Motori di ricerca</text>
+  <text x="210" y="580" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="19" font-weight="600" fill="#a6b3cc">Motori di ricerca</text>
 </g>
 
 <!-- colonna risposta AI -->
@@ -247,15 +247,15 @@ ${defs(id)}
   ${[196, 224, 252, 280, 308].map((y, i) => `<rect x="496" y="${y}" width="${[228, 200, 214, 176, 150][i]}" height="10" rx="5" fill="#22304d"/>`).join('')}
   <g>
     <rect x="496" y="336" width="228" height="26" rx="13" fill="url(#${id}g1)" opacity=".22"/>
-    <text x="512" y="354" font-family="'Segoe UI',sans-serif" font-size="14" font-weight="600" fill="#ffb43d">Fonte: inginet.it</text>
+    <text x="512" y="354" font-family="'Segoe UI',sans-serif" font-size="17" font-weight="600" fill="#ffb43d">Fonte: inginet.it</text>
   </g>
   <g>
     <rect x="470" y="400" width="280" height="110" rx="16" fill="#101a2e" stroke="#2b3b5e" stroke-width="1.4"/>
-    <text x="496" y="432" font-family="monospace" font-size="13" fill="#6aa5ff">llms.txt</text>
-    <text x="496" y="458" font-family="monospace" font-size="13" fill="#6aa5ff">schema.org</text>
-    <text x="496" y="484" font-family="monospace" font-size="13" fill="#6aa5ff">hreflang</text>
+    <text x="496" y="434" font-family="monospace" font-size="16" fill="#6aa5ff">llms.txt</text>
+    <text x="496" y="462" font-family="monospace" font-size="16" fill="#6aa5ff">schema.org</text>
+    <text x="496" y="490" font-family="monospace" font-size="16" fill="#6aa5ff">hreflang</text>
   </g>
-  <text x="610" y="580" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="15" font-weight="600" fill="#a6b3cc">Risposte generate dall’AI</text>
+  <text x="610" y="580" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="19" font-weight="600" fill="#a6b3cc">Risposte generate dall’AI</text>
 </g>
 </svg>`;
 }
@@ -273,7 +273,7 @@ ${win(id, 130, 90, 560, 300, 22)}
   <rect x="164" y="160" width="140" height="196" rx="14" fill="#101a2e" stroke="#2b3b5e" stroke-width="1.4"/>
   ${[186, 212, 238, 264, 290, 316].map((y, i) => `<rect x="186" y="${y}" width="${[96, 74, 88, 60, 96, 70][i]}" height="9" rx="4.5" fill="${i === 0 ? 'url(#' + id + 'g1)' : '#22304d'}"/>`).join('')}
   <rect x="330" y="160" width="326" height="196" rx="14" fill="#0d1728" stroke="#2b3b5e" stroke-width="1.4"/>
-  <g font-family="monospace" font-size="14" fill="#6aa5ff">
+  <g font-family="monospace" font-size="16" fill="#6aa5ff">
     <text x="356" y="192"><tspan fill="#ffb43d">function</tspan> risolvi(problema) {</text>
     <text x="376" y="220">const piano = analizza(problema)</text>
     <text x="376" y="248">const app = costruisci(piano)</text>
@@ -287,7 +287,7 @@ ${win(id, 130, 90, 560, 300, 22)}
   <circle cx="${x + 40}" cy="470" r="34" fill="#101a2e" stroke="url(#${id}g${i % 2 ? '3' : '1'})" stroke-width="2.4"/>
   <circle cx="${x + 40}" cy="460" r="11" fill="#2b3b5e"/>
   <path d="M${x + 22} 490a18 18 0 0 1 36 0" fill="#2b3b5e"/>
-  <text x="${x + 40}" y="536" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="14" fill="#a6b3cc">${l}</text>`).join('')}
+  <text x="${x + 40}" y="538" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="17" fill="#a6b3cc">${l}</text>`).join('')}
   <path d="M170 470h68M348 470h68M526 470h68" stroke="#243352" stroke-width="1.6" stroke-dasharray="5 6"/>
 </g>
 </svg>`;

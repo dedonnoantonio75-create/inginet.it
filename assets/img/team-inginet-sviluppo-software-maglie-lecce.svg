@@ -30,7 +30,7 @@
   <rect x="164" y="160" width="140" height="196" rx="14" fill="#101a2e" stroke="#2b3b5e" stroke-width="1.4"/>
   <rect x="186" y="186" width="96" height="9" rx="4.5" fill="url(#tg1)"/><rect x="186" y="212" width="74" height="9" rx="4.5" fill="#22304d"/><rect x="186" y="238" width="88" height="9" rx="4.5" fill="#22304d"/><rect x="186" y="264" width="60" height="9" rx="4.5" fill="#22304d"/><rect x="186" y="290" width="96" height="9" rx="4.5" fill="#22304d"/><rect x="186" y="316" width="70" height="9" rx="4.5" fill="#22304d"/>
   <rect x="330" y="160" width="326" height="196" rx="14" fill="#0d1728" stroke="#2b3b5e" stroke-width="1.4"/>
-  <g font-family="monospace" font-size="14" fill="#6aa5ff">
+  <g font-family="monospace" font-size="16" fill="#6aa5ff">
     <text x="356" y="192"><tspan fill="#ffb43d">function</tspan> risolvi(problema) {</text>
     <text x="376" y="220">const piano = analizza(problema)</text>
     <text x="376" y="248">const app = costruisci(piano)</text>
@@ -44,19 +44,19 @@
   <circle cx="130" cy="470" r="34" fill="#101a2e" stroke="url(#tg1)" stroke-width="2.4"/>
   <circle cx="130" cy="460" r="11" fill="#2b3b5e"/>
   <path d="M112 490a18 18 0 0 1 36 0" fill="#2b3b5e"/>
-  <text x="130" y="536" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="14" fill="#a6b3cc">Sviluppo</text>
+  <text x="130" y="538" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="17" fill="#a6b3cc">Sviluppo</text>
   <circle cx="308" cy="470" r="34" fill="#101a2e" stroke="url(#tg3)" stroke-width="2.4"/>
   <circle cx="308" cy="460" r="11" fill="#2b3b5e"/>
   <path d="M290 490a18 18 0 0 1 36 0" fill="#2b3b5e"/>
-  <text x="308" y="536" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="14" fill="#a6b3cc">Dati e AI</text>
+  <text x="308" y="538" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="17" fill="#a6b3cc">Dati e AI</text>
   <circle cx="486" cy="470" r="34" fill="#101a2e" stroke="url(#tg1)" stroke-width="2.4"/>
   <circle cx="486" cy="460" r="11" fill="#2b3b5e"/>
   <path d="M468 490a18 18 0 0 1 36 0" fill="#2b3b5e"/>
-  <text x="486" y="536" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="14" fill="#a6b3cc">Design</text>
+  <text x="486" y="538" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="17" fill="#a6b3cc">Design</text>
   <circle cx="664" cy="470" r="34" fill="#101a2e" stroke="url(#tg3)" stroke-width="2.4"/>
   <circle cx="664" cy="460" r="11" fill="#2b3b5e"/>
   <path d="M646 490a18 18 0 0 1 36 0" fill="#2b3b5e"/>
-  <text x="664" y="536" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="14" fill="#a6b3cc">Contenuti 5 lingue</text>
+  <text x="664" y="538" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="17" fill="#a6b3cc">Contenuti 5 lingue</text>
   <path d="M170 470h68M348 470h68M526 470h68" stroke="#243352" stroke-width="1.6" stroke-dasharray="5 6"/>
 </g>
 </svg>

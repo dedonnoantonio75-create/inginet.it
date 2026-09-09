@@ -35,32 +35,32 @@
 
   <g>
     <rect x="150" y="204" width="520" height="72" rx="16" fill="#101a2e" stroke="#ff9c00" stroke-width="1.8"/>
-    <text x="410" y="248" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="17" font-weight="600" fill="#c9d4e8">Sito · E-commerce · App</text>
+    <text x="410" y="248" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="23" font-weight="600" fill="#c9d4e8">Sito · E-commerce · App</text>
   </g>
 <path d="M410 276v30" stroke="#2b3b5e" stroke-width="2.5"/>
 
   <g>
     <rect x="130" y="306" width="560" height="72" rx="16" fill="#101a2e" stroke="#2d7dff" stroke-width="1.8"/>
-    <text x="410" y="350" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="17" font-weight="600" fill="#c9d4e8">Gestionale · CRM · CMS</text>
+    <text x="410" y="350" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="23" font-weight="600" fill="#c9d4e8">Gestionale · CRM · CMS</text>
   </g>
 <path d="M410 378v30" stroke="#2b3b5e" stroke-width="2.5"/>
 
   <g>
     <rect x="110" y="408" width="600" height="72" rx="16" fill="#101a2e" stroke="#6aa5ff" stroke-width="1.8"/>
-    <text x="410" y="452" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="17" font-weight="600" fill="#c9d4e8">Banca dati · API · Automazioni AI</text>
+    <text x="410" y="452" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="23" font-weight="600" fill="#c9d4e8">Banca dati · API · Automazioni AI</text>
   </g>
 
 <g>
-  <text x="410" y="516" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="14" fill="#7b89a5">Integrazioni</text>
+  <text x="410" y="514" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="18" fill="#7b89a5">Integrazioni</text>
   
   <rect x="58" y="536" width="164" height="50" rx="12" fill="#0d1728" stroke="#243352" stroke-width="1.4"/>
-  <text x="140" y="566" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="14" fill="#a6b3cc">Pagamenti</text>
+  <text x="140" y="567" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="17" fill="#a6b3cc">Pagamenti</text>
   <rect x="238" y="536" width="164" height="50" rx="12" fill="#0d1728" stroke="#243352" stroke-width="1.4"/>
-  <text x="320" y="566" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="14" fill="#a6b3cc">Fattura el.</text>
+  <text x="320" y="567" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="17" fill="#a6b3cc">Fattura el.</text>
   <rect x="418" y="536" width="164" height="50" rx="12" fill="#0d1728" stroke="#243352" stroke-width="1.4"/>
-  <text x="500" y="566" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="14" fill="#a6b3cc">Channel mgr</text>
+  <text x="500" y="567" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="17" fill="#a6b3cc">Channel mgr</text>
   <rect x="598" y="536" width="164" height="50" rx="12" fill="#0d1728" stroke="#243352" stroke-width="1.4"/>
-  <text x="680" y="566" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="14" fill="#a6b3cc">Corrieri</text>
+  <text x="680" y="567" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="17" fill="#a6b3cc">Corrieri</text>
   <g stroke="#243352" stroke-width="1.6">
     <path d="M140 536 C140 500 410 500 410 480"/><path d="M320 536 C320 500 410 500 410 480"/><path d="M500 536 C500 500 410 500 410 480"/><path d="M680 536 C680 500 410 500 410 480"/>
   </g>

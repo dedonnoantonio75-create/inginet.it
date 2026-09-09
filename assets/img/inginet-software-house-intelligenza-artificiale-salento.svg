@@ -70,7 +70,7 @@
 <!-- scheda codice -->
 <g>
   <rect x="60" y="470" width="250" height="180" rx="20" fill="#101a2e" stroke="#2b3b5e" stroke-width="1.5"/>
-  <g font-family="monospace" font-size="15" fill="#7b89a5">
+  <g font-family="monospace" font-size="17" fill="#7b89a5">
     <text x="88" y="516">&lt;<tspan fill="#ffb43d">agent</tspan>&gt;</text>
     <text x="104" y="546" fill="#6aa5ff">read(dati)</text>
     <text x="104" y="576" fill="#6aa5ff">answer()</text>
@@ -81,7 +81,7 @@
 <!-- badge lingue -->
 <g>
   <rect x="600" y="560" width="248" height="120" rx="20" fill="#101a2e" stroke="#2b3b5e" stroke-width="1.5"/>
-  <g font-family="'Segoe UI',sans-serif" font-size="17" font-weight="600" fill="#a6b3cc">
+  <g font-family="'Segoe UI',sans-serif" font-size="21" font-weight="600" fill="#a6b3cc">
     <text x="628" y="606">IT</text><text x="676" y="606">EN</text><text x="724" y="606">DE</text>
     <text x="628" y="646">FR</text><text x="676" y="646">ES</text>
   </g>

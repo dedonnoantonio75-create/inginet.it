@@ -54,8 +54,9 @@ Contatti: info@inginet.it · +39 393 569 4342 · https://www.inginet.it
 
 ## Progetti pubblici realizzati
 
-- [Olvix](https://www.olvix.net/) — marketplace, piattaforma, ai
+- [Olvix](https://www.olvix.net/) — gestionali, marketplace, piattaforma, ai
 - [Cala dei Balcani](https://www.caladeibalcani.it/) — sito, booking, seo
+- [Borgo Terra](https://www.borgoterra.com/) — sito, booking, seo
 - [Corte dei Granai](https://www.cortedeigranai.it/) — sito, booking
 - [Casino De Viti](https://www.casinodeviti.com/) — sito, seo
 - [Perle Marine](https://www.perlemarine.it/) — sito, booking

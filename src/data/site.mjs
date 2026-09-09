@@ -93,8 +93,9 @@ export const navPages = ['ai', 'servizi', 'seo', 'clienti', 'chisiamo', 'contatt
  * Esclusi perché offline: euxeria.it, otrantobelvedere.it, maresidenze.it, ristoprime.com
  */
 export const clients = [
-  { name: 'Olvix', url: 'https://www.olvix.net/', logo: 'olvix-marketplace-logo.png', sector: 'portali', tags: ['marketplace', 'piattaforma', 'ai'], featured: true, own: true },
+  { name: 'Olvix', url: 'https://www.olvix.net/', logo: 'olvix-marketplace-logo.png', sector: 'portali', tags: ['gestionali', 'marketplace', 'piattaforma', 'ai'], featured: true, own: true },
   { name: 'Cala dei Balcani', url: 'https://www.caladeibalcani.it/', logo: 'cala-dei-balcani-logo.png', sector: 'ricettivo', tags: ['sito', 'booking', 'seo'] },
+  { name: 'Borgo Terra', url: 'https://www.borgoterra.com/', logo: 'borgo-terra-logo.png', sector: 'ricettivo', tags: ['sito', 'booking', 'seo'] },
   { name: 'Corte dei Granai', url: 'https://www.cortedeigranai.it/', logo: 'corte-dei-granai-maglie-logo.png', sector: 'ricettivo', tags: ['sito', 'booking'] },
   { name: 'Casino De Viti', url: 'https://www.casinodeviti.com/', logo: 'casino-de-viti-poggiardo-logo.png', sector: 'ricettivo', tags: ['sito', 'seo'] },
   { name: 'Perle Marine', url: 'https://www.perlemarine.it/', logo: 'perle-marine-logo.png', sector: 'ricettivo', tags: ['sito', 'booking'] },

@@ -60,15 +60,22 @@ def main():
     mk.save(os.path.join(IMG, "inginet-marchio.png"), optimize=True)
     print("inginet-marchio.png", mk.size)
 
-    # --- favicon PNG ---
-    for s in (16, 32, 48):
-        icon(mark, s, pad=0.06).save(os.path.join(IMG, "favicon-%d.png" % s), optimize=True)
-    print("favicon 16/32/48 png")
+    # --- favicon: solo il marchio, sfondo trasparente ---
+    def solo_marchio(size, pad=0.02):
+        c = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+        inner = int(size * (1 - 2 * pad))
+        mm = mark.copy()
+        mm.thumbnail((inner, inner), Image.LANCZOS)
+        c.paste(mm, ((size - mm.width) // 2, (size - mm.height) // 2), mm)
+        return c
+
+    for sz in (16, 32, 48):
+        solo_marchio(sz).save(os.path.join(IMG, "favicon-%d.png" % sz), optimize=True)
+    print("favicon 16/32/48 png (marchio su trasparente)")
 
     # --- favicon.ico multi-risoluzione, in root ---
-    ico = icon(mark, 64, pad=0.06)
-    ico.save(os.path.join(ROOT, "favicon.ico"), format="ICO",
-             sizes=[(16, 16), (32, 32), (48, 48), (64, 64)])
+    solo_marchio(64).save(os.path.join(ROOT, "favicon.ico"), format="ICO",
+                          sizes=[(16, 16), (32, 32), (48, 48), (64, 64)])
     print("favicon.ico")
 
     # --- icone app ---

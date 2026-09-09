@@ -1,0 +1,12 @@
+# sistema
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# strumenti locali
+.claude/
+node_modules/
+
+# file di lavoro
+*.log
+*.tmp

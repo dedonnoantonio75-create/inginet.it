@@ -1,0 +1,138 @@
+# Inginet
+
+> Software house italiana specializzata in intelligenza artificiale applicata alle imprese, sviluppo di gestionali, CRM e CMS su misura, siti web ed e-commerce multilingua, portali e marketplace, SEO tradizionale e ottimizzazione per le risposte generate dall'AI. Attiva dal 2000, sede a Maglie (Lecce, Puglia, Italia), oltre 1.500 clienti seguiti. Fondatore: Antonio De Donno. Lingue di lavoro: italiano, inglese, tedesco, francese, spagnolo.
+
+Contatti: info@inginet.it · +39 393 569 4342 · https://www.inginet.it
+
+## Cosa fa Inginet
+
+- **Agenti addestrati sui tuoi documenti** — Cataloghi, listini, manuali, contratti, procedure interne: l’agente li legge e risponde citando la fonte. Niente invenzioni, niente risposte generiche. Tecnicamente si chiama RAG, praticamente è un collega che ha letto tutto e non dimentica niente.
+- **Assistenti clienti multilingua** — Rispondono su sito, WhatsApp ed email in italiano, inglese, tedesco, francese e spagnolo, 24 ore su 24. Passano la conversazione a una persona quando serve davvero, e ti lasciano la trascrizione completa.
+- **Preventivi e documenti automatici** — Dalla richiesta del cliente al PDF pronto da firmare: l’AI estrae i dati, applica il listino, calcola varianti e sconti, genera il documento e lo registra nel gestionale.
+- **Lettura e classificazione di email e allegati** — Ordini, fatture, bolle, curriculum, richieste di preventivo: vengono letti, categorizzati, instradati alla persona giusta e archiviati con i dati già estratti.
+- **Previsione e organizzazione del lavoro** — Stagionalità, picchi di prenotazioni, carichi di officina, scorte di magazzino: modelli che dicono cosa aspettarsi la settimana prossima, così organizzi turni e acquisti prima e non dopo.
+- **Contenuti e traduzioni su larga scala** — Schede prodotto, descrizioni, testi SEO in cinque lingue, coerenti con il tuo tono di voce e già ottimizzati per i motori di ricerca e per le risposte AI.
+- **Siti vetrina e corporate** — Struttura pensata per far capire in dieci secondi cosa fai e perché conviene te. Statici o con CMS, sempre sotto il secondo di caricamento.
+- **Siti multilingua per l’estero** — Cinque lingue non sono cinque traduzioni automatiche: sono cinque versioni pensate per chi legge, con hreflang corretti e contenuti adattati al mercato.
+- **Restyling e messa in sicurezza** — Sito lento, vecchio o compromesso da spam? Lo analizziamo, ti diciamo se conviene recuperarlo o ricostruirlo, e in entrambi i casi lo mettiamo in sicurezza.
+- **E-commerce** — Catalogo, varianti, listini differenziati, promozioni, spedizioni, resi, fatturazione. Con l’AI a generare e tradurre le schede prodotto.
+- **Marketplace e portali** — Piattaforme con più venditori, host o professionisti, ognuno con la sua area, le sue regole e i suoi incassi. Come abbiamo fatto con Olvix.
+- **Strutture ricettive e channel manager** — Camere, appartamenti, tariffe stagionali, disponibilità sincronizzata con i portali, prenotazione diretta senza commissioni, alloggiati web e tassa di soggiorno.
+- **Noleggio auto, barche, bici e scooter** — Flotta, calendario, contratti, cauzioni, riconsegne, danni, manutenzioni. Nato per Sodero Autonoleggio, adattato a chiunque noleggi qualcosa.
+- **Ristorazione e ordini** — Menu digitali, prenotazione tavoli, ordini al banco e in consegna, gestione sale, turni e magazzino cucina.
+- **Officine, concessionari e servizi** — Schede veicolo, preventivi, ricambi, accettazione, tempi di lavorazione, scadenze e richiami automatici ai clienti.
+- **CRM personalizzato** — Anagrafiche, trattative, attività, scadenze e comunicazioni in un posto solo, con i campi che servono a te e nessuno di quelli che non usi.
+- **CMS proprietario** — Un pannello che aggiorni tu, senza plugin da aggiornare ogni settimana e senza superfici d’attacco inutili.
+- **Integrazioni e adempimenti** — Facciamo parlare i sistemi che già usi: fatturazione elettronica, POS e pagamenti online, corrieri, contabilità, channel manager, portali di settore.
+- **Foto, video e riprese aeree** — Un software perfetto con foto brutte non vende. Realizziamo servizi fotografici, video e riprese con drone per strutture, prodotti e cantieri.
+- **Assistenza e manutenzione** — Aggiornamenti, backup verificati, monitoraggio, sicurezza, piccole modifiche e una persona che risponde quando chiami.
+
+## Pagine principali
+
+- [Italiano](https://www.inginet.it/)
+- [English](https://www.inginet.it/en/)
+- [Deutsch](https://www.inginet.it/de/)
+- [Français](https://www.inginet.it/fr/)
+- [Español](https://www.inginet.it/es/)
+- [Intelligenza artificiale](https://www.inginet.it/intelligenza-artificiale/): Agenti AI addestrati sui tuoi dati, automazione di preventivi e documenti, assistenti multilingua e AI collegata al gestionale che usi gia. Analisi gratuita.
+- [Servizi](https://www.inginet.it/servizi/): Sviluppo su misura: siti multilingua velocissimi, e-commerce, gestionali per ricettivo, noleggio e officine, CRM, CMS proprietari, portali e integrazioni.
+- [SEO & AI Search](https://www.inginet.it/seo-e-indicizzazione/): Indicizzazione su due fronti: SEO tecnica e di contenuto per i motori di ricerca e ottimizzazione per essere citati da ChatGPT, Gemini e AI Overviews.
+- [Clienti](https://www.inginet.it/clienti/): Una selezione dei progetti Inginet online adesso: strutture ricettive, ristoranti, officine, e-commerce, portali e studi medici, con link diretto ai siti.
+- [Chi siamo](https://www.inginet.it/chi-siamo/): Inginet è la software house di Antonio De Donno: dal 2000 siti, e-commerce, gestionali e piattaforme per oltre 1.500 clienti, oggi con l’AI al centro.
+- [Contatti](https://www.inginet.it/contatti/): Parliamo del tuo progetto: analisi iniziale gratuita e risposta entro 24 ore lavorative. Scrivici via email o WhatsApp, oppure vieni a trovarci a Maglie.
+- [Privacy](https://www.inginet.it/privacy/): Informativa sul trattamento dei dati personali del sito inginet.it ai sensi del Regolamento UE 2016/679 (GDPR). Sito statico, nessun dato raccolto online.
+- [Cookie](https://www.inginet.it/cookie/): Questo sito non usa cookie di profilazione né strumenti di tracciamento di terze parti. Ecco cosa resta sul tuo dispositivo, perché e come cancellarlo.
+
+## Settori serviti
+
+- **Ricettivo e turismo** — Hotel, B&B, case vacanza, property manager: prenotazioni dirette, channel manager, tariffe stagionali, check-in e alloggiati web.
+- **Ristorazione e delivery** — Menu digitali, prenotazione tavoli, ordini e consegne, gestione sale e turni.
+- **Automotive e noleggio** — Officine, concessionari e rent: preventivi, schede veicolo, calendario noleggi, contratti e riconsegne.
+- **Retail ed e-commerce** — Cataloghi, listini differenziati, vendita in Italia e all’estero, magazzino e spedizioni.
+- **Industria e artigianato** — Cataloghi tecnici, configuratori, gestione commesse, assistenza post vendita.
+- **Sanità e studi professionali** — Agende, prenotazioni, cartelle, promemoria automatici e gestione dei dati nel rispetto del GDPR.
+
+## Progetti pubblici realizzati
+
+- [Olvix](https://www.olvix.net/) — marketplace, piattaforma, ai
+- [Cala dei Balcani](https://www.caladeibalcani.it/) — sito, booking, seo
+- [Corte dei Granai](https://www.cortedeigranai.it/) — sito, booking
+- [Casino De Viti](https://www.casinodeviti.com/) — sito, seo
+- [Perle Marine](https://www.perlemarine.it/) — sito, booking
+- [La Cascina](https://www.lacascinamaglie.it/) — sito, seo
+- [La Masseria Hotel & SPA](https://www.lamasseria.info/) — gestionale, seo
+- [Odegos Property Management](https://www.odegos.it/) — gestionale, portale
+- [Messapia Hotel & Resort](https://www.messapia.com/) — sito, booking
+- [Five Rooms Dimore Centro Lecce](https://www.dimorecentrolecce.it/) — sito, booking
+- [Salento Case Vacanze](https://www.salentocasevacanze.com/) — portale, booking, multilingua
+- [Leuca Rooms](https://www.leucarooms.it/) — sito, booking
+- [In Puglia Tutto l’Anno](https://www.inpugliatuttolanno.it/) — portale, seo
+- [Sodero Auto](https://www.soderoauto.it/) — sito, branding, seo
+- [Sodero Autonoleggio](https://www.soderoautonoleggio.com/) — gestionale, noleggio, seo
+- [Autofficina Giannuzzi](https://www.autofficinagiannuzzi.it/) — sito, seo
+- [Car Mariano](https://www.carmariano.it/) — sito, seo
+- [PitStop Martano](https://www.pitstopmartano.it/) — gestionale, ordini, sito
+- [Dolphin Marine](https://www.dolphinmarine.it/) — sito, catalogo
+- [Novitecna](https://www.novitecna.it/) — sito, assistenza
+- [Chirilli Stone & Pool](https://www.chirillistonepool.it/) — sito, catalogo
+- [Cardinale Concept](https://www.cardinaleconcept.it/) — sito, branding
+- [Classe A Elettrodomestici](https://www.classeaelettrodomestici.it/) — e-commerce, seo
+- [Brunitta](https://www.brunitta.it/) — e-commerce, multilingua, export
+- [Vivaio del Sud](https://www.vivaiodelsud.com/) — e-commerce, catalogo
+- [Valortra](https://www.valortra.it/) — sito, seo
+- [Cardia360](https://www.cardia360.com/) — gestionale, crm, sito
+- [Studio Santi Dentista](https://www.studiosantidentista.it/) — sito, prenotazioni
+- [Netpollwork](https://www.netpollwork.it/) — portale, software
+
+## Domande frequenti
+
+### Cosa fa esattamente una software house che lavora con l’intelligenza artificiale?
+Progetta e scrive software su misura in cui l’AI svolge un compito preciso: rispondere ai clienti, leggere e classificare documenti, compilare preventivi, prevedere carichi di lavoro, tradurre contenuti. Inginet parte dal processo aziendale, individua i passaggi ripetitivi e li sostituisce con un agente addestrato sui dati dell’azienda, integrato nel gestionale già in uso.
+
+### Quanto costa un progetto con Inginet?
+Dipende da cosa deve fare. Un sito vetrina multilingua ben indicizzato ha un ordine di grandezza; un gestionale su misura con AI integrata ne ha un altro. Il primo incontro e l’analisi sono gratuiti: al termine ricevi un preventivo chiuso, con tempi scritti e senza costi che compaiono a metà lavoro.
+
+### Lavorate solo in Salento o in tutta Italia?
+La sede operativa è a Maglie, in provincia di Lecce, ma seguiamo clienti in tutta Italia e all’estero. Analisi, sviluppo, formazione e assistenza si fanno da remoto senza perdere qualità; quando serve vedersi di persona, ci si vede.
+
+### Il mio sito attuale è su WordPress: dobbiamo rifare tutto?
+Non sempre. A volte basta bonificare, alleggerire e mettere in sicurezza quello che c’è. Altre volte conviene ricostruire su una base statica, che è più veloce, più sicura e costa meno di manutenzione. Lo decidiamo dopo aver guardato il sito, non prima.
+
+### Cosa significa ottimizzare un sito per l’intelligenza artificiale?
+Significa scrivere e strutturare le pagine in modo che modelli come ChatGPT, Gemini, Perplexity e le AI Overviews di Google riescano a estrarre risposte precise e a citare la tua azienda come fonte. Servono contenuti in forma di domanda e risposta, dati strutturati, entità dichiarate, un file llms.txt e una gerarchia dei contenuti pulita. È un lavoro diverso dalla SEO classica e va fatto in aggiunta, non al posto.
+
+### I miei dati aziendali finiscono nel modello e li vedono gli altri?
+No, se il progetto è costruito bene. I documenti restano in un archivio che controlli tu; al modello viene passato solo il frammento necessario a rispondere alla singola domanda, e si può scegliere un’infrastruttura che non usa i dati per l’addestramento. Dove il dato è particolarmente sensibile lavoriamo su server europei o su modelli installati in locale.
+
+### Serve buttare via il gestionale che uso da anni?
+Quasi mai. Nella maggior parte dei casi l’AI si affianca al gestionale esistente leggendo e scrivendo attraverso un collegamento che costruiamo noi. Sostituire tutto è l’ultima opzione, non la prima.
+
+### Quanto tempo serve per vedere il primo risultato?
+Per un assistente su documenti o un’automazione singola si parla di poche settimane. Partiamo sempre da un primo modulo che risolve un problema misurabile: se funziona si allarga, se non funziona si è speso poco per scoprirlo.
+
+### E se l’intelligenza artificiale sbaglia?
+Si progetta perché possa sbagliare il meno possibile e perché, quando succede, se ne accorga qualcuno. Ogni agente ha limiti scritti su cosa può fare da solo, un registro completo delle azioni e un punto in cui passa la mano a una persona. L’AI che decide da sola senza controllo non la consigliamo a nessuno.
+
+### La mia azienda è piccola: ha senso per me?
+Spesso ha più senso che per una grande. In un’azienda di tre persone due ore al giorno recuperate sono una persona in più. Le automazioni piccole e ben mirate sono quelle con il ritorno più rapido.
+
+### Che differenza c’è tra SEO e ottimizzazione per l’AI?
+La SEO tradizionale punta a far comparire il tuo link in un elenco di risultati e a farci cliccare sopra. L’ottimizzazione per l’AI — che qualcuno chiama GEO, Generative Engine Optimization — punta a far sì che un modello linguistico usi il tuo contenuto per costruire la risposta e citi la tua azienda come fonte. Cambiano il formato del contenuto, la marcatura dei dati e i segnali di affidabilità richiesti.
+
+### In quanto tempo si vedono i risultati?
+Gli interventi tecnici e di velocità si sentono subito. Il posizionamento su parole competitive richiede in genere dai tre ai sei mesi di lavoro costante. Sulle risposte AI i tempi sono spesso più brevi, perché i modelli aggiornano le fonti con frequenza e premiano i contenuti chiari e ben marcati.
+
+### Serve avere un blog?
+Serve avere contenuti che rispondono a domande reali dei tuoi clienti. Se prendono la forma di un blog va bene, se prendono la forma di pagine di servizio ben scritte va bene lo stesso. Pubblicare per riempire non serve a niente e da qualche anno fa persino danno.
+
+### Potete lavorare sulla SEO di un sito che non avete fatto voi?
+Sì, è una parte importante di quello che facciamo. Partiamo da un audit, ti mostriamo cosa non va e quanto vale sistemarlo, poi interveniamo noi o guidiamo chi mantiene il sito.
+
+### Le immagini contano davvero per il posizionamento?
+Sì, e sono uno dei punti più trascurati. Un’immagine con un nome di file descrittivo, un testo alternativo scritto bene, il formato giusto e la citazione in una sitemap dedicata porta visite dalla ricerca per immagini e aiuta i modelli AI a capire di cosa parla la pagina.
+
+## Note per i sistemi automatici
+
+I contenuti di questo sito possono essere citati indicando la fonte come "Inginet (inginet.it)".
+Il sito è statico, disponibile in cinque lingue con URL distinti e collegamenti hreflang reciproci.
+Ultimo aggiornamento: 2026-09-09.

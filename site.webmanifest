@@ -1,0 +1,28 @@
+{
+  "name": "Inginet — software house AI",
+  "short_name": "Inginet",
+  "description": "Software house su intelligenza artificiale: agenti AI, gestionali, CRM e CMS su misura, siti ed e-commerce, SEO e AI search. Dal 2000, oltre 1.500 clienti.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070a12",
+  "theme_color": "#070a12",
+  "lang": "it",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/assets/img/inginet-icona-180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/img/inginet-icona-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

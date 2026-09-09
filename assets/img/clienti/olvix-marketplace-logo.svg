@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120" role="img" aria-label="Olvix">
+<defs><linearGradient id="ol" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7fb2ff"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+<circle cx="52" cy="60" r="27" fill="none" stroke="url(#ol)" stroke-width="7"/>
+<path d="M52 44v32" stroke="url(#ol)" stroke-width="7" stroke-linecap="round"/>
+<text x="96" y="76" font-family="'Segoe UI',sans-serif" font-size="46" font-weight="700" letter-spacing="1" fill="url(#ol)">OLVIX</text>
+<text x="98" y="96" font-family="'Segoe UI',sans-serif" font-size="12" letter-spacing="3.4" fill="#9db6dd">SHARE AND DISCOVER</text>
+</svg>

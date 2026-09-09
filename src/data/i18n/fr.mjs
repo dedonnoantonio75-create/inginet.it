@@ -213,7 +213,7 @@ export default {
     servizi: {
       title: 'Sites, e-commerce, logiciels de gestion, CRM et CMS | Inginet',
       description: 'Développement sur mesure : sites multilingues très rapides, e-commerce, logiciels pour l’hôtellerie, la location et les garages, CRM, CMS, portails, API.',
-      keywords: 'création de sites web professionnels, développement e-commerce, logiciel de gestion sur mesure, logiciel hôtelier, channel manager, logiciel de location de voitures, CRM personnalisé, CMS sur mesure, développement de places de marché, applications d’entreprise, intégration facturation électronique',
+      keywords: 'création de sites web professionnels, développement e-commerce, logiciel de gestion sur mesure, logiciel hôtelier, channel manager, logiciel de location de voitures, CRM personnalisé, CMS sur mesure, développement de places de marché, applications d’entreprise, intégration facturation électronique, développement d’applications iOS et Android, web apps et PWA, applications métier sur mesure',
       h1: 'Tout ce que nous construisons, et pour qui',
       lead: 'Chaque ligne ci-dessous est née d’un client qui avait un problème et ne trouvait rien d’adapté sur le marché. Nous les avons construites une fois, améliorées cent fois, et aujourd’hui nous les adaptons à vous.',
       imgAlt: 'Illustration des services Inginet : création de sites web, e-commerce, logiciels de gestion sur mesure, CRM et CMS propriétaires',
@@ -251,6 +251,14 @@ export default {
           ],
         },
         {
+          title: 'Applications et mobile',
+          items: [
+            { title: 'Applications iOS et Android', text: 'Des applications publiées sur les stores, reliées à votre logiciel de gestion et aux données que vous avez déjà. Pas une copie du site : elles font les quelques choses qui comptent vraiment sur un téléphone, et les font bien.', bullets: ['Publication sur l\'App Store et Google Play', 'Liaison avec le logiciel de gestion et le CRM', 'Notifications ciblées, pas du spam', 'Accès et rôles pour le personnel'] },
+            { title: 'Web apps et PWA', text: 'Quand passer par les stores n\'apporte rien : des applications qui s\'ouvrent dans le navigateur, s\'installent sur l\'écran d\'accueil et coûtent bien moins cher à maintenir.', bullets: ['Aucune attente pour les validations des stores', 'S\'installe sur téléphone comme sur ordinateur', 'Fonctionne même avec un réseau lent', 'Un seul code pour tous les appareils'] },
+            { title: 'Applications sur mesure pour votre secteur', text: 'Réservations, commandes, tarifs, catalogues, interventions techniques, présences, livraisons. L\'application fait ce dont vous avez besoin et rien d\'autre : c\'est pour cela qu\'elle est vraiment utilisée.', bullets: ['Commandes et réservations depuis un téléphone', 'Fiches d\'intervention pour les techniciens sur le terrain', 'Catalogues et tarifs toujours à jour', 'Fonctions assistées par l\'intelligence artificielle'] },
+          ],
+        },
+        {
           title: 'Contenus et assistance',
           items: [
             { title: 'Photo, vidéo et prises de vue aériennes', text: 'Un logiciel parfait avec de mauvaises photos ne vend pas. Nous réalisons des reportages photo, des vidéos et des prises de vue par drone pour établissements, produits et chantiers.', bullets: ['Prises de vue aériennes par drone', 'Photo produit et mises en situation', 'Vidéos promotionnelles courtes', 'Visites virtuelles navigables'] },
@@ -258,6 +266,12 @@ export default {
           ],
         },
       ],
+      gestionaliTitle: 'Les logiciels de gestion que nous avons construits, en service aujourd\'hui',
+      gestionaliSub: 'Pas des démos : deux plateformes réelles, utilisées chaque jour. Olvix les contient pratiquement tous, et c\'est la preuve de ce que nous pouvons monter pour vous aussi.',
+      gestionali: {
+        cardia360: { text: 'Un logiciel complet pour un cabinet médical : agendas des praticiens, prises de rendez-vous, fiches patients, dossiers, rappels automatiques et espace prive, le tout en traitant les données de santé comme elles doivent l\'etre.', tags: ['agendas et rendez-vous', 'CRM patients', 'rappels automatiques', 'RGPD'] },
+        olvix: { text: 'La plateforme qui les contient tous : hébergements et réservations, locations, commandes et boutiques, stock, paiements et commissions, facturation, modules anti-gaspillage et contenus traduits en plusieurs langues. Chaque module se détache et s\'adapte à votre activité.', tags: ['réservations', 'locations', 'commandes et boutiques', 'stock', 'paiements', 'facturation', 'multilingue'] },
+      },
       faq: [
         { q: 'Combien de temps faut-il pour un site multilingue ?', a: 'Pour un site vitrine en cinq langues, bien structuré et correctement indexé, il faut en général de trois à six semaines, selon la rapidité d’arrivée des contenus et des photos. Un e-commerce ou un logiciel de gestion suivent d’autres délais, que nous fixons ensemble pendant l’analyse.' },
         { q: 'Puis-je mettre à jour les contenus moi-même ?', a: 'Oui. Selon le projet, vous recevez un CMS propriétaire, un panneau sur mesure ou des fichiers de contenu très simples à modifier. Dans tous les cas nous vous formons, avec une session enregistrée que vous pouvez revoir quand vous voulez.' },

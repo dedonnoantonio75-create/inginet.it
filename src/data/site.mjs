@@ -121,6 +121,13 @@ export const clients = [
   { name: 'Netpollwork', url: 'https://www.netpollwork.it/', logo: 'netpollwork-logo.png', sector: 'servizi', tags: ['portale', 'software'] },
 ];
 
+/* Le piattaforme che mostriamo nella sezione "gestionali": sono nostre o
+   nostre al 100% come sviluppo, e servono da prova concreta. */
+export const platforms = [
+  { key: 'cardia360', name: 'Cardia360', url: 'https://www.cardia360.com/', logo: 'cardia360-logo.png', sector: 'salute' },
+  { key: 'olvix', name: 'Olvix', url: 'https://www.olvix.net/', logo: 'olvix-marketplace-logo.png', sector: 'portali' },
+];
+
 export const sectors = ['tutti', 'ricettivo', 'ristorazione', 'automotive', 'retail', 'industria', 'salute', 'portali', 'servizi'];
 
 // Illustrazioni SVG generate: nome file → chiave di contenuto (alt localizzato)

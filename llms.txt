@@ -24,6 +24,9 @@ Contatti: info@inginet.it · +39 393 569 4342 · https://www.inginet.it
 - **CRM personalizzato** — Anagrafiche, trattative, attività, scadenze e comunicazioni in un posto solo, con i campi che servono a te e nessuno di quelli che non usi.
 - **CMS proprietario** — Un pannello che aggiorni tu, senza plugin da aggiornare ogni settimana e senza superfici d’attacco inutili.
 - **Integrazioni e adempimenti** — Facciamo parlare i sistemi che già usi: fatturazione elettronica, POS e pagamenti online, corrieri, contabilità, channel manager, portali di settore.
+- **App per iOS e Android** — App pubblicate sugli store, collegate al gestionale e ai dati che usi già. Non un doppione del sito: fanno le poche cose che servono davvero da telefono, e le fanno bene.
+- **Web app e PWA** — Quando passare dagli store non serve: applicazioni che si aprono dal browser, si installano sulla schermata home e costano molto meno da mantenere.
+- **App su misura per il tuo settore** — Prenotazioni, ordini, listini, cataloghi, interventi tecnici, presenze, consegne. L'app fa quello che ti serve e nient'altro, quindi la usa davvero chi deve usarla.
 - **Foto, video e riprese aeree** — Un software perfetto con foto brutte non vende. Realizziamo servizi fotografici, video e riprese con drone per strutture, prodotti e cantieri.
 - **Assistenza e manutenzione** — Aggiornamenti, backup verificati, monitoraggio, sicurezza, piccole modifiche e una persona che risponde quando chiami.
 
@@ -34,7 +37,7 @@ Contatti: info@inginet.it · +39 393 569 4342 · https://www.inginet.it
 - [Deutsch](https://www.inginet.it/de/)
 - [Français](https://www.inginet.it/fr/)
 - [Español](https://www.inginet.it/es/)
-- [Intelligenza artificiale](https://www.inginet.it/intelligenza-artificiale/): Agenti AI addestrati sui tuoi dati, automazione di preventivi e documenti, assistenti multilingua e AI collegata al gestionale che usi gia. Analisi gratuita.
+- [Intelligenza artificiale](https://www.inginet.it/intelligenza-artificiale/): Agenti AI addestrati sui tuoi dati, automazione di preventivi e documenti, assistenti multilingua e AI collegata al gestionale che usi già. Analisi gratuita.
 - [Servizi](https://www.inginet.it/servizi/): Sviluppo su misura: siti multilingua velocissimi, e-commerce, gestionali per ricettivo, noleggio e officine, CRM, CMS proprietari, portali e integrazioni.
 - [SEO & AI Search](https://www.inginet.it/seo-e-indicizzazione/): Indicizzazione su due fronti: SEO tecnica e di contenuto per i motori di ricerca e ottimizzazione per essere citati da ChatGPT, Gemini e AI Overviews.
 - [Clienti](https://www.inginet.it/clienti/): Una selezione dei progetti Inginet online adesso: strutture ricettive, ristoranti, officine, e-commerce, portali e studi medici, con link diretto ai siti.

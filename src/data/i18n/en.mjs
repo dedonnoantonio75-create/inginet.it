@@ -213,7 +213,7 @@ export default {
     servizi: {
       title: 'Websites, e-commerce, business software, CRM, CMS | Inginet',
       description: 'Custom development: very fast multilingual websites, e-commerce, software for hospitality, rental and garages, CRM, proprietary CMS, portals, integrations.',
-      keywords: 'professional website development, e-commerce development, custom management software, hotel management software, channel manager, car rental software, bespoke CRM, custom CMS, marketplace development, business apps, e-invoicing integration',
+      keywords: 'professional website development, e-commerce development, custom management software, hotel management software, channel manager, car rental software, bespoke CRM, custom CMS, marketplace development, business apps, e-invoicing integration, iOS and Android app development, web apps and PWAs, custom business apps',
       h1: 'Everything we build, and who we build it for',
       lead: 'Every item below started with a client who had a problem and could find nothing suitable on the market. We built each one once, improved it a hundred times, and today we adapt it to you.',
       imgAlt: 'Illustration of Inginet services: website development, e-commerce, custom management software, CRM and proprietary CMS',
@@ -251,6 +251,14 @@ export default {
           ],
         },
         {
+          title: 'Apps and mobile',
+          items: [
+            { title: 'iOS and Android apps', text: 'Apps published on the stores, connected to your business software and the data you already have. Not a copy of the website: they do the few things that genuinely matter on a phone, and do them well.', bullets: ['Published on the App Store and Google Play', 'Connected to your business software and CRM', 'Targeted push notifications, not spam', 'Logins and roles for your staff'] },
+            { title: 'Web apps and PWAs', text: 'When going through the stores adds nothing: applications that open in the browser, install to the home screen and cost far less to maintain.', bullets: ['No waiting for store approvals', 'Installs on phone and desktop alike', 'Works on a slow connection', 'One codebase for every device'] },
+            { title: 'Apps built around your sector', text: 'Bookings, orders, price lists, catalogues, service jobs, attendance, deliveries. The app does what you need and nothing else, so the people who should use it actually do.', bullets: ['Orders and bookings from a phone', 'Job sheets for technicians in the field', 'Catalogues and prices always current', 'Features assisted by artificial intelligence'] },
+          ],
+        },
+        {
           title: 'Content and support',
           items: [
             { title: 'Photo, video and aerial footage', text: 'Perfect software with poor photography does not sell. We produce photo shoots, video and drone footage for properties, products and sites.', bullets: ['Aerial drone footage', 'Product and lifestyle photography', 'Short promotional videos', 'Navigable virtual tours'] },
@@ -258,6 +266,12 @@ export default {
           ],
         },
       ],
+      gestionaliTitle: 'The business systems we have built, running right now',
+      gestionaliSub: 'Not demos: two real platforms in daily use. Olvix contains virtually all of them, and it is the proof of what we can build for you too.',
+      gestionali: {
+        cardia360: { text: 'A complete system for a medical practice: practitioner diaries, bookings, patient records, case files, automatic reminders and a private area, all handling health data the way health data must be handled.', tags: ['diaries and bookings', 'patient CRM', 'automatic reminders', 'GDPR'] },
+        olvix: { text: 'The platform that has them all inside: accommodation and bookings, rentals, orders and shops, stock, payments and commissions, invoicing, food-waste modules and content translated into several languages. Any module can be detached and adapted to your business.', tags: ['bookings', 'rentals', 'orders and shops', 'stock', 'payments', 'invoicing', 'multilingual'] },
+      },
       faq: [
         { q: 'How long does a multilingual website take?', a: 'For a well-structured, properly indexed brochure site in five languages, usually three to six weeks, depending on how quickly content and photography arrive. E-commerce or management software follow different timelines, which we agree together during the analysis.' },
         { q: 'Can I update the content myself?', a: 'Yes. Depending on the project you get a proprietary CMS, a custom panel or very simple content files. In every case we train you, with a recorded session you can go back to whenever you like.' },

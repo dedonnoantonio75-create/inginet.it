@@ -213,7 +213,7 @@ export default {
     servizi: {
       title: 'Webs, e-commerce, software de gestión, CRM y CMS | Inginet',
       description: 'Desarrollo a medida: webs multilingües muy rápidas, tiendas online, software para alojamientos, alquiler y talleres, CRM, CMS propios e integraciones.',
-      keywords: 'creación de webs profesionales, desarrollo de comercio electrónico, software de gestión a medida, software para hoteles, channel manager, software de alquiler de coches, CRM personalizado, CMS a medida, desarrollo de marketplaces, aplicaciones empresariales, integración de facturación electrónica',
+      keywords: 'creación de webs profesionales, desarrollo de comercio electrónico, software de gestión a medida, software para hoteles, channel manager, software de alquiler de coches, CRM personalizado, CMS a medida, desarrollo de marketplaces, aplicaciones empresariales, integración de facturación electrónica, desarrollo de apps iOS y Android, web apps y PWA, apps empresariales a medida',
       h1: 'Todo lo que construimos, y para quién',
       lead: 'Cada punto de esta lista nació de un cliente que tenía un problema y no encontraba nada adecuado en el mercado. Los construimos una vez, los mejoramos cien y hoy los adaptamos a ti.',
       imgAlt: 'Ilustración de los servicios de Inginet: desarrollo de webs, comercio electrónico, software de gestión a medida, CRM y CMS propios',
@@ -251,6 +251,14 @@ export default {
           ],
         },
         {
+          title: 'Apps y móvil',
+          items: [
+            { title: 'Apps para iOS y Android', text: 'Apps publicadas en las tiendas, conectadas a tu software de gestión y a los datos que ya tienes. No una copia de la web: hacen las pocas cosas que de verdad importan desde el móvil, y las hacen bien.', bullets: ['Publicación en App Store y Google Play', 'Conexión con el software de gestión y el CRM', 'Notificaciones dirigidas, no spam', 'Accesos y roles para el personal'] },
+            { title: 'Web apps y PWA', text: 'Cuando pasar por las tiendas no aporta nada: aplicaciones que se abren en el navegador, se instalan en la pantalla de inicio y cuestan mucho menos de mantener.', bullets: ['Sin esperas por las aprobaciones de las tiendas', 'Se instala en móvil y en ordenador', 'Funciona también con conexión lenta', 'Un solo código para todos los dispositivos'] },
+            { title: 'Apps a medida para tu sector', text: 'Reservas, pedidos, tarifas, catálogos, intervenciones técnicas, fichajes, entregas. La app hace lo que necesitas y nada mas, por eso la usa de verdad quien tiene que usarla.', bullets: ['Pedidos y reservas desde el móvil', 'Partes de trabajo para los técnicos en campo', 'Catálogos y tarifas siempre al día', 'Funciones asistidas por inteligencia artificial'] },
+          ],
+        },
+        {
           title: 'Contenidos y soporte',
           items: [
             { title: 'Foto, vídeo y tomas aéreas', text: 'Un software perfecto con fotos malas no vende. Realizamos sesiones fotográficas, vídeos y tomas con dron para alojamientos, productos y obras.', bullets: ['Tomas aéreas con dron', 'Fotografía de producto y ambientada', 'Vídeos promocionales breves', 'Visitas virtuales navegables'] },
@@ -258,6 +266,12 @@ export default {
           ],
         },
       ],
+      gestionaliTitle: 'Los sistemas de gestión que hemos construido, funcionando ahora',
+      gestionaliSub: 'No son demos: dos plataformas reales, en uso cada día. Olvix los contiene prácticamente todos, y es la prueba de lo que podemos levantar también para ti.',
+      gestionali: {
+        cardia360: { text: 'Sistema completo para una consulta médica: agendas de los profesionales, citas, fichas de pacientes, historiales, recordatorios automáticos y área privada, tratando los datos de salud como se deben tratar.', tags: ['agendas y citas', 'CRM de pacientes', 'recordatorios automaticos', 'RGPD'] },
+        olvix: { text: 'La plataforma que los tiene todos dentro: alojamientos y reservas, alquileres, pedidos y tiendas, almacén, pagos y comisiones, facturación, módulos contra el desperdicio y contenidos traducidos a varios idiomas. Cada modulo se separa y se adapta a tu actividad.', tags: ['reservas', 'alquileres', 'pedidos y tiendas', 'almacén', 'pagos', 'facturación', 'multiidioma'] },
+      },
       faq: [
         { q: '¿Cuánto se tarda en una web multilingüe?', a: 'Para una web de presentación en cinco idiomas, bien estructurada e indexada, normalmente entre tres y seis semanas, según la rapidez con que lleguen los contenidos y las fotos. Una tienda online o un software de gestión tienen otros plazos, que fijamos juntos en la fase de análisis.' },
         { q: '¿Puedo actualizar los contenidos yo mismo?', a: 'Sí. Según el proyecto te damos un CMS propio, un panel a medida o unos archivos de contenido muy sencillos de modificar. En todos los casos te formamos, con una sesión grabada a la que puedes volver cuando quieras.' },

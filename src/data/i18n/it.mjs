@@ -168,7 +168,7 @@ export default {
 
     ai: {
       title: 'Intelligenza artificiale per aziende su misura | Inginet',
-      description: 'Agenti AI addestrati sui tuoi dati, automazione di preventivi e documenti, assistenti multilingua e AI collegata al gestionale che usi gia. Analisi gratuita.',
+      description: 'Agenti AI addestrati sui tuoi dati, automazione di preventivi e documenti, assistenti multilingua e AI collegata al gestionale che usi già. Analisi gratuita.',
       keywords: 'intelligenza artificiale per aziende, agenti AI su misura, chatbot aziendale addestrato sui propri dati, RAG documenti aziendali, automazione processi con AI, AI nel gestionale, assistente virtuale multilingua, machine learning PMI, consulenza AI Italia',
       h1: 'Intelligenza artificiale che lavora, non che fa scena',
       lead: 'L’AI serve a qualcosa solo quando toglie lavoro ripetitivo alle persone e restituisce tempo all’azienda. Noi partiamo sempre da lì: quale attività ti sta mangiando le ore, e come la facciamo fare a una macchina senza perdere il controllo.',
@@ -213,7 +213,7 @@ export default {
     servizi: {
       title: 'Siti, e-commerce, gestionali, CRM e CMS su misura | Inginet',
       description: 'Sviluppo su misura: siti multilingua velocissimi, e-commerce, gestionali per ricettivo, noleggio e officine, CRM, CMS proprietari, portali e integrazioni.',
-      keywords: 'realizzazione siti web professionali, sviluppo e-commerce, gestionale su misura, software gestionale strutture ricettive, channel manager, gestionale noleggio auto, CRM personalizzato, CMS su misura, sviluppo portali e marketplace, app aziendali, integrazione fatturazione elettronica',
+      keywords: 'realizzazione siti web professionali, sviluppo e-commerce, gestionale su misura, software gestionale strutture ricettive, channel manager, gestionale noleggio auto, CRM personalizzato, CMS su misura, sviluppo portali e marketplace, app aziendali, integrazione fatturazione elettronica, sviluppo app iOS e Android, web app e PWA, app aziendali su misura',
       h1: 'Tutto quello che costruiamo, e per chi lo costruiamo',
       lead: 'Ogni voce qui sotto è nata da un cliente che aveva un problema e non trovava niente di adatto sul mercato. Le abbiamo costruite una volta, le abbiamo migliorate cento, oggi le adattiamo a te.',
       imgAlt: 'Illustrazione dei servizi Inginet: sviluppo di siti web, e-commerce, gestionali su misura, CRM e CMS proprietari',
@@ -251,6 +251,14 @@ export default {
           ],
         },
         {
+          title: 'App e mobile',
+          items: [
+            { title: 'App per iOS e Android', text: 'App pubblicate sugli store, collegate al gestionale e ai dati che usi già. Non un doppione del sito: fanno le poche cose che servono davvero da telefono, e le fanno bene.', bullets: ['Pubblicazione su App Store e Google Play', 'Collegamento al gestionale e al CRM', 'Notifiche push mirate, non spam', 'Accessi e ruoli per il personale'] },
+            { title: 'Web app e PWA', text: 'Quando passare dagli store non serve: applicazioni che si aprono dal browser, si installano sulla schermata home e costano molto meno da mantenere.', bullets: ['Nessuna attesa per le approvazioni degli store', 'Si installa da telefono e da computer', 'Funziona anche con rete lenta', 'Un solo codice per tutti i dispositivi'] },
+            { title: 'App su misura per il tuo settore', text: 'Prenotazioni, ordini, listini, cataloghi, interventi tecnici, presenze, consegne. L\'app fa quello che ti serve e nient\'altro, quindi la usa davvero chi deve usarla.', bullets: ['Ordini e prenotazioni da telefono', 'Schede lavorazione per i tecnici sul campo', 'Cataloghi e listini sempre aggiornati', 'Funzioni assistite dall\'intelligenza artificiale'] },
+          ],
+        },
+        {
           title: 'Contenuti e supporto',
           items: [
             { title: 'Foto, video e riprese aeree', text: 'Un software perfetto con foto brutte non vende. Realizziamo servizi fotografici, video e riprese con drone per strutture, prodotti e cantieri.', bullets: ['Riprese aeree con drone', 'Foto prodotto e ambientazioni', 'Video promozionali brevi', 'Tour virtuali navigabili'] },
@@ -258,6 +266,12 @@ export default {
           ],
         },
       ],
+      gestionaliTitle: 'I gestionali che abbiamo costruito, in funzione adesso',
+      gestionaliSub: 'Non demo: due piattaforme vere, usate ogni giorno. Olvix li contiene praticamente tutti, ed è la prova di cosa possiamo mettere in piedi anche per te.',
+      gestionali: {
+        cardia360: { text: 'Gestionale completo per uno studio medico: agende dei professionisti, prenotazioni, anagrafiche pazienti, cartelle, promemoria automatici e area riservata, il tutto trattando i dati sanitari come vanno trattati.', tags: ['agende e prenotazioni', 'CRM pazienti', 'promemoria automatici', 'GDPR'] },
+        olvix: { text: 'La piattaforma che li ha tutti dentro: alloggi e prenotazioni, noleggi, ordini e negozi, magazzino, pagamenti e commissioni, fatturazione, antispreco alimentare e contenuti tradotti in più lingue. Ogni modulo lo stacchiamo e lo adattiamo alla tua attività.', tags: ['prenotazioni', 'noleggi', 'ordini e negozi', 'magazzino', 'pagamenti', 'fatturazione', 'multilingua'] },
+      },
       faq: [
         { q: 'Quanto tempo serve per un sito multilingua?', a: 'Per un sito vetrina in cinque lingue, ben strutturato e indicizzato, in genere si va dalle tre alle sei settimane, contenuti e materiali fotografici permettendo. Un e-commerce o un gestionale hanno tempi diversi, che stabiliamo insieme in fase di analisi.' },
         { q: 'Posso aggiornare i contenuti da solo?', a: 'Sì. A seconda del progetto ti diamo un CMS proprietario, un pannello su misura o dei file di contenuto molto semplici da modificare. In tutti i casi ti formiamo, con una sessione registrata a cui puoi tornare quando vuoi.' },

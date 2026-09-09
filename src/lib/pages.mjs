@@ -1,4 +1,4 @@
-import { site, clients, artwork } from '../data/site.mjs';
+import { site, clients, platforms, artwork } from '../data/site.mjs';
 import { esc, icon, btn, pageUrl, absUrl, sectionHead, faqBlock, ctaBlock } from './render.mjs';
 
 const img = (file, alt, cls = '', w = 1200, h = 800, lazy = true) =>
@@ -224,6 +224,26 @@ ${p.groups.map((g, gi) => `
     </div>
   </div>
 </section>`).join('')}
+
+
+<section class="sec sec-gest" id="gestionali">
+  <div class="wrap">
+    ${sectionHead(null, esc(p.gestionaliTitle), p.gestionaliSub)}
+    <div class="cards cards-2">
+      ${platforms.map(pf => {
+        const g = p.gestionali[pf.key];
+        return `
+      <a class="card card-gest" href="${esc(pf.url)}" target="_blank" rel="noopener">
+        <span class="gest-logo"><img src="/assets/img/clienti/${pf.logo}" alt="${esc(pf.name)} — gestionale sviluppato da Inginet" width="240" height="120" loading="lazy" decoding="async"></span>
+        <h3>${esc(pf.name)}</h3>
+        <p>${esc(g.text)}</p>
+        <span class="ctile-tags">${g.tags.map(x => `<em>${esc(x)}</em>`).join('')}</span>
+        <span class="card-link">${esc(t.common.visitSite)} ${icon('external')}</span>
+      </a>`;
+      }).join('')}
+    </div>
+  </div>
+</section>
 
 ${faqBlock(t.common.faqTitle, p.faq)}
 ${ctaBlock(t, lang)}`;

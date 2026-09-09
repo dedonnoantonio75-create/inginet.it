@@ -565,3 +565,16 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 /* mentre il pannello e aperto su mobile, sposto il tasto WhatsApp per non coprirlo */
 @media (max-width: 640px) { body.cc-open .wa-float { transform: translateY(-9rem); } }
+
+/* ---------------------------------------------- sezione gestionali (Servizi) */
+.sec-gest { background: var(--bg-2); border-block: 1px solid var(--line-soft); }
+.card-gest { display: flex; flex-direction: column; gap: .2rem; padding: 1.7rem 1.6rem; }
+.gest-logo {
+  display: flex; align-items: center; justify-content: center;
+  height: 96px; margin-bottom: 1.2rem; padding: 1rem 1.4rem;
+  background: var(--tile); border-radius: 16px; overflow: hidden;
+}
+.gest-logo img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.card-gest h3 { margin-bottom: .45em; }
+.card-gest .ctile-tags { margin: .2rem 0 1.1rem; }
+.card-gest .card-link { margin-top: auto; }

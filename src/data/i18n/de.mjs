@@ -213,7 +213,7 @@ export default {
     servizi: {
       title: 'Websites, Onlineshops, Branchensoftware, CRM, CMS | Inginet',
       description: 'Individuelle Entwicklung: schnelle mehrsprachige Websites, Onlineshops, Software für Hotellerie, Vermietung und Werkstätten, CRM, CMS und Schnittstellen.',
-      keywords: 'professionelle Websites erstellen, Onlineshop Entwicklung, individuelle Branchensoftware, Hotelsoftware, Channel Manager, Mietwagen Software, CRM nach Maß, individuelles CMS, Marktplatz Entwicklung, Unternehmens Apps, E-Rechnung Schnittstelle',
+      keywords: 'professionelle Websites erstellen, Onlineshop Entwicklung, individuelle Branchensoftware, Hotelsoftware, Channel Manager, Mietwagen Software, CRM nach Maß, individuelles CMS, Marktplatz Entwicklung, Unternehmens Apps, E-Rechnung Schnittstelle, App-Entwicklung für iOS und Android, Web-Apps und PWAs, individuelle Unternehmens-Apps',
       h1: 'Alles, was wir bauen — und für wen',
       lead: 'Jeder Punkt hier unten entstand aus einem Kunden, der ein Problem hatte und am Markt nichts Passendes fand. Wir haben jede Lösung einmal gebaut, hundertmal verbessert, und heute passen wir sie an Sie an.',
       imgAlt: 'Illustration der Leistungen von Inginet: Websites, Onlineshops, individuelle Branchensoftware, CRM und eigene CMS',
@@ -251,6 +251,14 @@ export default {
           ],
         },
         {
+          title: 'Apps und Mobile',
+          items: [
+            { title: 'Apps für iOS und Android', text: 'Apps in den Stores, angebunden an Ihre Branchensoftware und die Daten, die Sie ohnehin haben. Kein Abklatsch der Website: Sie erledigen die wenigen Dinge, die am Telefon wirklich zählen, und das gut.', bullets: ['Veröffentlichung im App Store und bei Google Play', 'Anbindung an Branchensoftware und CRM', 'Gezielte Push-Nachrichten statt Spam', 'Zugänge und Rollen für die Mitarbeitenden'] },
+            { title: 'Web-Apps und PWAs', text: 'Wenn der Umweg über die Stores nichts bringt: Anwendungen, die im Browser starten, sich auf dem Startbildschirm installieren und deutlich weniger Pflege kosten.', bullets: ['Kein Warten auf Store-Freigaben', 'Installierbar auf Handy und Rechner', 'Funktioniert auch bei langsamer Verbindung', 'Ein Code für alle Geräte'] },
+            { title: 'Apps nach Maß für Ihre Branche', text: 'Buchungen, Aufträge, Preislisten, Kataloge, Serviceeinsätze, Anwesenheiten, Lieferungen. Die App kann genau das, was Sie brauchen, und sonst nichts. Deshalb wird sie auch benutzt.', bullets: ['Aufträge und Buchungen vom Telefon aus', 'Auftragsblätter für Techniker vor Ort', 'Kataloge und Preise immer aktuell', 'Von künstlicher Intelligenz unterstützte Funktionen'] },
+          ],
+        },
+        {
           title: 'Inhalte und Betreuung',
           items: [
             { title: 'Foto, Video und Luftaufnahmen', text: 'Perfekte Software mit schlechten Fotos verkauft nicht. Wir produzieren Fotoshootings, Videos und Drohnenaufnahmen für Objekte, Produkte und Baustellen.', bullets: ['Luftaufnahmen mit Drohne', 'Produkt- und Ambientefotografie', 'Kurze Werbevideos', 'Begehbare virtuelle Rundgänge'] },
@@ -258,6 +266,12 @@ export default {
           ],
         },
       ],
+      gestionaliTitle: 'Die Branchensoftware, die wir gebaut haben — jetzt im Einsatz',
+      gestionaliSub: 'Keine Demos: zwei echte Plattformen, täglich im Einsatz. Olvix enthält praktisch alle Module und ist der Beweis, was wir auch für Sie aufbauen können.',
+      gestionali: {
+        cardia360: { text: 'Vollständige Lösung für eine Arztpraxis: Terminkalender der Behandelnden, Buchungen, Patientenstammdaten, Akten, automatische Erinnerungen und geschützter Bereich - und das alles im Umgang mit Gesundheitsdaten, wie er sein muss.', tags: ['Kalender und Buchungen', 'Patienten-CRM', 'automatische Erinnerungen', 'DSGVO'] },
+        olvix: { text: 'Die Plattform, die alles enthält: Unterkünfte und Buchungen, Vermietung, Aufträge und Shops, Lager, Zahlungen und Provisionen, Rechnungsstellung, Module gegen Lebensmittelverschwendung und Inhalte in mehreren Sprachen. Jedes Modul lösen wir heraus und passen es an Ihren Betrieb an.', tags: ['Buchungen', 'Vermietung', 'Aufträge und Shops', 'Lager', 'Zahlungen', 'Rechnungen', 'mehrsprachig'] },
+      },
       faq: [
         { q: 'Wie lange dauert eine mehrsprachige Website?', a: 'Für eine gut strukturierte, sauber indexierte Imagewebsite in fünf Sprachen in der Regel drei bis sechs Wochen, je nachdem, wie schnell Texte und Bildmaterial vorliegen. Onlineshops und Branchensoftware haben andere Zeitpläne, die wir in der Analysephase gemeinsam festlegen.' },
         { q: 'Kann ich die Inhalte selbst pflegen?', a: 'Ja. Je nach Projekt erhalten Sie ein eigenes CMS, einen maßgeschneiderten Bereich oder sehr einfach zu bearbeitende Inhaltsdateien. In jedem Fall schulen wir Sie, mit einer Aufzeichnung, auf die Sie jederzeit zurückgreifen können.' },

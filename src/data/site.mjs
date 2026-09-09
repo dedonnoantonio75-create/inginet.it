@@ -30,9 +30,9 @@ export const site = {
     whatsapp: '393935694342',
   },
   social: {
-    facebook: 'https://www.facebook.com/inginet',
+    facebook: 'https://www.facebook.com/olvixapp',
     linkedin: '',
-    youtube: 'https://www.youtube.com/watch?v=xLYklJ5hmbE',
+    youtube: '',
   },
   founder: {
     name: 'Antonio De Donno',
@@ -127,6 +127,37 @@ export const platforms = [
   { key: 'cardia360', name: 'Cardia360', url: 'https://www.cardia360.com/', logo: 'cardia360-logo.png', sector: 'salute' },
   { key: 'olvix', name: 'Olvix', url: 'https://www.olvix.net/', logo: 'olvix-marketplace-logo.png', sector: 'portali' },
 ];
+
+/* Vecchi permalink del sito WordPress (fino al 09/09/2026), da reindirizzare
+   alle pagine nuove. GitHub Pages non fa redirect lato server: il build genera
+   per ognuno una paginetta con meta refresh e canonical, che Google interpreta
+   come un 301. Chiave = vecchio percorso, valore = chiave della pagina nuova. */
+const OLD = 'home-costruzione-siti-web-maglie-lecce-puglia-italia';
+const SRV = OLD + '/servizi-realizzazione-progetti-software-gestionali-app-e-siti-e-commerce-e-vetrina-maglie-lecce-saelnto-puglia-italia';
+const GEST = SRV + '/gestionali-per-attivita-ricettive-channel-manager-maglie-lecce-salento-puglia';
+
+export const redirects = {
+  [OLD]: 'home',
+  [OLD + '/cookie-policy-ue']: 'cookie',
+  [OLD + '/siti-web-vetrina-ed-e-commerce-maglie-lecce-salento-puglia-italia']: 'servizi',
+  [OLD + '/chi-siamo-realizzazione-siti-web-e-commerce-gestionali-portali-app-software-maglie-lecce-salento-puglia-italia']: 'chisiamo',
+  [OLD + '/contattaci-per-realizzare-il-tuo-progetto-app-software-web-maglie-lecce-salento-puglia']: 'contatti',
+  [SRV]: 'servizi',
+  [SRV + '/digital-marketing-maglie-lecce-puglia']: 'seo',
+  [SRV + '/riprese-aeree-con-drone-maglie-lecce-salento-puglia-italia']: 'servizi',
+  [GEST]: 'servizi',
+  [GEST + '/ristoranti-menu-online-e-sistemi-di-prenotazione-tavoli-maglie-lecce-puglia-italia']: 'servizi',
+  [GEST + '/hotel-gestionali-channel-manager-maglie-lecce-salento-puglia-italia']: 'servizi',
+  [GEST + '/noleggio-software-gestionali-rent-car-barche-bici-scooter-maglie-lecce-salento-puglia-italia']: 'servizi',
+  'contattaci': 'contatti',
+  'siti-web': 'servizi',
+  'gestionali-per-attivita': 'servizi',
+  'digital-marketing': 'seo',
+  'riprese-aeree': 'servizi',
+  'cookie-policy-ue': 'cookie',
+  'privacy-policy': 'privacy',
+  'home': 'home',
+};
 
 export const sectors = ['tutti', 'ricettivo', 'ristorazione', 'automotive', 'retail', 'industria', 'salute', 'portali', 'servizi'];
 

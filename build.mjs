@@ -8,7 +8,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { site, languages, pages, slugs, defaultLang, clients, artwork } from './src/data/site.mjs';
+import { site, languages, pages, slugs, defaultLang, clients, artwork, redirects } from './src/data/site.mjs';
 import { layout, pageUrl, absUrl, outPath } from './src/lib/render.mjs';
 import { renderers, extraSchemaFor } from './src/lib/pages.mjs';
 import * as art from './src/lib/artwork.mjs';
@@ -233,8 +233,67 @@ write('404.html', layout({
       <a class="btn btn-primary" href="/"><span>${t404.common.backHome}</span></a>
       <a class="btn btn-ghost" href="${pageUrl(defaultLang, 'contatti')}"><span>${t404.common.ctaPrimary}</span></a>
     </div>
-  </div></section>`,
+    <p id="ing404" class="note" style="margin-top:1.6rem"></p>
+  </div></section>
+<script>
+/* I vecchi indirizzi WordPress erano lunghissimi e descrittivi. Invece di
+   lasciare la persona su un errore, leggiamo le parole nel percorso e la
+   portiamo sulla pagina che corrisponde. */
+(function () {
+  var p = location.pathname.toLowerCase();
+  var regole = [
+    [/chi-siamo|about|storia/, '/chi-siamo/'],
+    [/contatt|preventivo|richiesta/, '/contatti/'],
+    [/seo|posizionament|digital-marketing|indicizza|google-ads|facebook-ads/, '/seo-e-indicizzazione/'],
+    [/intelligenza-artificiale|\\bai\\b|chatbot/, '/intelligenza-artificiale/'],
+    [/client|portfolio|referenz|lavori|progetti/, '/clienti/'],
+    [/cookie/, '/cookie/'],
+    [/privacy/, '/privacy/'],
+    [/gestional|channel-manager|noleggio|rent|hotel|ricettiv|ristorant|menu-online|delivery|e-commerce|ecommerce|siti-web|sito|portal|app|software|drone|riprese|virtual-tour|foto|video|assistenza|servizi/, '/servizi/']
+  ];
+  for (var i = 0; i < regole.length; i++) {
+    if (regole[i][0].test(p)) {
+      var dove = regole[i][1];
+      var el = document.getElementById('ing404');
+      if (el) el.textContent = 'Questo indirizzo apparteneva al vecchio sito. Ti stiamo portando alla pagina corrispondente...';
+      setTimeout(function () { location.replace(dove); }, 1200);
+      return;
+    }
+  }
+})();
+</script>`,
 }));
+
+
+/* ----------------------------------- 9-bis. redirect dai vecchi permalink */
+
+/* GitHub Pages non fa redirect lato server. Per ogni vecchio indirizzo del sito
+   WordPress scriviamo una paginetta con canonical + meta refresh a zero secondi:
+   Google la interpreta come un 301 e passa il posizionamento alla pagina nuova. */
+const redirectPage = (to) => `<!doctype html>
+<html lang="${defaultLang}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pagina spostata \u00b7 ${site.brand}</title>
+<link rel="canonical" href="${to}">
+<meta http-equiv="refresh" content="0; url=${to}">
+<script>location.replace(${JSON.stringify(to)});</script>
+<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#070a12;color:#a6b3cc;font:16px/1.6 system-ui,sans-serif;text-align:center;padding:2rem}a{color:#ff9c00}</style>
+</head>
+<body><div>
+  <p>Questa pagina si \u00e8 spostata.</p>
+  <p><a href="${to}">Continua sul nuovo indirizzo</a></p>
+</div></body>
+</html>`;
+
+let nRed = 0;
+for (const [oldPath, key] of Object.entries(redirects)) {
+  const clean = oldPath.replace(/^\/+|\/+$/g, '');
+  write(clean + '/index.html', redirectPage(absUrl(defaultLang, key)));
+  nRed++;
+}
+console.log('\u2714 ' + nRed + ' redirect dai vecchi permalink WordPress');
 
 write('CNAME', 'www.inginet.it\n');
 write('.nojekyll', '');

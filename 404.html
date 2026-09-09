@@ -78,7 +78,35 @@
       <a class="btn btn-primary" href="/"><span>Torna alla home</span></a>
       <a class="btn btn-ghost" href="/contatti/"><span>Parliamo del tuo progetto</span></a>
     </div>
+    <p id="ing404" class="note" style="margin-top:1.6rem"></p>
   </div></section>
+<script>
+/* I vecchi indirizzi WordPress erano lunghissimi e descrittivi. Invece di
+   lasciare la persona su un errore, leggiamo le parole nel percorso e la
+   portiamo sulla pagina che corrisponde. */
+(function () {
+  var p = location.pathname.toLowerCase();
+  var regole = [
+    [/chi-siamo|about|storia/, '/chi-siamo/'],
+    [/contatt|preventivo|richiesta/, '/contatti/'],
+    [/seo|posizionament|digital-marketing|indicizza|google-ads|facebook-ads/, '/seo-e-indicizzazione/'],
+    [/intelligenza-artificiale|\bai\b|chatbot/, '/intelligenza-artificiale/'],
+    [/client|portfolio|referenz|lavori|progetti/, '/clienti/'],
+    [/cookie/, '/cookie/'],
+    [/privacy/, '/privacy/'],
+    [/gestional|channel-manager|noleggio|rent|hotel|ricettiv|ristorant|menu-online|delivery|e-commerce|ecommerce|siti-web|sito|portal|app|software|drone|riprese|virtual-tour|foto|video|assistenza|servizi/, '/servizi/']
+  ];
+  for (var i = 0; i < regole.length; i++) {
+    if (regole[i][0].test(p)) {
+      var dove = regole[i][1];
+      var el = document.getElementById('ing404');
+      if (el) el.textContent = 'Questo indirizzo apparteneva al vecchio sito. Ti stiamo portando alla pagina corrispondente...';
+      setTimeout(function () { location.replace(dove); }, 1200);
+      return;
+    }
+  }
+})();
+</script>
 </main>
 
 <footer class="site-foot">

@@ -191,7 +191,7 @@ export const footer = (t, lang) => {
         <li><a href="${pageUrl(lang, 'privacy')}">${esc(t.common.nav.privacy)}</a></li>
         <li><a href="${pageUrl(lang, 'cookie')}">${esc(t.common.nav.cookie)}</a></li>
       </ul>
-      <p class="foot-vat">${esc(L.ragioneSociale)}<br>${esc(t.common.footer.vat)} ${esc(L.piva)}</p>
+      <p class="foot-vat">${esc(L.ragioneSociale)}<br>${esc(t.common.footer.vat)} ${esc(L.piva)} · REA ${esc(L.rea)}<br>PEC <a href="mailto:${L.pec}">${esc(L.pec)}</a></p>
     </div>
   </div>
   <div class="wrap foot-bar">

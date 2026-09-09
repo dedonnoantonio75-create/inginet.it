@@ -7,24 +7,26 @@ Su Aruba restano **solo la posta e il dominio**. L'hosting è GitHub Pages.
 
 ---
 
-## ⚠️ Prima di pubblicare
+## Dati aziendali
 
-Nel file [`src/data/site.mjs`](src/data/site.mjs) ci sono dei **segnaposto** da sostituire.
-Finché sono lì, il sito non va messo online: per legge la partita IVA deve comparire.
+Sono in [`src/data/site.mjs`](src/data/site.mjs), blocco `legal`, e da lì finiscono in
+footer, pagina contatti, informativa privacy e dati strutturati di tutte e cinque le lingue.
 
-| Segnaposto | Dove compare |
+| | |
 |---|---|
-| `[RAGIONE SOCIALE]` | footer, privacy, dati strutturati, pagina contatti |
-| `[P.IVA]` | footer, privacy, dati strutturati |
-| `[VIA E NUMERO CIVICO]` | footer, contatti, dati strutturati, link mappa |
-| `[CAP]` | footer, contatti, dati strutturati |
-| `[TELEFONO FISSO]` | (opzionale) attualmente si usa solo il cellulare |
-| `[CODICE FISCALE]`, `[REA]`, `[PEC]` | opzionali, oggi non stampati |
+| Ragione sociale | Inginet di Antonio De Donno |
+| Sede legale e amministrativa | Via G. Marconi 14 — 73024 Maglie (LE), Italia |
+| P.IVA | 05346170755 |
+| Codice fiscale | DDNNTN75B06E815O |
+| REA | LE-360123 |
+| PEC | inginet@pec.it |
+| Email | info@inginet.it |
+| Telefono / WhatsApp | +39 393 569 4342 |
 
-Vanno anche verificate le coordinate `lat` / `lon` (ora sono quelle generiche di Maglie)
-e il link Facebook in `site.social`.
+Coordinate della sede: `40.1166488, 18.3062816` (geocodificate da OpenStreetMap sulla via,
+non sul civico: se vuoi il puntamento esatto si affinano a mano).
 
-Dopo la modifica: `node build.mjs`.
+Dopo ogni modifica: `node build.mjs`.
 
 ---
 

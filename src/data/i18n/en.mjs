@@ -408,7 +408,7 @@ export default {
       updated: 'Last updated: September 2026',
       intro: 'This site is static and collects no personal data through forms submitted to a server. Even so, here is everything worth knowing about how data is handled when you contact us.',
       sections: [
-        { h: 'Data controller', p: 'The data controller is [RAGIONE SOCIALE], registered at [INDIRIZZO], [CAP] Maglie (LE), Italy, VAT no. [P.IVA]. For any request concerning your data, write to info@inginet.it.' },
+        { h: 'Data controller', p: 'The data controller is Inginet di Antonio De Donno, registered at Via G. Marconi 14, 73024 Maglie (LE), Italy, VAT no. 05346170755. For any request concerning your data, write to info@inginet.it.' },
         { h: 'What data we collect', p: 'The site uses no forms that send data to our servers: the form on the Contact page only prepares a message in your own email client. The data you give us — name, company, email, phone and the content of the message — therefore reaches us only if you choose to send the email or message us on WhatsApp.' },
         { h: 'Why we process it', p: 'To answer your enquiry, prepare a quote and, where applicable, perform the resulting contract. The legal basis is the performance of pre-contractual and contractual measures requested by you (Art. 6.1.b GDPR), together with statutory tax and accounting obligations for relationships that become commercial (Art. 6.1.c GDPR).' },
         { h: 'How long we keep it', p: 'Enquiries that do not lead to a commercial relationship are kept for a maximum of 24 months. Client and contract data is kept for the period required by law, generally ten years for accounting records.' },

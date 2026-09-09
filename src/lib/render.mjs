@@ -61,6 +61,7 @@ const ICON = {
   moon: '<path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/>',
   spark: '<path d="M12 3.5 13.9 9l5.6 1.9-5.6 1.9L12 18.4l-1.9-5.6L4.5 11l5.6-1.9L12 3.5Z"/>',
   layers: '<path d="m12 3 9 4.5-9 4.5-9-4.5L12 3Z"/><path d="m3 12.5 9 4.5 9-4.5M3 16.5 12 21l9-4.5"/>',
+  cookie: '<path d="M21.5 12.4A9.5 9.5 0 1 1 11.6 2.5a4 4 0 0 0 4.3 4.3 4 4 0 0 0 3.7 3.7 4 4 0 0 0 1.9 1.9Z"/><circle cx="9" cy="10" r="1.1" fill="currentColor" stroke="none"/><circle cx="8.4" cy="15.2" r="1.1" fill="currentColor" stroke="none"/><circle cx="14" cy="15.6" r="1.1" fill="currentColor" stroke="none"/>',
 };
 
 export const icon = (name, cls = '') =>
@@ -68,21 +69,8 @@ export const icon = (name, cls = '') =>
 
 /* ------------------------------------------------------------------- logo */
 
-export const logoMark = (id = 'lm') => `
-<svg class="logo-mark" viewBox="0 0 40 40" role="img" aria-label="Inginet">
-  <defs>
-    <linearGradient id="${id}-a" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ffb43d"/><stop offset="0.5" stop-color="#ff9c00"/><stop offset="1" stop-color="#2d7dff"/>
-    </linearGradient>
-  </defs>
-  <rect x="1.25" y="1.25" width="37.5" height="37.5" rx="11" fill="none" stroke="url(#${id}-a)" stroke-width="2"/>
-  <circle cx="12.4" cy="11.6" r="2.35" fill="url(#${id}-a)"/>
-  <path d="M12.4 17.6v11.2" stroke="url(#${id}-a)" stroke-width="3.9" stroke-linecap="round"/>
-  <path d="M20.6 28.8v-6.9a4.6 4.6 0 0 1 9.2 0v6.9" stroke="url(#${id}-a)" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-</svg>`;
-
-export const logoLockup = (cls = '') => `
-<span class="logo ${cls}">${logoMark('h')}<span class="logo-text"><b>Ingi</b>net</span></span>`;
+export const logoLockup = (cls = '', eager = false) => `
+<span class="logo ${cls}"><img src="/assets/img/inginet-logo.png" alt="Inginet" width="900" height="210"${eager ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async"></span>`;
 
 /* --------------------------------------------------------------- frammenti */
 
@@ -158,7 +146,7 @@ export const header = (t, lang, key) => `
 <a class="skip" href="#main">${esc(t.common.skip)}</a>
 <header class="site-head" id="siteHead">
   <div class="wrap head-in">
-    <a class="logo-link" href="${pageUrl(lang, 'home')}" aria-label="Inginet — ${esc(t.common.nav.home)}">${logoLockup()}</a>
+    <a class="logo-link" href="${pageUrl(lang, 'home')}" aria-label="Inginet — ${esc(t.common.nav.home)}">${logoLockup('', true)}</a>
     <nav class="mainnav" id="mainnav" aria-label="${esc(t.common.menu)}">
       <ul>
         ${navPages.map(p => `<li><a href="${pageUrl(lang, p)}"${p === key ? ' aria-current="page"' : ''}>${esc(t.common.nav[p])}</a></li>`).join('')}
@@ -214,6 +202,39 @@ export const footer = (t, lang) => {
 <a class="wa-float" href="https://wa.me/${site.contact.whatsapp}" target="_blank" rel="noopener" aria-label="${esc(t.common.ctaWhatsapp)}">${icon('whatsapp')}</a>`;
 };
 
+
+/* ------------------------------------------------------- consenso cookie */
+
+export const consentBanner = (t, lang) => {
+  const c = t.common.consent;
+  return `
+<aside class="cc" id="cc" aria-live="polite">
+  <div class="cc-panel" id="ccPanel" role="dialog" aria-modal="false" aria-labelledby="ccTitle" hidden>
+    <div class="cc-head">${icon('cookie')}<h2 id="ccTitle">${esc(c.title)}</h2></div>
+    <p>${esc(c.text)} <a href="${pageUrl(lang, 'cookie')}">${esc(t.common.nav.cookie)}</a> · <a href="${pageUrl(lang, 'privacy')}">${esc(t.common.nav.privacy)}</a></p>
+    <div class="cc-prefs" id="ccPrefs" hidden>
+      <div class="cc-row">
+        <div><b>${esc(c.necessaryTitle)}</b><span>${esc(c.necessaryText)}</span></div>
+        <span class="cc-fixed">${esc(c.always)}</span>
+      </div>
+      <div class="cc-row">
+        <div><b>${esc(c.statsTitle)}</b><span>${esc(c.statsText)}</span></div>
+        <label class="cc-switch"><input type="checkbox" id="ccStats" aria-label="${esc(c.statsTitle)}"><i></i></label>
+      </div>
+    </div>
+    <div class="cc-actions">
+      <button type="button" class="btn btn-primary" id="ccAccept"><span>${esc(c.accept)}</span></button>
+      <button type="button" class="btn btn-ghost" id="ccReject"><span>${esc(c.reject)}</span></button>
+    </div>
+    <button type="button" class="cc-link" id="ccPrefsBtn">${esc(c.prefs)}</button>
+    <button type="button" class="cc-link" id="ccSave" hidden>${esc(c.save)}</button>
+  </div>
+  <button type="button" class="cc-tab" id="ccTab" hidden aria-expanded="false" aria-controls="ccPanel">
+    ${icon('cookie')}<span>${esc(c.reopen)}</span><span class="cc-dot" id="ccDot" aria-hidden="true"></span>
+  </button>
+</aside>`;
+};
+
 /* -------------------------------------------------------------- JSON-LD */
 
 function orgSchema(lang, t) {
@@ -224,7 +245,7 @@ function orgSchema(lang, t) {
     name: site.brand,
     legalName: L.ragioneSociale,
     url: site.origin + '/',
-    logo: { '@type': 'ImageObject', url: `${site.origin}/assets/img/inginet-logo.svg`, width: 512, height: 512 },
+    logo: { '@type': 'ImageObject', url: `${site.origin}/assets/img/inginet-logo.png`, width: 900, height: 210 },
     image: `${site.origin}/assets/img/og/inginet-og-${lang}.png`,
     email: site.contact.email,
     telephone: site.contact.phoneRaw,
@@ -351,8 +372,10 @@ ${noindex ? '' : `<meta property="og:url" content="${canonical}">`}
 <meta name="twitter:description" content="${esc(p.description)}">
 <meta name="twitter:image" content="${site.origin}/assets/img/og/inginet-og-${lang}.png">
 <meta name="theme-color" content="#070a12">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/assets/img/inginet-icona-180.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/inginet-icona-180.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/space-grotesk-700-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-400-latin.woff2" crossorigin>
@@ -368,6 +391,7 @@ ${breadcrumb(t, lang, key)}
 ${body}
 </main>
 ${footer(t, lang)}
+${consentBanner(t, lang)}
 <script src="/assets/js/inginet.js?v=${JS_V}" defer></script>
 </body>
 </html>`;

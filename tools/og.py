@@ -128,10 +128,11 @@ def build_og(lang):
     for y in range(0, H, 60):
         d.line([(0, y), (W, y)], fill=(19, 27, 45), width=1)
 
-    # marchio
-    logo_mark(d, 72, 62, 62, ACC2)
-    d.text((175, 66), "Inginet", font=font(44), fill=TX)
-    d.text((177, 118), "inginet.it", font=font(20, False), fill=TX2)
+    # logo reale, in alto a sinistra
+    logo = Image.open(os.path.join(ICO, "inginet-logo.png")).convert("RGBA")
+    logo.thumbnail((420, 78), Image.LANCZOS)
+    img.paste(logo, (72, 58), logo)
+    d.text((76, 58 + logo.height + 8), "inginet.it", font=font(20, False), fill=TX2)
 
     title, sub, foot = TEXTS[lang]
     f_title = font(58)
@@ -159,24 +160,7 @@ def build_og(lang):
     return path
 
 
-def build_icons():
-    for size in (180, 512):
-        img = Image.new("RGB", (size, size), BG)
-        d = ImageDraw.Draw(img)
-        r = int(size * 0.24)
-        mask = Image.new("L", (size, size), 0)
-        ImageDraw.Draw(mask).rounded_rectangle([0, 0, size - 1, size - 1], radius=r, fill=255)
-        orb(img, int(size * 0.2), int(size * 0.15), int(size * 0.55), ACC, 90)
-        orb(img, int(size * 0.85), int(size * 0.9), int(size * 0.5), BLU, 80)
-        d = ImageDraw.Draw(img)
-        logo_mark(d, int(size * 0.20), int(size * 0.22), int(size * 0.56), ACC2)
-        out = Image.new("RGB", (size, size), BG)
-        out.paste(img, (0, 0), mask)
-        out.save(os.path.join(ICO, "inginet-icona-%d.png" % size), "PNG", optimize=True)
-
-
 if __name__ == "__main__":
     for lg in TEXTS:
         print("ok", build_og(lg))
-    build_icons()
-    print("ok icone 180/512")
+    print("Le icone si generano con:  python tools/icone.py")

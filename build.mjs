@@ -46,8 +46,6 @@ write('assets/img/' + artwork.ai, art.aiArt());
 write('assets/img/' + artwork.servizi, art.serviziArt());
 write('assets/img/' + artwork.seo, art.seoArt());
 write('assets/img/' + artwork.team, art.teamArt());
-write('favicon.svg', art.faviconSvg());
-write('assets/img/inginet-logo.svg', art.logoFull());
 
 write('assets/img/clienti/olvix-marketplace-logo.svg', art.olvixLogo());
 write('assets/img/clienti/leuca-rooms-logo.svg', art.wordmarkLogo('LEUCA ROOMS', 'SANTA MARIA DI LEUCA', '#0d5b8a'));
@@ -212,9 +210,11 @@ write('site.webmanifest', JSON.stringify({
   theme_color: '#070a12',
   lang: 'it',
   icons: [
-    { src: '/favicon.svg', sizes: 'any', type: 'image/svg+xml' },
+    { src: '/assets/img/favicon-48.png', sizes: '48x48', type: 'image/png' },
     { src: '/assets/img/inginet-icona-180.png', sizes: '180x180', type: 'image/png' },
-    { src: '/assets/img/inginet-icona-512.png', sizes: '512x512', type: 'image/png', purpose: 'any maskable' },
+    { src: '/assets/img/inginet-icona-192.png', sizes: '192x192', type: 'image/png' },
+    { src: '/assets/img/inginet-icona-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
+    { src: '/assets/img/inginet-icona-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
   ],
 }, null, 2));
 
@@ -243,4 +243,4 @@ write('.nojekyll', '');
 
 console.log(`✔ ${n} pagine HTML generate (${languages.length} lingue × ${pages.length})`);
 console.log('✔ sitemap.xml, sitemap-immagini.xml, sitemap-index.xml, robots.txt, llms.txt, manifest, 404');
-console.log('→ per le immagini OG lanciare:  python tools/og.py');
+console.log('→ immagini social:  python tools/og.py   ·   icone e logo:  python tools/icone.py');

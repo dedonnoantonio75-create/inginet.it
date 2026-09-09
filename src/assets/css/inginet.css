@@ -53,6 +53,9 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
+/* l'attributo hidden deve vincere sempre sui display dichiarati qui sotto */
+[hidden] { display: none !important; }
+
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
@@ -102,11 +105,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .site-head.is-stuck { border-bottom-color: var(--line-soft); background: color-mix(in srgb, var(--bg) 92%, transparent); }
 .head-in { display: flex; align-items: center; gap: 1.1rem; min-height: 74px; }
 
-.logo { display: inline-flex; align-items: center; gap: .6rem; font-family: var(--fd); font-weight: 500; font-size: 1.32rem; letter-spacing: -.03em; }
-.logo-mark { width: 34px; height: 34px; flex: none; }
-.logo-text b { font-weight: 700; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.logo-lg { font-size: 1.55rem; }
-.logo-lg .logo-mark { width: 40px; height: 40px; }
+.logo { display: inline-flex; align-items: center; }
+.logo img { height: 38px; width: auto; max-width: none; }
+.logo-lg img { height: 52px; }
+@media (max-width: 640px) { .logo img { height: 32px; } .logo-lg img { height: 44px; } }
 
 .mainnav { margin-inline-start: auto; }
 .mainnav ul { display: flex; gap: .15rem; }
@@ -485,3 +487,81 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .reveal.in { opacity: 1; transform: none; }
 .card.reveal, .ctile.reveal, .steps li.reveal, .timeline li.reveal { transition-duration: .5s; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+/* ============================================================ consenso cookie
+   Banner in basso a sinistra. Dopo la scelta resta una linguetta piccola,
+   sempre visibile, per riaprire e cambiare idea in qualsiasi momento.
+   ========================================================================= */
+
+.cc { position: fixed; left: 1.1rem; bottom: 1.1rem; z-index: 95; width: min(420px, calc(100vw - 2.2rem)); }
+.cc[hidden] { display: none !important; }
+
+.cc-panel {
+  padding: 1.25rem 1.3rem 1.15rem;
+  background: var(--surf); border: 1px solid var(--line); border-radius: var(--r);
+  box-shadow: 0 26px 60px -22px rgba(0, 0, 0, .75);
+  animation: cc-in .35s cubic-bezier(.2, .8, .3, 1) both;
+}
+@keyframes cc-in { from { opacity: 0; transform: translateY(14px) scale(.98); } }
+@media (prefers-reduced-motion: reduce) { .cc-panel { animation: none; } }
+
+.cc-head { display: flex; align-items: center; gap: .6rem; margin-bottom: .6rem; }
+.cc-head .ico { width: 20px; height: 20px; color: var(--acc); }
+.cc-head h2 { margin: 0; font-size: 1.02rem; }
+.cc-panel p { margin: 0 0 .9rem; font-size: .88rem; line-height: 1.55; color: var(--tx-2); }
+.cc-panel a { color: var(--acc); text-decoration: underline; text-underline-offset: 2px; }
+
+.cc-actions { display: flex; flex-wrap: wrap; gap: .5rem; }
+.cc-actions .btn { padding: .62rem 1.05rem; font-size: .86rem; flex: 1 1 auto; }
+.cc-link {
+  background: none; border: 0; padding: .5rem .2rem; cursor: pointer;
+  font: 500 .82rem var(--fs); color: var(--tx-3); text-decoration: underline; text-underline-offset: 2px;
+}
+.cc-link:hover { color: var(--tx); }
+
+/* dettaglio preferenze */
+.cc-prefs { margin: .2rem 0 1rem; display: grid; gap: .55rem; }
+.cc-row {
+  display: flex; align-items: flex-start; gap: .7rem; padding: .75rem .85rem;
+  border: 1px solid var(--line-soft); border-radius: var(--r-sm); background: var(--bg-2);
+}
+.cc-row b { display: block; font: 600 .87rem var(--fd); margin-bottom: .15rem; }
+.cc-row span { font-size: .8rem; color: var(--tx-3); line-height: 1.45; }
+.cc-row .cc-fixed { flex: none; align-self: center; font-size: .74rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ok); }
+
+.cc-switch { flex: none; align-self: center; position: relative; width: 42px; height: 24px; }
+.cc-switch input { position: absolute; inset: 0; opacity: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; }
+.cc-switch i {
+  position: absolute; inset: 0; border-radius: 999px; background: var(--line);
+  transition: background .2s; pointer-events: none;
+}
+.cc-switch i::after {
+  content: ""; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px;
+  border-radius: 50%; background: #fff; transition: transform .2s;
+}
+.cc-switch input:checked + i { background: var(--acc); }
+.cc-switch input:checked + i::after { transform: translateX(18px); }
+.cc-switch input:focus-visible + i { outline: 2px solid var(--acc-2); outline-offset: 3px; }
+
+/* linguetta che resta dopo la scelta */
+.cc-tab {
+  display: inline-flex; align-items: center; gap: .45rem;
+  padding: .5rem .8rem .5rem .65rem; border-radius: 999px; cursor: pointer;
+  background: color-mix(in srgb, var(--surf) 92%, transparent);
+  border: 1px solid var(--line); color: var(--tx-2);
+  font: 600 .78rem var(--fs); letter-spacing: .01em;
+  backdrop-filter: blur(8px); box-shadow: var(--shadow-sm);
+  transition: color .2s, border-color .2s, transform .2s;
+}
+.cc-tab:hover { color: var(--tx); border-color: var(--acc); transform: translateY(-2px); }
+.cc-tab .ico { width: 17px; height: 17px; color: var(--acc); }
+.cc-tab .cc-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--ok); flex: none; }
+.cc-tab.is-off .cc-dot { background: var(--tx-3); }
+
+@media (max-width: 640px) {
+  .cc { left: .7rem; right: .7rem; bottom: .7rem; width: auto; }
+  .cc-panel { padding: 1.1rem; }
+  .cc-actions .btn { flex: 1 1 100%; }
+}
+/* mentre il pannello e aperto su mobile, sposto il tasto WhatsApp per non coprirlo */
+@media (max-width: 640px) { body.cc-open .wa-float { transform: translateY(-9rem); } }

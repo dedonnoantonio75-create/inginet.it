@@ -31,9 +31,12 @@ Dopo la modifica: `node build.mjs`.
 ## Come si costruisce
 
 ```bash
-node build.mjs      # genera le 45 pagine HTML + sitemap, robots, llms.txt, manifest, 404
-python tools/og.py  # rigenera le 5 immagini social e le icone PNG (serve solo se cambi testi/colori)
+node build.mjs        # genera le 45 pagine HTML + sitemap, robots, llms.txt, manifest, 404
+python tools/icone.py # logo ottimizzato, marchio, favicon.ico e icone app dal logo originale
+python tools/og.py    # le 5 immagini social (una per lingua)
 ```
+
+I due script Python vanno rilanciati solo se cambi il logo o i testi delle immagini social.
 
 Il build **scrive nella root del repository**: è quello che GitHub Pages pubblica.
 Non modificare mai gli `index.html` a mano: vengono riscritti a ogni build.
@@ -126,11 +129,32 @@ node -e "const l=['it','en','de','fr','es'];const p=(o,x='')=>Object.entries(o).
 - Nessun framework, nessuna libreria esterna: un solo CSS e un solo JS, entrambi con
   impronta nell'URL (`?v=…`) così il browser ricarica dopo ogni rilascio.
 - Caratteri tipografici **ospitati sul sito** (`assets/fonts/`): nessuna chiamata a Google Fonts,
-  quindi nessun problema GDPR e nessun banner cookie necessario.
+  quindi nessun problema GDPR.
 - Nessuna mappa incorporata, nessun video incorporato, nessun pixel, nessun analytics.
 - Il modulo contatti **non invia nulla a un server**: compone un `mailto:` precompilato.
   Se un giorno servisse un vero invio, la strada più semplice è passare il deploy a Netlify
   (form nativi) oppure agganciare Formspree/Web3Forms.
+
+---
+
+## Banner cookie e consenso
+
+Il banner compare **in basso a sinistra** alla prima visita. Tre strade: *Accetta tutto*,
+*Solo necessari*, oppure *Personalizza* per decidere voce per voce.
+Dopo la scelta il pannello si chiude e **resta una linguetta piccola, sempre in basso a
+sinistra**: da lì si riapre e si cambia idea. Il pallino è verde se le statistiche sono
+attive, grigio se sono spente.
+
+La scelta finisce in `localStorage` alla chiave `ing-consent` e non arriva a noi.
+
+**Oggi il sito non installa nulla**, quindi il banner non sarebbe obbligatorio: è pronto
+perché la scelta valga già da subito. Quando vorrai aggiungere Google Analytics (o Matomo,
+o Plausible), lo script va messo **solo** dentro `attivaStatistiche()` in
+[`src/assets/js/inginet.js`](src/assets/js/inginet.js): parte esclusivamente dopo il
+consenso, e da quel momento il banner diventa a norma senza toccare altro.
+
+Se cambi cosa il sito installa, aggiorna anche i testi della pagina Cookie
+(`pages.cookie` nei cinque file di `src/data/i18n/`).
 
 ---
 

@@ -93,7 +93,7 @@ export const navPages = ['ai', 'servizi', 'seo', 'clienti', 'chisiamo', 'contatt
  * Esclusi perché offline: euxeria.it, otrantobelvedere.it, maresidenze.it, ristoprime.com
  */
 export const clients = [
-  { name: 'Olvix', url: 'https://www.olvix.net/', logo: 'olvix-marketplace-logo.svg', tile: 'dark', sector: 'portali', tags: ['marketplace', 'piattaforma', 'ai'], featured: true, own: true },
+  { name: 'Olvix', url: 'https://www.olvix.net/', logo: 'olvix-marketplace-logo.png', sector: 'portali', tags: ['marketplace', 'piattaforma', 'ai'], featured: true, own: true },
   { name: 'Cala dei Balcani', url: 'https://www.caladeibalcani.it/', logo: 'cala-dei-balcani-logo.png', sector: 'ricettivo', tags: ['sito', 'booking', 'seo'] },
   { name: 'Corte dei Granai', url: 'https://www.cortedeigranai.it/', logo: 'corte-dei-granai-maglie-logo.png', sector: 'ricettivo', tags: ['sito', 'booking'] },
   { name: 'Casino De Viti', url: 'https://www.casinodeviti.com/', logo: 'casino-de-viti-poggiardo-logo.png', sector: 'ricettivo', tags: ['sito', 'seo'] },
@@ -116,9 +116,7 @@ export const clients = [
   { name: 'Classe A Elettrodomestici', url: 'https://www.classeaelettrodomestici.it/', logo: 'classe-a-elettrodomestici-logo.png', sector: 'retail', tags: ['e-commerce', 'seo'] },
   { name: 'Brunitta', url: 'https://www.brunitta.it/', logo: 'brunitta-logo.png', tile: 'dark', sector: 'retail', tags: ['e-commerce', 'multilingua', 'export'], featured: true },
   { name: 'Vivaio del Sud', url: 'https://www.vivaiodelsud.com/', logo: 'vivaio-del-sud-logo.png', sector: 'retail', tags: ['e-commerce', 'catalogo'] },
-  { name: 'Valortra', url: 'https://www.valortra.it/', logo: 'valortra-logo.svg', sector: 'industria', tags: ['sito', 'seo'] },
   { name: 'Cardia360', url: 'https://www.cardia360.com/', logo: 'cardia360-logo.png', sector: 'salute', tags: ['gestionale', 'crm', 'sito'], featured: true },
-  { name: 'Studio Santi Dentista', url: 'https://www.studiosantidentista.it/', logo: 'studio-santi-dentista-logo.svg', sector: 'salute', tags: ['sito', 'prenotazioni'] },
   { name: 'Netpollwork', url: 'https://www.netpollwork.it/', logo: 'netpollwork-logo.png', sector: 'servizi', tags: ['portale', 'software'] },
 ];
 

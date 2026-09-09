@@ -94,7 +94,7 @@ export function home(t, lang) {
     </div>
     <div class="olvix-art">
       <div class="olvix-card">
-        <img src="/assets/img/clienti/olvix-marketplace-logo.svg" alt="Olvix — marketplace nazionale progettato e sviluppato da Inginet" width="320" height="120" loading="lazy" decoding="async">
+        <img src="/assets/img/clienti/olvix-marketplace-logo.png" alt="Olvix — marketplace nazionale progettato e sviluppato da Inginet" width="640" height="292" loading="lazy" decoding="async">
         <ul class="chips"><li>marketplace</li><li>multi-vendor</li><li>pagamenti</li><li>AI</li><li>antispreco</li><li>5 lingue</li></ul>
       </div>
     </div>

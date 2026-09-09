@@ -47,12 +47,10 @@ write('assets/img/' + artwork.servizi, art.serviziArt());
 write('assets/img/' + artwork.seo, art.seoArt());
 write('assets/img/' + artwork.team, art.teamArt());
 
-write('assets/img/clienti/olvix-marketplace-logo.svg', art.olvixLogo());
-write('assets/img/clienti/leuca-rooms-logo.svg', art.wordmarkLogo('LEUCA ROOMS', 'SANTA MARIA DI LEUCA', '#0d5b8a'));
-write('assets/img/clienti/valortra-logo.svg', art.wordmarkLogo('VALORTRA', '', '#1d3557'));
-write('assets/img/clienti/studio-santi-dentista-logo.svg', art.wordmarkLogo('STUDIO SANTI', 'ODONTOIATRIA', '#0e7490'));
 
 /* ------------------------------------------------------- 3. asset statici */
+
+write('assets/img/clienti/leuca-rooms-logo.svg', art.wordmarkLogo('LEUCA ROOMS', 'SANTA MARIA DI LEUCA', '#0d5b8a'));
 
 copyDir(p('src/assets/css'), p('assets/css'));
 copyDir(p('src/assets/js'), p('assets/js'));

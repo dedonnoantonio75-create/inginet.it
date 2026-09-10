@@ -479,8 +479,9 @@ export function contatti(t, lang) {
       <!-- Invio vero: la richiesta arriva nella casella info@inginet.it.
            _honey e' un campo trappola invisibile: i robot lo riempiono e la
            richiesta viene scartata. _captcha aggiunge la verifica antispam. -->
-      <form class="cform" action="https://formsubmit.co/${site.contact.email}" method="POST" accept-charset="UTF-8">
+      <form class="cform" action="https://formsubmit.co/${site.contact.formTo}" method="POST" accept-charset="UTF-8">
         <input type="hidden" name="_subject" value="${esc(p.form.subject)}">
+        <input type="hidden" name="_cc" value="${site.contact.formCc}">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="true">
         <input type="hidden" name="_next" value="${site.origin}${pageUrl(lang, 'home')}${t.common.grazie.slug}/">

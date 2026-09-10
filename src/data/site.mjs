@@ -25,6 +25,13 @@ export const site = {
   },
   contact: {
     email: 'info@inginet.it',
+    /* Dove il modulo consegna le richieste. Su info@inginet.it l'antispam di
+       Aruba scartava le mail del servizio senza nemmeno metterle in spam,
+       quindi il destinatario principale e la casella Gmail, con copia a
+       info@. Da sostituire con l'indirizzo mascherato di FormSubmit appena
+       disponibile, cosi l'indirizzo non resta scritto nella pagina. */
+    formTo: 'dedonnoantonio75@gmail.com',
+    formCc: 'info@inginet.it',
     phone: '+39 393 569 4342',
     phoneRaw: '+393935694342',
     whatsapp: '393935694342',

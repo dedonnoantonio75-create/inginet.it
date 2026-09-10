@@ -114,7 +114,7 @@ export const clients = [
   { name: 'Messapia Hotel & Resort', url: 'https://www.messapia.com/', logo: 'messapia-logo.png', sector: 'ricettivo', tags: ['sito', 'booking'] },
   { name: 'Five Rooms Dimore Centro Lecce', url: 'https://www.dimorecentrolecce.it/', logo: 'five-rooms-dimore-centro-lecce-logo.png', sector: 'ricettivo', tags: ['sito', 'booking'] },
   { name: 'Salento Case Vacanze', url: 'https://www.salentocasevacanze.com/', logo: 'salento-case-vacanze-logo.png', sector: 'ricettivo', tags: ['portale', 'booking', 'multilingua'] },
-  { name: 'Leuca Rooms', url: 'https://www.leucarooms.it/', logo: 'leuca-rooms-logo.svg', sector: 'ricettivo', tags: ['sito', 'booking'] },
+  { name: 'Messapia Restaurant & Banqueting', url: 'https://www.messapiarestaurant.com/', logo: 'messapia-restaurant-banqueting-logo.png', sector: 'ristorazione', tags: ['sito', 'eventi', 'seo'] },
   { name: 'In Puglia Tutto l’Anno', url: 'https://www.inpugliatuttolanno.it/', logo: 'in-puglia-tutto-lanno-logo.png', sector: 'portali', tags: ['portale', 'seo'] },
   { name: 'Sodero Auto', url: 'https://www.soderoauto.it/', logo: 'sodero-auto-logo.png', sector: 'automotive', tags: ['sito', 'branding', 'seo'], featured: true },
   { name: 'Sodero Autonoleggio', url: 'https://www.soderoautonoleggio.com/', logo: 'sodero-autonoleggio-logo.png', sector: 'automotive', tags: ['gestionale', 'noleggio', 'seo'], featured: true },

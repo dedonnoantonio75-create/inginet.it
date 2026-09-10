@@ -39,14 +39,12 @@ for (const l of languages) {
   T[l.code] = mod.default;
 }
 
-/* ------------------------------------------------------- 2. immagini */
-
-write('assets/img/clienti/leuca-rooms-logo.svg', art.wordmarkLogo('LEUCA ROOMS', 'SANTA MARIA DI LEUCA', '#0d5b8a'));
+/* ------------------------------------------------- 2. fogli di stile e js */
 
 copyDir(p('src/assets/css'), p('assets/css'));
 copyDir(p('src/assets/js'), p('assets/js'));
 
-/* ------------------------------------------------------- 4. pagine HTML */
+/* ------------------------------------------------------- 3. pagine HTML */
 
 let n = 0;
 for (const l of languages) {

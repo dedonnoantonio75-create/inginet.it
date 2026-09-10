@@ -180,9 +180,46 @@
   });
 })();
 
-/* Modulo contatti: segna il momento in cui la pagina si e' aperta. Chi compila
-   e invia in meno di tre secondi non e' una persona, e il server lo scarta. */
+/* Modulo contatti.
+
+   Due cose insieme. La prima: _t segna il momento in cui la pagina si e'
+   aperta, e chi compila e invia in meno di tre secondi non e' una persona.
+
+   La seconda: la richiesta la mandiamo noi in sottofondo invece di lasciar
+   fare al modulo. Chi la riceve risponde dentro una cornice che non puo'
+   spostare la finestra, quindi un invio normale lascerebbe il visitatore
+   fermo su una pagina che non e' la nostra. Cosi' invece resta sul sito e
+   atterra sulla pagina di ringraziamento nella sua lingua. */
 (function () {
-  var t = document.querySelector('.cform input[name="_t"]');
+  var f = document.querySelector('form.cform');
+  if (!f) return;
+
+  var t = f.querySelector('[name="_t"]');
   if (t) t.value = Math.floor(Date.now() / 1000);
+
+  // Senza fetch il modulo parte da solo: meno elegante, ma la richiesta arriva.
+  if (!window.fetch || !window.FormData || !window.URLSearchParams) return;
+
+  f.addEventListener('submit', function (e) {
+    if (!f.checkValidity()) return;   // i campi obbligatori li segnala il browser
+    e.preventDefault();
+
+    var btn = f.querySelector('button[type="submit"]');
+    if (btn) btn.disabled = true;
+
+    var next = f.querySelector('[name="_next"]');
+    var grazie = next && next.value ? next.value : '/';
+
+    // La risposta arriva da un altro dominio e non e' leggibile: sappiamo solo
+    // se la richiesta e' partita. Se non parte, invio normale come ripiego.
+    fetch(f.action, {
+      method: 'POST',
+      mode: 'no-cors',
+      body: new URLSearchParams(new FormData(f)),
+    }).then(function () {
+      location.href = grazie;
+    }, function () {
+      f.submit();
+    });
+  });
 })();

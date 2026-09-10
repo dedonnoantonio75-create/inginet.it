@@ -19,14 +19,18 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "src", "foto")
 OUT = os.path.join(ROOT, "assets", "img", "foto")
 
-# originale -> (nome descrittivo, larghezze da generare)
+# originale -> (nome descrittivo, larghezze, ritaglia a 16:9)
+# I nomi sono frasi in italiano: contano per la ricerca per immagini e dicono
+# ai modelli AI di cosa parla la pagina. Alcuni master sono piu larghi di 16:9,
+# quindi si ritagliano al centro invece di deformarli.
 MAPPA = [
-    ("inginet_01.png", "team-inginet-sviluppo-siti-gestionali-salento",           [640, 1000, 1600]),
-    ("inginet_02.png", "team-inginet-sviluppo-siti-gestionali-verticale",         [640, 900]),
-    ("inginet_03.png", "sviluppo-siti-web-ed-e-commerce-su-misura-inginet",       [640, 900, 1400]),
-    ("inginet_04.png", "intelligenza-artificiale-applicata-alle-imprese-inginet", [640, 900, 1400]),
-    ("inginet_05.png", "seo-e-risultati-di-posizionamento-inginet",               [640, 900, 1400]),
-    ("inginet_06.png", "riprese-aeree-con-drone-team-inginet",                    [640, 900, 1400]),
+    ("01_team.png",            "software-house-inginet-team-sviluppo-software-maglie-lecce-salento", [640, 1000, 1400], True),
+    ("01_team_verticale.webp", "software-house-inginet-team-sviluppo-software-verticale",            [640, 900],        False),
+    ("02_siti_ecommerce.png",  "sviluppo-siti-web-ed-e-commerce-su-misura-inginet",                  [640, 900, 1400],  False),
+    ("03_gestionali.png",      "software-gestionali-e-intelligenza-artificiale-per-le-imprese-inginet", [640, 900, 1400], True),
+    ("04_hospitality.png",     "gestionali-per-hotel-strutture-ricettive-e-ristoranti-inginet",      [640, 900, 1400],  False),
+    ("05_marketing_seo.png",   "seo-posizionamento-e-digital-marketing-inginet",                     [640, 900, 1400],  False),
+    ("06_app_portali.png",     "chi-siamo-team-inginet-idee-tecnologia-persone-risultati",           [640, 900, 1400],  False),
 ]
 
 Q_AVIF = 52   # sotto i 45 iniziano gli aloni sui cieli sfumati
@@ -41,10 +45,16 @@ def main():
         os.remove(os.path.join(OUT, vecchio))
 
     prima = dopo = 0
-    for src, nome, larghezze in MAPPA:
+    for src, nome, larghezze, ritaglia in MAPPA:
         p = os.path.join(SRC, src)
         prima += os.path.getsize(p)
         im = Image.open(p).convert("RGB")
+        if ritaglia:
+            # al centro, alla proporzione delle altre: niente bande, niente deformazioni
+            largo = int(round(im.height * 16 / 9))
+            if largo < im.width:
+                x = (im.width - largo) // 2
+                im = im.crop((x, 0, x + largo, im.height))
         pesi = []
         for w in larghezze:
             r = im.copy()

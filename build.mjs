@@ -11,7 +11,6 @@ import { fileURLToPath } from 'node:url';
 import { site, languages, pages, slugs, defaultLang, clients, photos, redirects } from './src/data/site.mjs';
 import { layout, pageUrl, absUrl, outPath, icon, esc } from './src/lib/render.mjs';
 import { renderers, extraSchemaFor } from './src/lib/pages.mjs';
-import * as art from './src/lib/artwork.mjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const p = (...x) => path.join(ROOT, ...x);
@@ -58,7 +57,7 @@ for (const l of languages) {
   }
 }
 
-/* ------------------------------------------------------- 5. sitemap */
+/* ------------------------------------------------------- 4. sitemap */
 
 const PRIO = { home: '1.0', ai: '0.9', servizi: '0.9', seo: '0.9', clienti: '0.8', chisiamo: '0.7', contatti: '0.7', privacy: '0.3', cookie: '0.3' };
 const today = new Date().toISOString().slice(0, 10);
@@ -89,7 +88,7 @@ ${urlEntries.join('\n')}
 /* sitemap dedicata alle immagini: conta per la ricerca per immagini */
 /* Le foto entrano nella sitemap immagini con titolo e didascalia: e cosi che
    Google Immagini e i modelli AI capiscono cosa mostrano. */
-const fotoPagina = { home: 'hero', ai: 'ai', servizi: 'servizi', seo: 'seo', chisiamo: 'team' };
+const fotoPagina = { home: 'hero', ai: 'ai', servizi: 'servizi', seo: 'seo', clienti: 'clienti', chisiamo: 'team' };
 const imgUrls = languages.map(l => ({
   page: absUrl(l.code, 'home'),
   imgs: Object.entries(fotoPagina).map(([pg, key]) => [
@@ -121,7 +120,7 @@ write('sitemap-index.xml', `<?xml version="1.0" encoding="UTF-8"?>
 </sitemapindex>
 `);
 
-/* ------------------------------------------------------- 6. robots.txt */
+/* ------------------------------------------------------- 5. robots.txt */
 
 write('robots.txt', `# ${site.brand} — ${site.origin}
 User-agent: *
@@ -155,7 +154,7 @@ Sitemap: ${site.origin}/sitemap.xml
 Sitemap: ${site.origin}/sitemap-immagini.xml
 `);
 
-/* --------------------------------------------- 7. llms.txt (AI search) */
+/* --------------------------------------------- 6. llms.txt (AI search) */
 
 const svcList = T.it.pages.servizi.groups.flatMap(g => g.items.map(i => `- **${i.title}** — ${i.text}`)).join('\n');
 const aiList = T.it.pages.ai.solutions.map(s => `- **${s.title}** — ${s.text}`).join('\n');
@@ -197,7 +196,7 @@ Il sito è statico, disponibile in cinque lingue con URL distinti e collegamenti
 Ultimo aggiornamento: ${today}.
 `);
 
-/* ------------------------------------------------------- 8. manifest */
+/* ------------------------------------------------------- 7. manifest */
 
 write('site.webmanifest', JSON.stringify({
   name: 'Inginet — software house AI',
@@ -217,7 +216,7 @@ write('site.webmanifest', JSON.stringify({
   ],
 }, null, 2));
 
-/* ------------------------------------------------------- 9. 404 + extra */
+/* ------------------------------------------------------- 8. 404 e pagine di servizio */
 
 const t404 = T[defaultLang];
 write('404.html', layout({
@@ -266,7 +265,7 @@ write('404.html', layout({
 }));
 
 
-/* ----------------------------------- 9-bis. redirect dai vecchi permalink */
+/* ----------------------------------- 9. redirect dai vecchi permalink */
 
 /* GitHub Pages non fa redirect lato server. Per ogni vecchio indirizzo del sito
    WordPress scriviamo una paginetta con canonical + meta refresh a zero secondi:
@@ -297,7 +296,7 @@ for (const [oldPath, key] of Object.entries(redirects)) {
 console.log('\u2714 ' + nRed + ' redirect dai vecchi permalink WordPress');
 
 
-/* ------------------------------------- 9-ter. pagina di ringraziamento */
+/* ------------------------------------- 10. pagina di ringraziamento */
 
 /* Dove atterra chi ha appena inviato il modulo. Fuori dalla sitemap e
    marcata noindex: non deve finire nei risultati di ricerca. */

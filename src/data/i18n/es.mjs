@@ -86,7 +86,7 @@ export default {
         lead: 'No vendemos «una web». Analizamos cómo trabajas, encontramos dónde pierdes tiempo y dinero y construimos el software que resuelve exactamente eso: agentes de IA, software de gestión a medida, CRM, CMS, tiendas online y portales. Después nos aseguramos de que te encuentren, en Google y dentro de las respuestas de la inteligencia artificial.',
         ctaPrimary: 'Hablemos de tu proyecto',
         ctaSecondary: 'Mira lo que hemos construido',
-        imgAlt: 'El equipo de Inginet trabajando en webs, tiendas online y software de gestión, con la costa del sur de Italia detrás',
+        imgAlt: 'El equipo de Inginet trabajando en código, sitios web y software de gestión frente a varias pantallas',
       },
       stats: [
         { value: '35', label: 'años de desarrollo web y de software' },
@@ -180,7 +180,7 @@ export default {
       keywords: 'inteligencia artificial para empresas, agentes de IA a medida, chatbot corporativo con datos propios, RAG documentos de empresa, automatización de procesos con IA, IA en el ERP, asistente virtual multilingüe, machine learning pymes, consultoría de IA',
       h1: 'Inteligencia artificial que trabaja, no que hace espectáculo',
       lead: 'La IA solo sirve cuando quita trabajo repetitivo a las personas y devuelve tiempo a la empresa. Siempre partimos de ahí: qué actividad te está comiendo las horas y cómo se la pasamos a una máquina sin perder el control.',
-      imgAlt: 'Un alojamiento usa el software de gestión con automatizaciones de inteligencia artificial desarrollado por Inginet',
+      imgAlt: 'Panel de un software de gestión con análisis de datos y automatizaciones de inteligencia artificial desarrollado por Inginet',
       intro: {
         title: 'Empecemos por una pregunta incómoda: ¿qué sigues haciendo a mano cada día?',
         text: 'En la mayoría de las empresas que visitamos la respuesta es la misma: responder a las mismas consultas, copiar datos de un correo a un programa, redactar presupuestos idénticos en un 90 %, buscar un documento que existe pero no aparece, traducir fichas de producto. Son tareas en las que un agente de IA bien construido es más rápido, más constante y no se distrae. Lo difícil no es «usar la IA»: lo difícil es saber dónde ponerla y cómo mantenerla bajo control.',
@@ -224,7 +224,7 @@ export default {
       keywords: 'creación de webs profesionales, desarrollo de comercio electrónico, software de gestión a medida, software para hoteles, channel manager, software de alquiler de coches, CRM personalizado, CMS a medida, desarrollo de marketplaces, aplicaciones empresariales, integración de facturación electrónica, desarrollo de apps iOS y Android, web apps y PWA, apps empresariales a medida',
       h1: 'Todo lo que construimos, y para quién',
       lead: 'Cada punto de esta lista nació de un cliente que tenía un problema y no encontraba nada adecuado en el mercado. Los construimos una vez, los mejoramos cien y hoy los adaptamos a ti.',
-      imgAlt: 'Una web y una tienda online creadas por Inginet, vistas en portátil y en móvil',
+      imgAlt: 'Un sitio web y una tienda online creados por Inginet, vistos en monitor, tableta y teléfono',
       groups: [
         {
           title: 'Web y presencia online',
@@ -294,7 +294,7 @@ export default {
       keywords: 'consultoría SEO, posicionamiento en Google, SEO técnico, SEO local, SEO multilingüe hreflang, optimización para ChatGPT, generative engine optimization, que te cite la inteligencia artificial, AI Overviews, datos estructurados schema.org, SEO de imágenes',
       h1: 'Hoy hacerse encontrar son dos trabajos distintos',
       lead: 'Hasta hace poco bastaba con estar en la primera página de Google. Hoy la mitad de las respuestas las da directamente una inteligencia artificial y, si tu empresa no está escrita de forma que la IA la entienda y la cite, sencillamente no existes. Nosotros hacemos los dos trabajos.',
-      imgAlt: 'Gráficos de tráfico y posicionamiento al alza en un panel gestionado por Inginet',
+      imgAlt: 'Gráficos de tráfico, posicionamiento y cobertura en Italia en un panel SEO gestionado por Inginet',
       twoTitle: 'Los dos canales, sin rodeos',
       two: [
         { title: 'Buscadores tradicionales', text: 'Google y Bing mandan a una persona a tu web. Ganas si eres técnicamente limpio, rápido y coherente por temas, y si tus contenidos responden mejor que los demás a la misma pregunta.', bullets: ['Análisis técnico: velocidad, indexación, errores, duplicados', 'Contenidos estructurados por tema e intención de búsqueda', 'SEO local y ficha de Google Business Profile', 'Enlazado interno, datos estructurados y sitemaps cuidados'] },
@@ -327,6 +327,7 @@ export default {
       keywords: 'portafolio de webs, proyectos software house, referencias de webs y software, clientes de Inginet, casos de éxito de desarrollo',
       h1: 'Nuestros clientes, sus webs, en línea ahora',
       lead: 'Sin maquetas ni capturas congeladas en 2019. Aquí abajo están las webs y las plataformas que hemos construido, con enlace directo: ábrelas y juzga tú. Más de 1.500 empresas nos han confiado su parte digital desde el año 2000; esta es una selección.',
+      imgAlt: 'El software de gestión de Inginet para hoteles y alojamientos, con reservas y disponibilidad en pantalla',
       filterLabel: 'Filtrar por sector',
       featuredTitle: 'Proyectos destacados',
       allTitle: 'Todos los proyectos',
@@ -344,7 +345,7 @@ export default {
       keywords: 'Inginet quiénes somos, Antonio De Donno, software house Italia, empresa de desarrollo de software Apulia, equipo de desarrollo web, historia de Inginet',
       h1: 'Treinta y cinco años en el mismo oficio, y todavía no nos aburre',
       lead: 'Empezamos cuando internet en Italia era una curiosidad y las webs se escribían a mano. Desde entonces hemos atravesado todas las modas tecnológicas y hemos aprendido a reconocer cuáles servían de verdad. La inteligencia artificial, esta vez, sirve de verdad.',
-      imgAlt: 'El equipo de Inginet grabando imágenes aéreas con dron a lo largo de la costa',
+      imgAlt: 'El equipo de Inginet ante la pizarra, de la idea al proyecto digital: sitios, apps y plataformas',
       founderTitle: 'Antonio De Donno, fundador',
       founderText: 'Empecé a construir webs cuando las conexiones se medían en kilobits y nadie sabía qué era un buscador. Desde entonces lo he visto pasar todo: los portales, el auge del comercio electrónico, las redes sociales, el móvil y ahora la inteligencia artificial. He aprendido una sola cosa, pero vale para todas: la tecnología sirve si le quita un problema a quien trabaja. Si se lo añade, por bonita que sea, es tiempo perdido. Es el criterio con el que elijo qué proponer a los clientes y qué desaconsejar, incluso cuando desaconsejar significa facturar menos.',
       teamTitle: 'El equipo',

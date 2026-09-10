@@ -86,7 +86,7 @@ export default {
         lead: 'Non vendiamo “un sito”. Analizziamo come lavori, troviamo dove perdi tempo e denaro, e costruiamo il software che risolve quel problema: agenti AI, gestionali su misura, CRM, CMS, e-commerce e portali. Poi ci assicuriamo che ti trovino — su Google e dentro le risposte dell’intelligenza artificiale.',
         ctaPrimary: 'Parliamo del tuo progetto',
         ctaSecondary: 'Guarda cosa abbiamo costruito',
-        imgAlt: 'Il team Inginet al lavoro su siti, e-commerce e gestionali, con la costa salentina alle spalle',
+        imgAlt: 'Il team di Inginet al lavoro su codice, siti web e software gestionali davanti a più schermi',
       },
       stats: [
         { value: '35', label: 'anni di sviluppo web e software' },
@@ -180,7 +180,7 @@ export default {
       keywords: 'intelligenza artificiale per aziende, agenti AI su misura, chatbot aziendale addestrato sui propri dati, RAG documenti aziendali, automazione processi con AI, AI nel gestionale, assistente virtuale multilingua, machine learning PMI, consulenza AI Italia',
       h1: 'Intelligenza artificiale che lavora, non che fa scena',
       lead: 'L’AI serve a qualcosa solo quando toglie lavoro ripetitivo alle persone e restituisce tempo all’azienda. Noi partiamo sempre da lì: quale attività ti sta mangiando le ore, e come la facciamo fare a una macchina senza perdere il controllo.',
-      imgAlt: 'Una struttura ricettiva usa il gestionale con automazioni di intelligenza artificiale sviluppato da Inginet',
+      imgAlt: 'Dashboard di un gestionale con analisi dei dati e automazioni di intelligenza artificiale sviluppato da Inginet',
       intro: {
         title: 'Partiamo da una domanda scomoda: cosa rifate a mano ogni giorno?',
         text: 'Nella maggior parte delle aziende che incontriamo la risposta è sempre la stessa: rispondere alle stesse richieste, ricopiare dati da un’email a un gestionale, compilare preventivi uguali al 90%, cercare un documento che c’è ma non si trova, tradurre schede prodotto. Sono tutte attività in cui un agente AI ben costruito è più veloce, più costante e non si distrae. Il lavoro difficile non è “usare l’AI”: è capire dove metterla e come tenerla sotto controllo.',
@@ -224,7 +224,7 @@ export default {
       keywords: 'realizzazione siti web professionali, sviluppo e-commerce, gestionale su misura, software gestionale strutture ricettive, channel manager, gestionale noleggio auto, CRM personalizzato, CMS su misura, sviluppo portali e marketplace, app aziendali, integrazione fatturazione elettronica, sviluppo app iOS e Android, web app e PWA, app aziendali su misura',
       h1: 'Tutto quello che costruiamo, e per chi lo costruiamo',
       lead: 'Ogni voce qui sotto è nata da un cliente che aveva un problema e non trovava niente di adatto sul mercato. Le abbiamo costruite una volta, le abbiamo migliorate cento, oggi le adattiamo a te.',
-      imgAlt: 'Un sito web e un e-commerce realizzati da Inginet, visti su computer portatile e su telefono',
+      imgAlt: 'Un sito web e un e-commerce realizzati da Inginet, visti su monitor, tablet e telefono',
       groups: [
         {
           title: 'Siti web e presenza online',
@@ -294,7 +294,7 @@ export default {
       keywords: 'consulenza SEO, posizionamento su Google, SEO tecnica, local SEO Lecce, SEO multilingua hreflang, ottimizzazione per ChatGPT, GEO generative engine optimization, essere citati dall’intelligenza artificiale, AI Overviews, dati strutturati schema.org, SEO immagini',
       h1: 'Farsi trovare oggi significa due lavori diversi',
       lead: 'Fino a ieri bastava stare in prima pagina su Google. Oggi metà delle risposte le dà direttamente un’intelligenza artificiale, e se la tua azienda non è scritta in modo che l’AI la capisca e la citi, semplicemente non esisti. Noi facciamo tutti e due i lavori.',
-      imgAlt: 'Grafici di traffico e posizionamento in crescita su una dashboard curata da Inginet',
+      imgAlt: 'Grafici di traffico, posizionamento e copertura in Italia su una dashboard SEO curata da Inginet',
       twoTitle: 'I due canali, spiegati senza giri di parole',
       two: [
         { title: 'Motori di ricerca tradizionali', text: 'Google e Bing mandano una persona sul tuo sito. Vinci se sei tecnicamente pulito, veloce, coerente per argomento e se hai contenuti che rispondono meglio degli altri alla stessa domanda.', bullets: ['Analisi tecnica: velocità, indicizzazione, errori, duplicati', 'Struttura dei contenuti per argomento e intento di ricerca', 'Local SEO e scheda Google Business Profile', 'Link interni, dati strutturati e sitemap curate'] },
@@ -327,6 +327,7 @@ export default {
       keywords: 'portfolio siti web Lecce, progetti realizzati software house Salento, referenze siti web e gestionali, clienti Inginet, casi studio sviluppo software',
       h1: 'I nostri clienti, i loro siti, online adesso',
       lead: 'Nessun mockup, nessuno screenshot fermo al 2019. Qui sotto ci sono i siti e le piattaforme che abbiamo costruito, con il link diretto: aprili e giudica tu. Oltre 1.500 aziende ci hanno affidato il loro digitale dal 2000, questa è una selezione.',
+      imgAlt: 'Il gestionale per hotel e strutture ricettive di Inginet, con prenotazioni e disponibilità sullo schermo',
       filterLabel: 'Filtra per settore',
       featuredTitle: 'Progetti in primo piano',
       allTitle: 'Tutti i progetti',
@@ -344,7 +345,7 @@ export default {
       keywords: 'Inginet chi siamo, Antonio De Donno, software house Maglie Lecce, azienda sviluppo software Salento, team sviluppo web Puglia, storia Inginet',
       h1: 'Trentacinque anni sullo stesso mestiere, e non ci siamo ancora annoiati',
       lead: 'Abbiamo iniziato quando internet in Italia era una curiosità e i siti si scrivevano a mano. Da allora abbiamo attraversato ogni moda tecnologica, e imparato a riconoscere quali servivano davvero. L’intelligenza artificiale, questa volta, serve davvero.',
-      imgAlt: 'Il team Inginet durante riprese aeree con drone lungo la costa del Salento',
+      imgAlt: 'Il team di Inginet davanti alla lavagna, dall’idea al progetto digitale: siti, app e piattaforme',
       founderTitle: 'Antonio De Donno, fondatore',
       founderText: 'Ho iniziato a costruire siti quando le connessioni si misuravano in kilobit e nessuno sapeva cosa fosse un motore di ricerca. Da allora ho visto passare tutto: i portali, il boom degli e-commerce, i social, il mobile, e adesso l’intelligenza artificiale. Ho imparato una cosa sola, ma vale per tutte: la tecnologia serve se toglie un problema a chi lavora. Se lo aggiunge, per bella che sia, è tempo buttato. È il criterio con cui scelgo cosa proporre ai clienti e cosa sconsigliare, anche quando sconsigliare significa fatturare meno.',
       teamTitle: 'Il team',

@@ -335,11 +335,14 @@ export function clienti(t, lang) {
   const usedSectors = [...new Set(clients.map(c => c.sector))];
 
   return `
-<section class="page-hero page-hero-slim">
+<section class="page-hero">
   ${heroBg}
-  <div class="wrap">
-    <h1>${esc(p.h1)}</h1>
-    <p class="lead">${esc(p.lead)}</p>
+  <div class="wrap page-hero-in">
+    <div>
+      <h1>${esc(p.h1)}</h1>
+      <p class="lead">${esc(p.lead)}</p>
+    </div>
+    <div class="page-hero-art">${photo('clienti', p.imgAlt, { eager: true })}</div>
   </div>
 </section>
 

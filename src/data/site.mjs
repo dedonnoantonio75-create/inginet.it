@@ -30,6 +30,9 @@ export const site = {
        quindi il destinatario principale e la casella Gmail, con copia a
        info@. Da sostituire con l'indirizzo mascherato di FormSubmit appena
        disponibile, cosi l'indirizzo non resta scritto nella pagina. */
+    // Applicazione web di Google Apps Script nell'account di Inginet:
+    // riceve il modulo e manda la richiesta per email. Il codice sta in server/Codice.gs.
+    formAction: 'https://script.google.com/macros/s/AKfycbwxZJl3AvHIS_XTxoSFjQMhXXEh5JtHoFu-2uazS9XKoGWPfSeHg5cUbOtpitjbe1NYUQ/exec',
     formTo: 'dedonnoantonio75@gmail.com',
     formCc: 'info@inginet.it',
     phone: '+39 393 569 4342',

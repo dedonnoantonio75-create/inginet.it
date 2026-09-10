@@ -406,7 +406,7 @@ export default {
         messagePh: 'Che cosa vorresti risolvere? Che cosa ti fa perdere più tempo oggi?',
         privacyCheck: 'Ho letto l’informativa privacy e acconsento a essere ricontattato per questa richiesta.',
         submit: 'Invia la richiesta',
-        privacyNote: 'I dati che inserisci servono solo a risponderti. Alla prima richiesta comparirà una verifica anti-spam.',
+        privacyNote: 'I dati che inserisci servono solo a risponderti: niente newsletter, niente terzi. Non devi risolvere nessun test, ci pensa il sito.',
         subject: 'Richiesta dal sito inginet.it',
       },
       hoursTitle: 'Quando ci trovi',
@@ -433,7 +433,7 @@ export default {
       sections: [
         { h: 'Titolare del trattamento', p: 'Il titolare del trattamento è Inginet di Antonio De Donno, con sede in Via G. Marconi 14, 73024 Maglie (LE), P.IVA 05346170755. Per qualsiasi richiesta relativa ai tuoi dati puoi scrivere a info@inginet.it.' },
         { h: 'Quali dati raccogliamo', p: 'Dal modulo della pagina Contatti raccogliamo soltanto quello che scrivi tu: nome, azienda, email, telefono, tipo di richiesta e il testo del messaggio. Nessun altro dato viene raccolto durante la navigazione. Riceviamo i tuoi dati anche se ci scrivi direttamente via email o su WhatsApp.' },
-        { h: 'Come viaggia il modulo', p: 'L’invio del modulo è gestito da FormSubmit (Sendmail Inc.), un servizio esterno che riceve i campi compilati e ce li recapita per email nella nostra casella. Il servizio non li usa per finalità proprie e non li rivende; l’operazione comporta un trasferimento verso gli Stati Uniti, coperto dalle clausole contrattuali standard. Alla prima richiesta compare una verifica antispam. Se preferisci evitare qualsiasi intermediario, scrivici direttamente a info@inginet.it o su WhatsApp: il risultato per noi è lo stesso.' },
+        { h: 'Come viaggia il modulo', p: 'Quando invii il modulo i campi arrivano a un’applicazione che gira dentro l’account Google di Inginet e che ci recapita la richiesta per email. Nessun servizio di terzi la legge o la conserva per conto proprio: il trattamento avviene sull’infrastruttura Google, che Inginet usa come fornitore per la propria posta, con le tutele previste per i trasferimenti fuori dall’Unione Europea. Se preferisci evitare qualsiasi intermediario, scrivici direttamente a info@inginet.it o su WhatsApp: il risultato per noi è lo stesso.' },
         { h: 'Perché li trattiamo', p: 'Per rispondere alla tua richiesta, formulare un preventivo ed eventualmente eseguire il contratto che ne deriva. La base giuridica è l’esecuzione di misure precontrattuali e contrattuali richieste da te (art. 6.1.b GDPR), oltre agli obblighi di legge fiscali e contabili per i rapporti che diventano commerciali (art. 6.1.c GDPR).' },
         { h: 'Per quanto tempo li conserviamo', p: 'Le richieste che non danno seguito a un rapporto commerciale vengono conservate per un massimo di 24 mesi. I dati relativi a clienti e contratti vengono conservati per il tempo previsto dagli obblighi di legge, in genere dieci anni per la documentazione contabile.' },
         { h: 'A chi li comunichiamo', p: 'Non vendiamo e non cediamo dati a terzi per finalità di marketing. Possono trattarli per nostro conto, come responsabili del trattamento, i fornitori di servizi di posta elettronica, di hosting e il consulente fiscale, ciascuno limitatamente a quanto necessario.' },

@@ -406,7 +406,7 @@ export default {
         messagePh: 'What would you like to solve? What costs you the most time today?',
         privacyCheck: 'I have read the privacy notice and agree to be contacted about this enquiry.',
         submit: 'Send the enquiry',
-        privacyNote: 'The data you enter is used only to answer you. On your first enquiry an anti-spam check will appear.',
+        privacyNote: 'The data you enter is used only to answer you: no newsletter, no third parties. There is no puzzle to solve, the site takes care of it.',
         subject: 'Enquiry from inginet.it',
       },
       hoursTitle: 'When you’ll find us',
@@ -433,7 +433,7 @@ export default {
       sections: [
         { h: 'Data controller', p: 'The data controller is Inginet di Antonio De Donno, registered at Via G. Marconi 14, 73024 Maglie (LE), Italy, VAT no. 05346170755. For any request concerning your data, write to info@inginet.it.' },
         { h: 'What data we collect', p: 'From the form on the Contact page we collect only what you type: name, company, email, phone, type of enquiry and the message itself. No other data is collected while you browse. We also receive your data if you write to us directly by email or on WhatsApp.' },
-        { h: 'How the form travels', p: 'Form delivery is handled by FormSubmit (Sendmail Inc.), an external service that receives the submitted fields and forwards them to our mailbox by email. The service does not use them for its own purposes and does not resell them; the operation involves a transfer to the United States, covered by standard contractual clauses. An anti-spam check appears on your first enquiry. If you prefer to avoid any intermediary, write to us directly at info@inginet.it or on WhatsApp: for us the result is the same.' },
+        { h: 'How the form travels', p: 'When you send the form, the fields reach an application running inside Inginet’s own Google account, which delivers the enquiry to us by email. No third-party service reads or keeps it for its own purposes: processing takes place on Google’s infrastructure, which Inginet uses as its mail provider, under the safeguards that apply to transfers outside the European Union. If you prefer to avoid any intermediary, write to us directly at info@inginet.it or on WhatsApp: for us the result is the same.' },
         { h: 'Why we process it', p: 'To answer your enquiry, prepare a quote and, where applicable, perform the resulting contract. The legal basis is the performance of pre-contractual and contractual measures requested by you (Art. 6.1.b GDPR), together with statutory tax and accounting obligations for relationships that become commercial (Art. 6.1.c GDPR).' },
         { h: 'How long we keep it', p: 'Enquiries that do not lead to a commercial relationship are kept for a maximum of 24 months. Client and contract data is kept for the period required by law, generally ten years for accounting records.' },
         { h: 'Who we share it with', p: 'We do not sell or pass data to third parties for marketing. It may be processed on our behalf, as data processors, by our email and hosting providers and our accountant, each strictly to the extent necessary.' },

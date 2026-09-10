@@ -406,7 +406,7 @@ export default {
         messagePh: 'Was möchten Sie lösen? Was kostet Sie heute die meiste Zeit?',
         privacyCheck: 'Ich habe die Datenschutzerklärung gelesen und bin damit einverstanden, zu dieser Anfrage kontaktiert zu werden.',
         submit: 'Anfrage senden',
-        privacyNote: 'Ihre Angaben dienen nur der Beantwortung. Bei der ersten Anfrage erscheint eine Spam-Prüfung.',
+        privacyNote: 'Ihre Angaben dienen nur der Beantwortung: kein Newsletter, keine Dritten. Sie müssen keinen Test lösen, das übernimmt die Website.',
         subject: 'Anfrage über inginet.it',
       },
       hoursTitle: 'Wann Sie uns antreffen',
@@ -433,7 +433,7 @@ export default {
       sections: [
         { h: 'Verantwortlicher', p: 'Verantwortlich ist Inginet di Antonio De Donno mit Sitz in Via G. Marconi 14, 73024 Maglie (LE), Italien, USt-IdNr. 05346170755. Für Anliegen zu Ihren Daten schreiben Sie an info@inginet.it.' },
         { h: 'Welche Daten wir erheben', p: 'Über das Formular auf der Kontaktseite erheben wir nur, was Sie selbst eintragen: Name, Firma, E-Mail, Telefon, Art der Anfrage und den Nachrichtentext. Während des Besuchs werden keine weiteren Daten erhoben. Ihre Daten erreichen uns ebenso, wenn Sie uns direkt per E-Mail oder WhatsApp schreiben.' },
-        { h: 'Wie das Formular übermittelt wird', p: 'Den Versand übernimmt FormSubmit (Sendmail Inc.), ein externer Dienst, der die ausgefüllten Felder entgegennimmt und uns per E-Mail in unser Postfach zustellt. Der Dienst nutzt sie nicht für eigene Zwecke und verkauft sie nicht weiter; dabei erfolgt eine Übermittlung in die USA, abgedeckt durch Standardvertragsklauseln. Bei der ersten Anfrage erscheint eine Spam-Prüfung. Wenn Sie jeden Vermittler vermeiden möchten, schreiben Sie uns direkt an info@inginet.it oder per WhatsApp: für uns ist das Ergebnis dasselbe.' },
+        { h: 'Wie das Formular übermittelt wird', p: 'Beim Absenden gelangen die Felder an eine Anwendung, die im Google-Konto von Inginet läuft und uns die Anfrage per E-Mail zustellt. Kein Dienst Dritter liest oder speichert sie für eigene Zwecke: Die Verarbeitung erfolgt auf der Infrastruktur von Google, die Inginet als Anbieter für die eigene Post nutzt, mit den Garantien für Übermittlungen außerhalb der Europäischen Union. Wenn Sie jeden Vermittler vermeiden möchten, schreiben Sie uns direkt an info@inginet.it oder per WhatsApp: für uns ist das Ergebnis dasselbe.' },
         { h: 'Zu welchem Zweck', p: 'Um Ihre Anfrage zu beantworten, ein Angebot zu erstellen und gegebenenfalls den daraus entstehenden Vertrag zu erfüllen. Rechtsgrundlage ist die Durchführung vorvertraglicher und vertraglicher Maßnahmen auf Ihre Anfrage (Art. 6 Abs. 1 lit. b DSGVO) sowie gesetzliche steuer- und handelsrechtliche Pflichten bei Geschäftsbeziehungen (Art. 6 Abs. 1 lit. c DSGVO).' },
         { h: 'Wie lange wir sie aufbewahren', p: 'Anfragen, aus denen keine Geschäftsbeziehung entsteht, werden höchstens 24 Monate aufbewahrt. Kunden- und Vertragsdaten werden für die gesetzlich vorgeschriebene Dauer aufbewahrt, in der Regel zehn Jahre für Buchhaltungsunterlagen.' },
         { h: 'An wen wir sie weitergeben', p: 'Wir verkaufen und übermitteln keine Daten zu Marketingzwecken an Dritte. In unserem Auftrag können sie als Auftragsverarbeiter unsere Anbieter für E-Mail und Hosting sowie unser Steuerberater verarbeiten, jeweils nur im erforderlichen Umfang.' },

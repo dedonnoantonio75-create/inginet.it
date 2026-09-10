@@ -476,16 +476,14 @@ export function contatti(t, lang) {
     <div>
       <h2>${esc(p.formTitle)}</h2>
       <p>${esc(p.formIntro)}</p>
-      <!-- Invio vero: la richiesta arriva nella casella info@inginet.it.
-           _honey e' un campo trappola invisibile: i robot lo riempiono e la
-           richiesta viene scartata. _captcha aggiunge la verifica antispam. -->
-      <form class="cform" action="https://formsubmit.co/${site.contact.formTo}" method="POST" accept-charset="UTF-8">
-        <input type="hidden" name="_subject" value="${esc(p.form.subject)}">
-        <input type="hidden" name="_cc" value="${site.contact.formCc}">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="true">
+      <!-- Invio vero: la richiesta arriva su dedonnoantonio75@gmail.com, con
+           copia a info@inginet.it. _honey e' un campo trappola invisibile e _t
+           il momento in cui la pagina si e' aperta: i robot cadono su entrambi. -->
+      <form class="cform" action="${site.contact.formAction}" method="POST" accept-charset="UTF-8">
+        <input type="hidden" name="_oggetto" value="${esc(p.form.subject)}">
         <input type="hidden" name="_next" value="${site.origin}${pageUrl(lang, 'home')}${t.common.grazie.slug}/">
-        <input type="hidden" name="_language" value="${lang}">
+        <input type="hidden" name="_lingua" value="${lang}">
+        <input type="hidden" name="_t" value="">
         <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" class="trappola">
         <div class="f-row">
           <label>${esc(p.form.name)}<input type="text" name="Nome" required autocomplete="name" placeholder="${esc(p.form.namePh)}"></label>

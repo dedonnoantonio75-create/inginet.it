@@ -129,6 +129,9 @@ write('robots.txt', `# ${site.brand} — ${site.origin}
 User-agent: *
 Allow: /
 
+# Codice sorgente del modulo contatti: sta nel repository, non e' una pagina
+Disallow: /server/
+
 # Crawler dei modelli linguistici: contenuti liberamente consultabili e citabili
 User-agent: GPTBot
 Allow: /

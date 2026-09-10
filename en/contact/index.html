@@ -127,16 +127,14 @@
     <div>
       <h2>Write to us in two minutes</h2>
       <p>Fill in the fields and press send: your enquiry arrives straight in our inbox. We reply within one working day.</p>
-      <!-- Invio vero: la richiesta arriva nella casella info@inginet.it.
-           _honey e' un campo trappola invisibile: i robot lo riempiono e la
-           richiesta viene scartata. _captcha aggiunge la verifica antispam. -->
-      <form class="cform" action="https://formsubmit.co/dedonnoantonio75@gmail.com" method="POST" accept-charset="UTF-8">
-        <input type="hidden" name="_subject" value="Enquiry from inginet.it">
-        <input type="hidden" name="_cc" value="info@inginet.it">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="true">
+      <!-- Invio vero: la richiesta arriva su dedonnoantonio75@gmail.com, con
+           copia a info@inginet.it. _honey e' un campo trappola invisibile e _t
+           il momento in cui la pagina si e' aperta: i robot cadono su entrambi. -->
+      <form class="cform" action="https://script.google.com/macros/s/AKfycbwxZJl3AvHIS_XTxoSFjQMhXXEh5JtHoFu-2uazS9XKoGWPfSeHg5cUbOtpitjbe1NYUQ/exec" method="POST" accept-charset="UTF-8">
+        <input type="hidden" name="_oggetto" value="Enquiry from inginet.it">
         <input type="hidden" name="_next" value="https://www.inginet.it/en/thank-you/">
-        <input type="hidden" name="_language" value="en">
+        <input type="hidden" name="_lingua" value="en">
+        <input type="hidden" name="_t" value="">
         <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" class="trappola">
         <div class="f-row">
           <label>Full name<input type="text" name="Nome" required autocomplete="name" placeholder="John Smith"></label>
@@ -157,7 +155,7 @@
           <span>I have read the privacy notice and agree to be contacted about this enquiry. <a href="/en/privacy/">Privacy</a></span>
         </label>
         <button type="submit" class="btn btn-primary"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg><span>Send the enquiry</span></button>
-        <p class="note">The data you enter is used only to answer you. On your first enquiry an anti-spam check will appear.</p>
+        <p class="note">The data you enter is used only to answer you: no newsletter, no third parties. There is no puzzle to solve, the site takes care of it.</p>
       </form>
     </div>
     <aside class="contact-aside">
@@ -261,6 +259,6 @@
     <svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21.5 12.4A9.5 9.5 0 1 1 11.6 2.5a4 4 0 0 0 4.3 4.3 4 4 0 0 0 3.7 3.7 4 4 0 0 0 1.9 1.9Z"/><circle cx="9" cy="10" r="1.1" fill="currentColor" stroke="none"/><circle cx="8.4" cy="15.2" r="1.1" fill="currentColor" stroke="none"/><circle cx="14" cy="15.6" r="1.1" fill="currentColor" stroke="none"/></svg><span>Cookies and privacy</span><span class="cc-dot" id="ccDot" aria-hidden="true"></span>
   </button>
 </aside>
-<script src="/assets/js/inginet.js?v=896609a0" defer></script>
+<script src="/assets/js/inginet.js?v=84a2ce6a" defer></script>
 </body>
 </html>

@@ -179,3 +179,10 @@
     if (e.key === 'Escape' && !panel.hidden && read()) closePanel();
   });
 })();
+
+/* Modulo contatti: segna il momento in cui la pagina si e' aperta. Chi compila
+   e invia in meno di tre secondi non e' una persona, e il server lo scarta. */
+(function () {
+  var t = document.querySelector('.cform input[name="_t"]');
+  if (t) t.value = Math.floor(Date.now() / 1000);
+})();

@@ -294,7 +294,7 @@ export default {
       keywords: 'SEO Beratung, Google Ranking, technische SEO, lokale SEO, mehrsprachige SEO hreflang, ChatGPT Optimierung, Generative Engine Optimization, von KI zitiert werden, AI Overviews, strukturierte Daten schema.org, Bilder SEO',
       h1: 'Gefunden werden heißt heute zwei verschiedene Aufgaben',
       lead: 'Bis vor Kurzem reichte die erste Google-Seite. Heute kommt die Hälfte der Antworten direkt von einer künstlichen Intelligenz — und wenn Ihr Unternehmen nicht so beschrieben ist, dass die KI es versteht und zitiert, existieren Sie schlicht nicht. Wir erledigen beide Aufgaben.',
-      imgAlt: 'Diagramme zu Traffic, Rankings und Abdeckung in Italien auf einem SEO-Dashboard von Inginet',
+      imgAlt: 'Steigende Traffic- und Ranking-Diagramme auf einem SEO-Dashboard von Inginet',
       twoTitle: 'Die zwei Kanäle, ohne Fachchinesisch',
       two: [
         { title: 'Klassische Suchmaschinen', text: 'Google und Bing schicken einen Menschen auf Ihre Website. Sie gewinnen, wenn Sie technisch sauber und schnell sind, thematisch stimmig aufgebaut sind und die Frage besser beantworten als andere.', bullets: ['Technische Analyse: Tempo, Indexierung, Fehler, Duplikate', 'Inhalte nach Thema und Suchabsicht strukturiert', 'Lokale SEO und Google-Unternehmensprofil', 'Interne Verlinkung, strukturierte Daten und saubere Sitemaps'] },
@@ -345,7 +345,7 @@ export default {
       keywords: 'Inginet über uns, Antonio De Donno, Softwarehaus Italien, Softwareentwicklung Apulien, Entwicklerteam, Geschichte Inginet',
       h1: 'Fünfunddreißig Jahre dasselbe Handwerk — und immer noch nicht langweilig',
       lead: 'Wir haben angefangen, als das Internet in Italien eine Kuriosität war und Websites von Hand geschrieben wurden. Seither haben wir jede technische Mode erlebt und gelernt zu erkennen, welche davon wirklich zählte. Die künstliche Intelligenz zählt diesmal wirklich.',
-      imgAlt: 'Das Team von Inginet am Whiteboard, von der Idee zum digitalen Projekt: Websites, Apps und Plattformen',
+      imgAlt: 'Das Team von Inginet arbeitet an einem digitalen Projekt: Website, Unternehmenssoftware und App',
       founderTitle: 'Antonio De Donno, Gründer',
       founderText: 'Ich habe angefangen, Websites zu bauen, als Verbindungen in Kilobit gemessen wurden und niemand wusste, was eine Suchmaschine ist. Seither habe ich alles kommen und gehen sehen: die Portale, den E-Commerce-Boom, die sozialen Netzwerke, das Mobiltelefon und jetzt die künstliche Intelligenz. Ich habe genau eine Sache gelernt, aber die gilt für alle: Technik taugt dann etwas, wenn sie denen, die arbeiten, ein Problem abnimmt. Fügt sie eines hinzu, ist sie — so schön sie sein mag — verlorene Zeit. Nach diesem Maßstab entscheide ich, was ich Kunden vorschlage und wovon ich abrate, auch wenn Abraten bedeutet, weniger zu verdienen.',
       teamTitle: 'Das Team',

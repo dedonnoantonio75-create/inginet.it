@@ -294,7 +294,7 @@ export default {
       keywords: 'conseil SEO, positionnement sur Google, SEO technique, référencement local, SEO multilingue hreflang, optimisation ChatGPT, generative engine optimization, être cité par l’intelligence artificielle, AI Overviews, données structurées schema.org, SEO des images',
       h1: 'Se faire trouver aujourd’hui, ce sont deux métiers différents',
       lead: 'Hier encore, il suffisait d’être en première page de Google. Aujourd’hui la moitié des réponses vient directement d’une intelligence artificielle, et si votre entreprise n’est pas écrite d’une façon que l’IA comprend et cite, vous n’existez tout simplement pas. Nous faisons les deux métiers.',
-      imgAlt: 'Graphiques de trafic, de positionnement et de couverture en Italie sur un tableau de bord SEO suivi par Inginet',
+      imgAlt: 'Graphiques de trafic et de positionnement en hausse sur un tableau de bord SEO suivi par Inginet',
       twoTitle: 'Les deux canaux, sans détour',
       two: [
         { title: 'Moteurs de recherche traditionnels', text: 'Google et Bing envoient une personne sur votre site. Vous gagnez si vous êtes techniquement propre, rapide, cohérent par thème et si vos contenus répondent mieux que les autres à la même question.', bullets: ['Analyse technique : vitesse, indexation, erreurs, doublons', 'Contenus structurés par thème et intention de recherche', 'Référencement local et fiche Google Business Profile', 'Maillage interne, données structurées et sitemaps soignées'] },
@@ -345,7 +345,7 @@ export default {
       keywords: 'Inginet qui sommes-nous, Antonio De Donno, éditeur de logiciels Italie, société de développement Pouilles, équipe de développement web, histoire Inginet',
       h1: 'Trente-cinq ans dans le même métier, et toujours pas lassés',
       lead: 'Nous avons commencé quand internet en Italie était une curiosité et que les sites s’écrivaient à la main. Depuis, nous avons traversé toutes les modes technologiques et appris à reconnaître celles qui comptaient vraiment. L’intelligence artificielle, cette fois, compte vraiment.',
-      imgAlt: 'L’équipe d’Inginet devant le tableau blanc, de l’idée au projet numérique : sites, applications et plateformes',
+      imgAlt: 'L’équipe d’Inginet au travail sur un projet numérique : site, logiciel de gestion et application',
       founderTitle: 'Antonio De Donno, fondateur',
       founderText: 'J’ai commencé à construire des sites quand les connexions se mesuraient en kilobits et que personne ne savait ce qu’était un moteur de recherche. Depuis, j’ai vu tout passer : les portails, l’explosion de l’e-commerce, les réseaux sociaux, le mobile, et maintenant l’intelligence artificielle. Je n’ai appris qu’une seule chose, mais elle vaut pour toutes : la technologie sert quand elle enlève un problème à ceux qui travaillent. Si elle en ajoute un, aussi belle soit-elle, c’est du temps perdu. C’est le critère avec lequel je choisis ce que je propose aux clients et ce que je déconseille, même quand déconseiller veut dire facturer moins.',
       teamTitle: 'L’équipe',

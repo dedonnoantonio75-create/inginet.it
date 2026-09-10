@@ -294,7 +294,7 @@ export default {
       keywords: 'consulenza SEO, posizionamento su Google, SEO tecnica, local SEO Lecce, SEO multilingua hreflang, ottimizzazione per ChatGPT, GEO generative engine optimization, essere citati dall’intelligenza artificiale, AI Overviews, dati strutturati schema.org, SEO immagini',
       h1: 'Farsi trovare oggi significa due lavori diversi',
       lead: 'Fino a ieri bastava stare in prima pagina su Google. Oggi metà delle risposte le dà direttamente un’intelligenza artificiale, e se la tua azienda non è scritta in modo che l’AI la capisca e la citi, semplicemente non esisti. Noi facciamo tutti e due i lavori.',
-      imgAlt: 'Grafici di traffico, posizionamento e copertura in Italia su una dashboard SEO curata da Inginet',
+      imgAlt: 'Grafici di traffico e posizionamento in crescita su una dashboard SEO curata da Inginet',
       twoTitle: 'I due canali, spiegati senza giri di parole',
       two: [
         { title: 'Motori di ricerca tradizionali', text: 'Google e Bing mandano una persona sul tuo sito. Vinci se sei tecnicamente pulito, veloce, coerente per argomento e se hai contenuti che rispondono meglio degli altri alla stessa domanda.', bullets: ['Analisi tecnica: velocità, indicizzazione, errori, duplicati', 'Struttura dei contenuti per argomento e intento di ricerca', 'Local SEO e scheda Google Business Profile', 'Link interni, dati strutturati e sitemap curate'] },
@@ -345,7 +345,7 @@ export default {
       keywords: 'Inginet chi siamo, Antonio De Donno, software house Maglie Lecce, azienda sviluppo software Salento, team sviluppo web Puglia, storia Inginet',
       h1: 'Trentacinque anni sullo stesso mestiere, e non ci siamo ancora annoiati',
       lead: 'Abbiamo iniziato quando internet in Italia era una curiosità e i siti si scrivevano a mano. Da allora abbiamo attraversato ogni moda tecnologica, e imparato a riconoscere quali servivano davvero. L’intelligenza artificiale, questa volta, serve davvero.',
-      imgAlt: 'Il team di Inginet davanti alla lavagna, dall’idea al progetto digitale: siti, app e piattaforme',
+      imgAlt: 'Il team di Inginet al lavoro su un progetto digitale, fra sito, gestionale e app',
       founderTitle: 'Antonio De Donno, fondatore',
       founderText: 'Ho iniziato a costruire siti quando le connessioni si misuravano in kilobit e nessuno sapeva cosa fosse un motore di ricerca. Da allora ho visto passare tutto: i portali, il boom degli e-commerce, i social, il mobile, e adesso l’intelligenza artificiale. Ho imparato una cosa sola, ma vale per tutte: la tecnologia serve se toglie un problema a chi lavora. Se lo aggiunge, per bella che sia, è tempo buttato. È il criterio con cui scelgo cosa proporre ai clienti e cosa sconsigliare, anche quando sconsigliare significa fatturare meno.',
       teamTitle: 'Il team',

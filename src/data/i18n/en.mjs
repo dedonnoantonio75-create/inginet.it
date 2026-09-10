@@ -294,7 +294,7 @@ export default {
       keywords: 'SEO consultancy, Google ranking, technical SEO, local SEO, multilingual SEO hreflang, ChatGPT optimisation, generative engine optimization, getting cited by AI, AI Overviews, schema.org structured data, image SEO',
       h1: 'Being found today means two different jobs',
       lead: 'Until recently, ranking on Google’s first page was enough. Today half the answers come straight from an artificial intelligence, and if your company isn’t written in a way the AI can understand and cite, you simply don’t exist. We do both jobs.',
-      imgAlt: 'Traffic, ranking and coverage charts for Italy on an SEO dashboard managed by Inginet',
+      imgAlt: 'Traffic and ranking charts growing on an SEO dashboard managed by Inginet',
       twoTitle: 'The two channels, without the jargon',
       two: [
         { title: 'Traditional search engines', text: 'Google and Bing send a person to your site. You win by being technically clean, fast, topically coherent and by answering the question better than anyone else.', bullets: ['Technical audit: speed, indexing, errors, duplicates', 'Content structured by topic and search intent', 'Local SEO and Google Business Profile', 'Internal links, structured data and clean sitemaps'] },
@@ -345,7 +345,7 @@ export default {
       keywords: 'about Inginet, Antonio De Donno, software house Italy, software development company Puglia, web development team, Inginet history',
       h1: 'Thirty-five years in the same craft, and still not bored',
       lead: 'We started when the internet in Italy was a curiosity and websites were written by hand. Since then we have lived through every technological fashion and learned to spot which ones actually mattered. Artificial intelligence, this time, actually matters.',
-      imgAlt: 'The Inginet team at the whiteboard, from idea to digital project: websites, apps and platforms',
+      imgAlt: 'The Inginet team at work on a digital project, across website, management system and app',
       founderTitle: 'Antonio De Donno, founder',
       founderText: 'I started building websites when connections were measured in kilobits and nobody knew what a search engine was. Since then I have seen everything come and go: portals, the e-commerce boom, social media, mobile, and now artificial intelligence. I have learned exactly one thing, and it applies to all of them: technology is worth having when it removes a problem for the people doing the work. If it adds one, however elegant it is, it is wasted time. That is the criterion I use to decide what to propose to clients and what to advise against, even when advising against means invoicing less.',
       teamTitle: 'The team',

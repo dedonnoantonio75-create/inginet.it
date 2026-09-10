@@ -294,7 +294,7 @@ export default {
       keywords: 'consultoría SEO, posicionamiento en Google, SEO técnico, SEO local, SEO multilingüe hreflang, optimización para ChatGPT, generative engine optimization, que te cite la inteligencia artificial, AI Overviews, datos estructurados schema.org, SEO de imágenes',
       h1: 'Hoy hacerse encontrar son dos trabajos distintos',
       lead: 'Hasta hace poco bastaba con estar en la primera página de Google. Hoy la mitad de las respuestas las da directamente una inteligencia artificial y, si tu empresa no está escrita de forma que la IA la entienda y la cite, sencillamente no existes. Nosotros hacemos los dos trabajos.',
-      imgAlt: 'Gráficos de tráfico, posicionamiento y cobertura en Italia en un panel SEO gestionado por Inginet',
+      imgAlt: 'Gráficos de tráfico y posicionamiento en crecimiento en un panel SEO gestionado por Inginet',
       twoTitle: 'Los dos canales, sin rodeos',
       two: [
         { title: 'Buscadores tradicionales', text: 'Google y Bing mandan a una persona a tu web. Ganas si eres técnicamente limpio, rápido y coherente por temas, y si tus contenidos responden mejor que los demás a la misma pregunta.', bullets: ['Análisis técnico: velocidad, indexación, errores, duplicados', 'Contenidos estructurados por tema e intención de búsqueda', 'SEO local y ficha de Google Business Profile', 'Enlazado interno, datos estructurados y sitemaps cuidados'] },
@@ -345,7 +345,7 @@ export default {
       keywords: 'Inginet quiénes somos, Antonio De Donno, software house Italia, empresa de desarrollo de software Apulia, equipo de desarrollo web, historia de Inginet',
       h1: 'Treinta y cinco años en el mismo oficio, y todavía no nos aburre',
       lead: 'Empezamos cuando internet en Italia era una curiosidad y las webs se escribían a mano. Desde entonces hemos atravesado todas las modas tecnológicas y hemos aprendido a reconocer cuáles servían de verdad. La inteligencia artificial, esta vez, sirve de verdad.',
-      imgAlt: 'El equipo de Inginet ante la pizarra, de la idea al proyecto digital: sitios, apps y plataformas',
+      imgAlt: 'El equipo de Inginet trabajando en un proyecto digital: sitio, software de gestión y app',
       founderTitle: 'Antonio De Donno, fundador',
       founderText: 'Empecé a construir webs cuando las conexiones se medían en kilobits y nadie sabía qué era un buscador. Desde entonces lo he visto pasar todo: los portales, el auge del comercio electrónico, las redes sociales, el móvil y ahora la inteligencia artificial. He aprendido una sola cosa, pero vale para todas: la tecnología sirve si le quita un problema a quien trabaja. Si se lo añade, por bonita que sea, es tiempo perdido. Es el criterio con el que elijo qué proponer a los clientes y qué desaconsejar, incluso cuando desaconsejar significa facturar menos.',
       teamTitle: 'El equipo',

@@ -175,10 +175,10 @@ export const sectors = ['tutti', 'ricettivo', 'ristorazione', 'automotive', 'ret
 export const photos = {
   hero:       { file: 'software-house-inginet-team-sviluppo-software-maglie-lecce-salento',    w: 1400, h: 788,  widths: [640, 1000, 1400] },
   heroMobile: { file: 'software-house-inginet-team-sviluppo-software-verticale',               w: 900,  h: 1600, widths: [640, 900] },
-  ai:         { file: 'software-gestionali-e-intelligenza-artificiale-per-le-imprese-inginet', w: 1400, h: 787,  widths: [640, 900, 1400] },
+  ai:         { file: 'software-gestionali-e-intelligenza-artificiale-per-le-imprese-inginet', w: 995,  h: 559,  widths: [640, 900, 995] },
   servizi:    { file: 'sviluppo-siti-web-ed-e-commerce-su-misura-inginet',                     w: 1400, h: 788,  widths: [640, 900, 1400] },
-  seo:        { file: 'seo-posizionamento-e-digital-marketing-inginet',                        w: 1400, h: 788,  widths: [640, 900, 1400] },
-  team:       { file: 'chi-siamo-team-inginet-idee-tecnologia-persone-risultati',              w: 1400, h: 788,  widths: [640, 900, 1400] },
+  seo:        { file: 'seo-posizionamento-e-digital-marketing-inginet',                        w: 1105, h: 622,  widths: [640, 900, 1105] },
+  team:       { file: 'chi-siamo-team-inginet-idee-tecnologia-persone-risultati',              w: 1137, h: 640,  widths: [640, 900, 1137] },
   clienti:    { file: 'gestionali-per-hotel-strutture-ricettive-e-ristoranti-inginet',         w: 1400, h: 788,  widths: [640, 900, 1400] },
 };
 

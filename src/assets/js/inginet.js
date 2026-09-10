@@ -70,30 +70,6 @@
     });
   }
 
-  /* ------------------------------------- modulo contatti → mailto: */
-  var form = $('#cform');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (!form.reportValidity()) return;
-      var d = new FormData(form);
-      var get = function (k) { return (d.get(k) || '').toString().trim(); };
-      var lines = [
-        get('nome') ? 'Nome: ' + get('nome') : '',
-        get('azienda') ? 'Azienda: ' + get('azienda') : '',
-        get('email') ? 'Email: ' + get('email') : '',
-        get('telefono') ? 'Telefono: ' + get('telefono') : '',
-        get('argomento') ? 'Richiesta: ' + get('argomento') : '',
-        '',
-        get('messaggio')
-      ].filter(function (l) { return l !== null; }).join('\n');
-      var subject = form.dataset.subject + (get('argomento') ? ' — ' + get('argomento') : '');
-      window.location.href = 'mailto:' + form.dataset.to +
-        '?subject=' + encodeURIComponent(subject) +
-        '&body=' + encodeURIComponent(lines);
-    });
-  }
-
   /* ------------------------------------------- comparsa alla scrolllata */
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     var io = new IntersectionObserver(function (entries) {

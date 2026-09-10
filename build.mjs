@@ -9,7 +9,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { site, languages, pages, slugs, defaultLang, clients, photos, redirects } from './src/data/site.mjs';
-import { layout, pageUrl, absUrl, outPath } from './src/lib/render.mjs';
+import { layout, pageUrl, absUrl, outPath, icon, esc } from './src/lib/render.mjs';
 import { renderers, extraSchemaFor } from './src/lib/pages.mjs';
 import * as art from './src/lib/artwork.mjs';
 
@@ -294,6 +294,31 @@ for (const [oldPath, key] of Object.entries(redirects)) {
   nRed++;
 }
 console.log('\u2714 ' + nRed + ' redirect dai vecchi permalink WordPress');
+
+
+/* ------------------------------------- 9-ter. pagina di ringraziamento */
+
+/* Dove atterra chi ha appena inviato il modulo. Fuori dalla sitemap e
+   marcata noindex: non deve finire nei risultati di ricerca. */
+for (const l of languages) {
+  const t = T[l.code];
+  const g = t.common.grazie;
+  write(`${pageUrl(l.code, 'home').replace(/^\/+|\/+$/g, '')}${l.code === defaultLang ? '' : '/'}${g.slug}/index.html`,
+    layout({
+      lang: l.code, key: 'home', t, noindex: true,
+      meta: { title: g.title, description: g.description },
+      body: `<section class="page-hero"><div class="wrap narrow center">
+    <span class="card-ico big-ico">${icon('check')}</span>
+    <h1>${esc(g.h1)}</h1>
+    <p class="lead" style="margin-inline:auto">${esc(g.text)}</p>
+    <div class="hero-cta" style="justify-content:center">
+      <a class="btn btn-primary" href="${pageUrl(l.code, 'home')}"><span>${esc(g.cta)}</span></a>
+      <a class="btn btn-ghost" href="https://wa.me/${site.contact.whatsapp}" target="_blank" rel="noopener"><span>${esc(t.common.ctaWhatsapp)}</span></a>
+    </div>
+  </div></section>`,
+    }));
+}
+console.log('\u2714 5 pagine di ringraziamento');
 
 write('CNAME', 'www.inginet.it\n');
 write('.nojekyll', '');

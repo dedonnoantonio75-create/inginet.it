@@ -42,7 +42,7 @@
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/space-grotesk-700-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-400-latin.woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts/fonts.css">
-<link rel="stylesheet" href="/assets/css/inginet.css?v=9880c1e3">
+<link rel="stylesheet" href="/assets/css/inginet.css?v=df3e35f2">
 <script>(function(){try{var t=localStorage.getItem('ing-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Organization","ProfessionalService"],"@id":"https://www.inginet.it/#organization","name":"Inginet","legalName":"Inginet di Antonio De Donno","url":"https://www.inginet.it/","logo":{"@type":"ImageObject","url":"https://www.inginet.it/assets/img/inginet-logo.png","width":900,"height":210},"image":"https://www.inginet.it/assets/img/og/inginet-og-de.png","email":"info@inginet.it","telephone":"+393935694342","vatID":"05346170755","foundingDate":"2000","founder":{"@type":"Person","name":"Antonio De Donno","jobTitle":"Founder & CTO"},"address":{"@type":"PostalAddress","streetAddress":"Via G. Marconi 14","addressLocality":"Maglie","addressRegion":"LE","postalCode":"73024","addressCountry":"IT"},"areaServed":[{"@type":"Country","name":"Italia"},{"@type":"AdministrativeArea","name":"Puglia"},{"@type":"Place","name":"Europa"}],"availableLanguage":["Italiano","English","Deutsch","Français","Español"],"sameAs":["https://www.facebook.com/olvixapp"],"knowsAbout":["Artificial intelligence software development","AI agents for business","Custom management software","CRM development","Headless CMS","E-commerce development","Search engine optimization","Generative engine optimization","Multilingual websites"],"slogan":"Wir bauen Software mit künstlicher Intelligenz im Inneren"},{"@type":"WebSite","@id":"https://www.inginet.it/#website","url":"https://www.inginet.it/","name":"Inginet","inLanguage":"de","publisher":{"@id":"https://www.inginet.it/#organization"}},{"@type":"WebPage","@id":"https://www.inginet.it/de/kontakt/#webpage","url":"https://www.inginet.it/de/kontakt/","name":"Kontakt | Inginet — Softwarehaus in Maglie, Italien","description":"Sprechen wir über Ihr Projekt: kostenlose Erstanalyse, Antwort innerhalb eines Werktages. Schreiben Sie per E-Mail oder WhatsApp oder besuchen Sie uns.","inLanguage":"de","isPartOf":{"@id":"https://www.inginet.it/#website"},"about":{"@id":"https://www.inginet.it/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://www.inginet.it/de/"},{"@type":"ListItem","position":2,"name":"Kontakt","item":"https://www.inginet.it/de/kontakt/"}]},{"@type":"FAQPage","@id":"https://www.inginet.it/de/kontakt/#faq","mainEntity":[{"@type":"Question","name":"Wie schnell antworten Sie?","acceptedAnswer":{"@type":"Answer","text":"Innerhalb eines Werktages, meist deutlich früher. Wer während der Bürozeiten per WhatsApp schreibt, bekommt in der Regel rasch Antwort."}},{"@type":"Question","name":"Kostet das Erstgespräch etwas?","acceptedAnswer":{"@type":"Answer","text":"Nein. Erstgespräch und erste Analyse des Problems sind kostenlos und unverbindlich. Bezahlt wird, wenn Sie sich für den Start entscheiden — gegen ein schriftliches Festpreisangebot."}},{"@type":"Question","name":"In welchen Sprachen können wir sprechen?","acceptedAnswer":{"@type":"Answer","text":"Deutsch, Italienisch, Englisch, Französisch und Spanisch — für das Gespräch ebenso wie für Unterlagen und Schulung."}}]},{"@type":"ContactPage","@id":"https://www.inginet.it/de/kontakt/#contactpage","mainEntity":{"@type":"LocalBusiness","name":"Inginet","image":"https://www.inginet.it/assets/img/og/inginet-og-de.png","email":"info@inginet.it","telephone":"+393935694342","priceRange":"€€","address":{"@type":"PostalAddress","streetAddress":"Via G. Marconi 14","addressLocality":"Maglie","addressRegion":"LE","postalCode":"73024","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":"40.1166488","longitude":"18.3062816"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"13:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"18:30"}]}}]}</script>
 </head>
@@ -126,24 +126,37 @@
   <div class="wrap split split-form">
     <div>
       <h2>Schreiben Sie uns in zwei Minuten</h2>
-      <p>Füllen Sie die Felder aus: Ihr E-Mail-Programm öffnet sich mit der fertigen Nachricht, so behalten Sie eine Kopie. Diese Website erhebt keine Daten.</p>
-      <form class="cform" id="cform" data-to="info@inginet.it" data-subject="Anfrage über inginet.it">
+      <p>Felder ausfüllen und absenden: Ihre Anfrage landet direkt in unserem Postfach. Wir antworten innerhalb eines Werktages.</p>
+      <!-- Invio vero: la richiesta arriva nella casella info@inginet.it.
+           _honey e' un campo trappola invisibile: i robot lo riempiono e la
+           richiesta viene scartata. _captcha aggiunge la verifica antispam. -->
+      <form class="cform" action="https://formsubmit.co/info@inginet.it" method="POST" accept-charset="UTF-8">
+        <input type="hidden" name="_subject" value="Anfrage über inginet.it">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_next" value="https://www.inginet.it/de/danke/">
+        <input type="hidden" name="_language" value="de">
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" class="trappola">
         <div class="f-row">
-          <label>Vor- und Nachname<input type="text" name="nome" required placeholder="Max Mustermann"></label>
-          <label>Unternehmen<input type="text" name="azienda" placeholder="Name Ihres Betriebs"></label>
+          <label>Vor- und Nachname<input type="text" name="Nome" required autocomplete="name" placeholder="Max Mustermann"></label>
+          <label>Unternehmen<input type="text" name="Azienda" autocomplete="organization" placeholder="Name Ihres Betriebs"></label>
         </div>
         <div class="f-row">
-          <label>Ihre E-Mail<input type="email" name="email" required placeholder="max@firma.de"></label>
-          <label>Telefon<input type="tel" name="telefono" placeholder="+49 170 1234567"></label>
+          <label>Ihre E-Mail<input type="email" name="Email" required autocomplete="email" placeholder="max@firma.de"></label>
+          <label>Telefon<input type="tel" name="Telefono" autocomplete="tel" placeholder="+49 170 1234567"></label>
         </div>
         <label>Worum geht es
-          <select name="argomento"><option>Lösungen mit künstlicher Intelligenz</option><option>Website oder Relaunch</option><option>Onlineshop</option><option>Branchensoftware oder CRM nach Maß</option><option>Portal oder Marktplatz</option><option>SEO und Indexierung</option><option>Foto, Video und Luftaufnahmen</option><option>Betreuung eines bestehenden Projekts</option><option>Sonstiges</option></select>
+          <select name="Richiesta"><option>Lösungen mit künstlicher Intelligenz</option><option>Website oder Relaunch</option><option>Onlineshop</option><option>Branchensoftware oder CRM nach Maß</option><option>Portal oder Marktplatz</option><option>SEO und Indexierung</option><option>Foto, Video und Luftaufnahmen</option><option>Betreuung eines bestehenden Projekts</option><option>Sonstiges</option></select>
         </label>
         <label>Schildern Sie das Problem
-          <textarea name="messaggio" rows="6" required placeholder="Was möchten Sie lösen? Was kostet Sie heute die meiste Zeit?"></textarea>
+          <textarea name="Messaggio" rows="6" required placeholder="Was möchten Sie lösen? Was kostet Sie heute die meiste Zeit?"></textarea>
         </label>
-        <button type="submit" class="btn btn-primary"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg><span>Vorausgefüllte E-Mail öffnen</span></button>
-        <p class="note">Dieses Formular sendet nichts an einen Server: Es bereitet nur eine Nachricht in Ihrem E-Mail-Programm vor. Mit Ihrer Nachricht erklären Sie sich einverstanden, zu Ihrer Anfrage kontaktiert zu werden.</p>
+        <label class="f-check">
+          <input type="checkbox" name="Consenso privacy" value="si" required>
+          <span>Ich habe die Datenschutzerklärung gelesen und bin damit einverstanden, zu dieser Anfrage kontaktiert zu werden. <a href="/de/datenschutz/">Datenschutz</a></span>
+        </label>
+        <button type="submit" class="btn btn-primary"><svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg><span>Anfrage senden</span></button>
+        <p class="note">Ihre Angaben dienen nur der Beantwortung. Bei der ersten Anfrage erscheint eine Spam-Prüfung.</p>
       </form>
     </div>
     <aside class="contact-aside">
@@ -247,6 +260,6 @@
     <svg class="ico " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21.5 12.4A9.5 9.5 0 1 1 11.6 2.5a4 4 0 0 0 4.3 4.3 4 4 0 0 0 3.7 3.7 4 4 0 0 0 1.9 1.9Z"/><circle cx="9" cy="10" r="1.1" fill="currentColor" stroke="none"/><circle cx="8.4" cy="15.2" r="1.1" fill="currentColor" stroke="none"/><circle cx="14" cy="15.6" r="1.1" fill="currentColor" stroke="none"/></svg><span>Cookies und Datenschutz</span><span class="cc-dot" id="ccDot" aria-hidden="true"></span>
   </button>
 </aside>
-<script src="/assets/js/inginet.js?v=8da25071" defer></script>
+<script src="/assets/js/inginet.js?v=896609a0" defer></script>
 </body>
 </html>

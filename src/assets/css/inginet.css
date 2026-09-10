@@ -599,3 +599,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .card-gest h3 { margin-bottom: .45em; }
 .card-gest .ctile-tags { margin: .2rem 0 1.1rem; }
 .card-gest .card-link { margin-top: auto; }
+
+/* campo trappola per i robot: invisibile a chi naviga davvero */
+.trappola { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; opacity: 0; }
+
+/* casella di consenso privacy */
+.f-check { display: flex !important; align-items: flex-start; gap: .65rem; font-size: .86rem; line-height: 1.5; }
+.f-check input { width: 18px; height: 18px; flex: none; margin-top: .15rem; accent-color: var(--acc); cursor: pointer; }
+.f-check a { color: var(--acc); text-decoration: underline; text-underline-offset: 2px; }

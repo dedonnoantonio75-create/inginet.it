@@ -1,8 +1,33 @@
-import { site, clients, platforms, artwork } from '../data/site.mjs';
+import { site, clients, platforms, photos } from '../data/site.mjs';
 import { esc, icon, btn, pageUrl, absUrl, sectionHead, faqBlock, ctaBlock } from './render.mjs';
 
-const img = (file, alt, cls = '', w = 1200, h = 800, lazy = true) =>
-  `<img src="/assets/img/${file}" alt="${esc(alt)}" class="${cls}" width="${w}" height="${h}"${lazy ? ' loading="lazy" decoding="async"' : ' fetchpriority="high" decoding="async"'}>`;
+const FOTO = '/assets/img/foto/';
+
+const srcset = (p, est) => p.widths.map(w => `${FOTO}${p.file}-${w}.${est} ${w}w`).join(', ');
+
+/* Catena AVIF -> WebP -> JPEG: ogni browser prende il primo formato che sa
+   leggere, quindi i moderni scaricano pochissimo e i vecchi vedono comunque
+   la foto. Su schermo stretto entra la versione verticale, dove esiste.
+   width/height dichiarati: la pagina non salta mentre l'immagine carica. */
+const photo = (key, alt, { mobile = null, eager = false } = {}) => {
+  const p = photos[key];
+  const m = mobile ? photos[mobile] : null;
+  /* width/height su OGNI sorgente: la verticale del telefono ha proporzioni
+     diverse dall'orizzontale, e senza queste il browser riserva lo spazio
+     sbagliato e la pagina salta quando la foto arriva. */
+  const src = (ph, est, media) =>
+    `<source type="image/${est}" ${media ? `media="${media}" ` : ''}srcset="${srcset(ph, est)}" ` +
+    `sizes="${media ? '100vw' : '(max-width: 900px) 92vw, 46vw'}" width="${ph.w}" height="${ph.h}">`;
+  const mq = '(max-width: 640px)';
+  const fonti = [];
+  if (m) { fonti.push(src(m, 'avif', mq), src(m, 'webp', mq)); }
+  fonti.push(src(p, 'avif'), src(p, 'webp'));
+  return `<picture class="art-wrap">
+  ${fonti.join('\n  ')}
+  <img class="art" src="${FOTO}${p.file}.jpg" alt="${esc(alt)}" width="${p.w}" height="${p.h}"
+       ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">
+</picture>`;
+};
 
 const heroBg = `<div class="hero-bg" aria-hidden="true"><span class="orb orb-a"></span><span class="orb orb-b"></span><span class="orb orb-c"></span><span class="grid-fade"></span></div>`;
 
@@ -48,7 +73,7 @@ export function home(t, lang) {
         ${p.stats.map(s => `<div><dt>${esc(s.value)}</dt><dd>${esc(s.label)}</dd></div>`).join('')}
       </dl>
     </div>
-    <div class="hero-art">${img(artwork.hero, p.hero.imgAlt, 'art', 900, 760, false)}</div>
+    <div class="hero-art">${photo('hero', p.hero.imgAlt, { mobile: 'heroMobile', eager: true })}</div>
   </div>
 </section>
 
@@ -145,7 +170,7 @@ export function ai(t, lang) {
       <p class="lead">${esc(p.lead)}</p>
       <div class="hero-cta">${btn(pageUrl(lang, 'contatti'), t.common.ctaPrimary, { variant: 'primary' })}</div>
     </div>
-    <div class="page-hero-art">${img(artwork.ai, p.imgAlt, 'art', 820, 620, false)}</div>
+    <div class="page-hero-art">${photo('ai', p.imgAlt, { eager: true })}</div>
   </div>
 </section>
 
@@ -206,7 +231,7 @@ export function servizi(t, lang) {
       <p class="lead">${esc(p.lead)}</p>
       <div class="hero-cta">${btn(pageUrl(lang, 'contatti'), t.common.ctaPrimary, { variant: 'primary' })}</div>
     </div>
-    <div class="page-hero-art">${img(artwork.servizi, p.imgAlt, 'art', 820, 620, false)}</div>
+    <div class="page-hero-art">${photo('servizi', p.imgAlt, { eager: true })}</div>
   </div>
 </section>
 
@@ -262,7 +287,7 @@ export function seo(t, lang) {
       <p class="lead">${esc(p.lead)}</p>
       <div class="hero-cta">${btn(pageUrl(lang, 'contatti'), t.common.ctaPrimary, { variant: 'primary' })}</div>
     </div>
-    <div class="page-hero-art">${img(artwork.seo, p.imgAlt, 'art', 820, 620, false)}</div>
+    <div class="page-hero-art">${photo('seo', p.imgAlt, { eager: true })}</div>
   </div>
 </section>
 
@@ -364,7 +389,7 @@ export function chisiamo(t, lang) {
       <h1>${esc(p.h1)}</h1>
       <p class="lead">${esc(p.lead)}</p>
     </div>
-    <div class="page-hero-art">${img(artwork.team, p.imgAlt, 'art', 820, 620, false)}</div>
+    <div class="page-hero-art">${photo('team', p.imgAlt, { eager: true })}</div>
   </div>
 </section>
 
@@ -509,9 +534,38 @@ export const cookie = t => legalPage(t.pages.cookie);
 
 /* ------------------------------------------------------- schema extra */
 
+/* Una foto sola per pagina, dichiarata come ImageObject: i motori sanno che
+   e l'immagine principale, e i modelli AI leggono didascalia e descrizione. */
+const FOTO_PAGINA = { home: 'hero', ai: 'ai', servizi: 'servizi', seo: 'seo', chisiamo: 'team' };
+
+function imageSchema(key, t, lang) {
+  const k = FOTO_PAGINA[key];
+  if (!k) return [];
+  const p = photos[k];
+  const alt = key === 'home' ? t.pages.home.hero.imgAlt : t.pages[key].imgAlt;
+  const url = `${site.origin}/assets/img/foto/${p.file}.jpg`;
+  return [{
+    '@type': 'ImageObject',
+    '@id': absUrl(lang, key) + '#immagine',
+    contentUrl: url,
+    url,
+    width: p.w,
+    height: p.h,
+    caption: alt,
+    description: alt,
+    name: alt,
+    inLanguage: lang,
+    representativeOfPage: true,
+    creditText: site.brand,
+    creator: { '@id': `${site.origin}/#organization` },
+    copyrightNotice: `© ${site.brand}`,
+  }];
+}
+
 export function extraSchemaFor(key, t, lang) {
+  const img = imageSchema(key, t, lang);
   if (key === 'clienti') {
-    return [{
+    return [...img, {
       '@type': 'ItemList',
       '@id': absUrl(lang, 'clienti') + '#portfolio',
       name: t.pages.clienti.h1,
@@ -527,7 +581,7 @@ export function extraSchemaFor(key, t, lang) {
     const names = key === 'servizi'
       ? p.groups.flatMap(g => g.items.map(i => i.title))
       : (p.solutions || p.work).map(s => s.title);
-    return [{
+    return [...img, {
       '@type': 'Service',
       '@id': absUrl(lang, key) + '#service',
       name: p.h1,
@@ -544,7 +598,7 @@ export function extraSchemaFor(key, t, lang) {
   }
   if (key === 'contatti') {
     const L = site.legal;
-    return [{
+    return [...img, {
       '@type': 'ContactPage',
       '@id': absUrl(lang, 'contatti') + '#contactpage',
       mainEntity: {
@@ -566,7 +620,7 @@ export function extraSchemaFor(key, t, lang) {
       },
     }];
   }
-  return [];
+  return img;
 }
 
 export const renderers = { home, ai, servizi, seo, clienti, chisiamo, contatti, privacy, cookie };

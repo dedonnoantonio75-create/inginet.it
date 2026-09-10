@@ -10,3 +10,6 @@ node_modules/
 # file di lavoro
 *.log
 *.tmp
+
+# originali pesanti delle foto: la versione web sta in assets/img/foto
+# (tienili: servono per rigenerare con tools/foto.py)

@@ -161,6 +161,16 @@ export const redirects = {
 
 export const sectors = ['tutti', 'ricettivo', 'ristorazione', 'automotive', 'retail', 'industria', 'salute', 'portali', 'servizi'];
 
+// Foto di copertina. widths = le larghezze davvero generate in assets/img/foto.
+export const photos = {
+  hero:       { file: 'team-inginet-sviluppo-siti-gestionali-salento',           w: 1600, h: 900,  widths: [640, 1000, 1600] },
+  heroMobile: { file: 'team-inginet-sviluppo-siti-gestionali-verticale',         w: 900,  h: 1599, widths: [640, 900] },
+  ai:         { file: 'intelligenza-artificiale-applicata-alle-imprese-inginet', w: 1400, h: 1050, widths: [640, 900, 1400] },
+  servizi:    { file: 'sviluppo-siti-web-ed-e-commerce-su-misura-inginet',       w: 1400, h: 1050, widths: [640, 900, 1400] },
+  seo:        { file: 'seo-e-risultati-di-posizionamento-inginet',               w: 1400, h: 1050, widths: [640, 900, 1400] },
+  team:       { file: 'riprese-aeree-con-drone-team-inginet',                    w: 1400, h: 1050, widths: [640, 900, 1400] },
+};
+
 // Illustrazioni SVG generate: nome file → chiave di contenuto (alt localizzato)
 export const artwork = {
   hero: 'inginet-software-house-intelligenza-artificiale-salento.svg',

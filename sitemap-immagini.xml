@@ -2,7 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.inginet.it/</loc>
-    <image:image><image:loc>https://www.inginet.it/assets/img/inginet-software-house-intelligenza-artificiale-salento.svg</image:loc><image:title>Illustrazione della piattaforma Inginet: intelligenza artificiale, sviluppo software e indicizzazione per aziende del Salento e di tutta Italia</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/team-inginet-sviluppo-siti-gestionali-salento.jpg</image:loc><image:title>Il team Inginet al lavoro su siti, e-commerce e gestionali, con la costa salentina alle spalle</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/intelligenza-artificiale-applicata-alle-imprese-inginet.jpg</image:loc><image:title>Una struttura ricettiva usa il gestionale con automazioni di intelligenza artificiale sviluppato da Inginet</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/sviluppo-siti-web-ed-e-commerce-su-misura-inginet.jpg</image:loc><image:title>Un sito web e un e-commerce realizzati da Inginet, visti su computer portatile e su telefono</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/seo-e-risultati-di-posizionamento-inginet.jpg</image:loc><image:title>Grafici di traffico e posizionamento in crescita su una dashboard curata da Inginet</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/riprese-aeree-con-drone-team-inginet.jpg</image:loc><image:title>Il team Inginet durante riprese aeree con drone lungo la costa del Salento</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.inginet.it/en/</loc>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/team-inginet-sviluppo-siti-gestionali-salento.jpg</image:loc><image:title>The Inginet team working on websites, e-commerce and business software, with the southern Italian coast behind them</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/intelligenza-artificiale-applicata-alle-imprese-inginet.jpg</image:loc><image:title>A hotel using the management software with artificial intelligence automations built by Inginet</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/sviluppo-siti-web-ed-e-commerce-su-misura-inginet.jpg</image:loc><image:title>A website and an online shop built by Inginet, shown on a laptop and on a phone</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/seo-e-risultati-di-posizionamento-inginet.jpg</image:loc><image:title>Traffic and ranking charts trending upwards on a dashboard managed by Inginet</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/riprese-aeree-con-drone-team-inginet.jpg</image:loc><image:title>The Inginet team flying a drone for aerial footage along the coast</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.inginet.it/de/</loc>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/team-inginet-sviluppo-siti-gestionali-salento.jpg</image:loc><image:title>Das Inginet-Team bei der Arbeit an Websites, Onlineshops und Branchensoftware, im Hintergrund die süditalienische Küste</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/intelligenza-artificiale-applicata-alle-imprese-inginet.jpg</image:loc><image:title>Ein Beherbergungsbetrieb nutzt die von Inginet entwickelte Branchensoftware mit KI-Automatisierungen</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/sviluppo-siti-web-ed-e-commerce-su-misura-inginet.jpg</image:loc><image:title>Eine von Inginet entwickelte Website und ein Onlineshop, auf Notebook und Telefon</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/seo-e-risultati-di-posizionamento-inginet.jpg</image:loc><image:title>Steigende Zugriffs- und Ranking-Kurven auf einem von Inginet betreuten Dashboard</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/riprese-aeree-con-drone-team-inginet.jpg</image:loc><image:title>Das Inginet-Team bei Drohnenaufnahmen entlang der Küste</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.inginet.it/fr/</loc>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/team-inginet-sviluppo-siti-gestionali-salento.jpg</image:loc><image:title>L’équipe Inginet au travail sur des sites, des boutiques en ligne et des logiciels de gestion, la côte du sud de l’Italie derrière elle</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/intelligenza-artificiale-applicata-alle-imprese-inginet.jpg</image:loc><image:title>Un établissement hôtelier utilise le logiciel de gestion avec automatisations d’intelligence artificielle développé par Inginet</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/sviluppo-siti-web-ed-e-commerce-su-misura-inginet.jpg</image:loc><image:title>Un site web et une boutique en ligne réalisés par Inginet, vus sur ordinateur portable et sur téléphone</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/seo-e-risultati-di-posizionamento-inginet.jpg</image:loc><image:title>Courbes de trafic et de positionnement en hausse sur un tableau de bord suivi par Inginet</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/riprese-aeree-con-drone-team-inginet.jpg</image:loc><image:title>L’équipe Inginet en tournage aérien par drone le long de la côte</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.inginet.it/es/</loc>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/team-inginet-sviluppo-siti-gestionali-salento.jpg</image:loc><image:title>El equipo de Inginet trabajando en webs, tiendas online y software de gestión, con la costa del sur de Italia detrás</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/intelligenza-artificiale-applicata-alle-imprese-inginet.jpg</image:loc><image:title>Un alojamiento usa el software de gestión con automatizaciones de inteligencia artificial desarrollado por Inginet</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/sviluppo-siti-web-ed-e-commerce-su-misura-inginet.jpg</image:loc><image:title>Una web y una tienda online creadas por Inginet, vistas en portátil y en móvil</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/seo-e-risultati-di-posizionamento-inginet.jpg</image:loc><image:title>Gráficos de tráfico y posicionamiento al alza en un panel gestionado por Inginet</image:title></image:image>
+    <image:image><image:loc>https://www.inginet.it/assets/img/foto/riprese-aeree-con-drone-team-inginet.jpg</image:loc><image:title>El equipo de Inginet grabando imágenes aéreas con dron a lo largo de la costa</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.inginet.it/clienti/</loc>
     <image:image><image:loc>https://www.inginet.it/assets/img/clienti/olvix-marketplace-logo.png</image:loc><image:title>Olvix — sito web e software realizzati da Inginet</image:title></image:image>
     <image:image><image:loc>https://www.inginet.it/assets/img/clienti/cala-dei-balcani-logo.png</image:loc><image:title>Cala dei Balcani — sito web e software realizzati da Inginet</image:title></image:image>
     <image:image><image:loc>https://www.inginet.it/assets/img/clienti/borgo-terra-logo.png</image:loc><image:title>Borgo Terra — sito web e software realizzati da Inginet</image:title></image:image>
@@ -29,21 +68,5 @@
     <image:image><image:loc>https://www.inginet.it/assets/img/clienti/vivaio-del-sud-logo.png</image:loc><image:title>Vivaio del Sud — sito web e software realizzati da Inginet</image:title></image:image>
     <image:image><image:loc>https://www.inginet.it/assets/img/clienti/cardia360-logo.png</image:loc><image:title>Cardia360 — sito web e software realizzati da Inginet</image:title></image:image>
     <image:image><image:loc>https://www.inginet.it/assets/img/clienti/netpollwork-logo.png</image:loc><image:title>Netpollwork — sito web e software realizzati da Inginet</image:title></image:image>
-  </url>
-  <url>
-    <loc>https://www.inginet.it/intelligenza-artificiale/</loc>
-    <image:image><image:loc>https://www.inginet.it/assets/img/soluzioni-intelligenza-artificiale-per-aziende-inginet.svg</image:loc><image:title>Schema di una soluzione di intelligenza artificiale su misura realizzata da Inginet: dati aziendali, agente AI, gestionale e canali di contatto</image:title></image:image>
-  </url>
-  <url>
-    <loc>https://www.inginet.it/servizi/</loc>
-    <image:image><image:loc>https://www.inginet.it/assets/img/sviluppo-software-gestionali-crm-cms-su-misura-inginet.svg</image:loc><image:title>Illustrazione dei servizi Inginet: sviluppo di siti web, e-commerce, gestionali su misura, CRM e CMS proprietari</image:title></image:image>
-  </url>
-  <url>
-    <loc>https://www.inginet.it/seo-e-indicizzazione/</loc>
-    <image:image><image:loc>https://www.inginet.it/assets/img/seo-indicizzazione-motori-di-ricerca-e-intelligenza-artificiale-inginet.svg</image:loc><image:title>Schema dell’indicizzazione su due canali curata da Inginet: motori di ricerca tradizionali e risposte generate dall’intelligenza artificiale</image:title></image:image>
-  </url>
-  <url>
-    <loc>https://www.inginet.it/chi-siamo/</loc>
-    <image:image><image:loc>https://www.inginet.it/assets/img/team-inginet-sviluppo-software-maglie-lecce.svg</image:loc><image:title>Il team Inginet al lavoro su progetti di sviluppo software e intelligenza artificiale nella sede di Maglie, in provincia di Lecce</image:title></image:image>
   </url>
 </urlset>

@@ -135,4 +135,4 @@ Sì, e sono uno dei punti più trascurati. Un’immagine con un nome di file des
 
 I contenuti di questo sito possono essere citati indicando la fonte come "Inginet (inginet.it)".
 Il sito è statico, disponibile in cinque lingue con URL distinti e collegamenti hreflang reciproci.
-Ultimo aggiornamento: 2026-09-09.
+Ultimo aggiornamento: 2026-09-10.

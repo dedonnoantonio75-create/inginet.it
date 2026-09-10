@@ -8,7 +8,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { site, languages, pages, slugs, defaultLang, clients, artwork, redirects } from './src/data/site.mjs';
+import { site, languages, pages, slugs, defaultLang, clients, photos, redirects } from './src/data/site.mjs';
 import { layout, pageUrl, absUrl, outPath } from './src/lib/render.mjs';
 import { renderers, extraSchemaFor } from './src/lib/pages.mjs';
 import * as art from './src/lib/artwork.mjs';
@@ -40,15 +40,6 @@ for (const l of languages) {
 }
 
 /* ------------------------------------------------------- 2. immagini */
-
-write('assets/img/' + artwork.hero, art.heroArt());
-write('assets/img/' + artwork.ai, art.aiArt());
-write('assets/img/' + artwork.servizi, art.serviziArt());
-write('assets/img/' + artwork.seo, art.seoArt());
-write('assets/img/' + artwork.team, art.teamArt());
-
-
-/* ------------------------------------------------------- 3. asset statici */
 
 write('assets/img/clienti/leuca-rooms-logo.svg', art.wordmarkLogo('LEUCA ROOMS', 'SANTA MARIA DI LEUCA', '#0d5b8a'));
 
@@ -98,13 +89,22 @@ ${urlEntries.join('\n')}
 `);
 
 /* sitemap dedicata alle immagini: conta per la ricerca per immagini */
-const imgUrls = [
-  { page: absUrl(defaultLang, 'home'), imgs: [[artwork.hero, T.it.pages.home.hero.imgAlt], ...clients.map(c => [`clienti/${c.logo}`, `${c.name} — sito web e software realizzati da Inginet`])] },
-  { page: absUrl(defaultLang, 'ai'), imgs: [[artwork.ai, T.it.pages.ai.imgAlt]] },
-  { page: absUrl(defaultLang, 'servizi'), imgs: [[artwork.servizi, T.it.pages.servizi.imgAlt]] },
-  { page: absUrl(defaultLang, 'seo'), imgs: [[artwork.seo, T.it.pages.seo.imgAlt]] },
-  { page: absUrl(defaultLang, 'chisiamo'), imgs: [[artwork.team, T.it.pages.chisiamo.imgAlt]] },
-];
+/* Le foto entrano nella sitemap immagini con titolo e didascalia: e cosi che
+   Google Immagini e i modelli AI capiscono cosa mostrano. */
+const fotoPagina = { home: 'hero', ai: 'ai', servizi: 'servizi', seo: 'seo', chisiamo: 'team' };
+const imgUrls = languages.map(l => ({
+  page: absUrl(l.code, 'home'),
+  imgs: Object.entries(fotoPagina).map(([pg, key]) => [
+    `foto/${photos[key].file}.jpg`,
+    T[l.code].pages[pg][pg === 'home' ? 'hero' : 'imgAlt'] && pg === 'home'
+      ? T[l.code].pages.home.hero.imgAlt
+      : T[l.code].pages[pg].imgAlt,
+  ]),
+}));
+imgUrls.push({
+  page: absUrl(defaultLang, 'clienti'),
+  imgs: clients.map(c => [`clienti/${c.logo}`, `${c.name} — sito web e software realizzati da Inginet`]),
+});
 const escX = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
 
 write('sitemap-immagini.xml', `<?xml version="1.0" encoding="UTF-8"?>

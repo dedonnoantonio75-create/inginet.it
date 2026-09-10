@@ -78,7 +78,7 @@ export default {
         lead: 'Wir verkaufen keine „Website“. Wir sehen uns an, wie Sie arbeiten, finden heraus, wo Zeit und Geld verloren gehen, und bauen genau die Software, die dieses Problem löst: KI-Agenten, Branchensoftware nach Maß, CRM, CMS, Onlineshops und Portale. Und dann sorgen wir dafür, dass man Sie findet — bei Google und in den Antworten der künstlichen Intelligenz.',
         ctaPrimary: 'Sprechen wir über Ihr Projekt',
         ctaSecondary: 'Sehen Sie, was wir gebaut haben',
-        imgAlt: 'Illustration der Inginet-Plattform: künstliche Intelligenz, Softwareentwicklung und Suchmaschinen-Indexierung für Unternehmen in Italien und Europa',
+        imgAlt: 'Das Inginet-Team bei der Arbeit an Websites, Onlineshops und Branchensoftware, im Hintergrund die süditalienische Küste',
       },
       stats: [
         { value: '35', label: 'Jahre Web- und Softwareentwicklung' },
@@ -172,7 +172,7 @@ export default {
       keywords: 'künstliche Intelligenz für Unternehmen, individuelle KI Agenten, Firmen Chatbot mit eigenen Daten, RAG Unternehmensdokumente, Prozessautomatisierung mit KI, KI im ERP, mehrsprachiger virtueller Assistent, Machine Learning KMU, KI Beratung',
       h1: 'Künstliche Intelligenz, die arbeitet — nicht die, die Eindruck macht',
       lead: 'KI bringt erst dann etwas, wenn sie Menschen wiederkehrende Arbeit abnimmt und dem Unternehmen Zeit zurückgibt. Genau dort setzen wir an: Welche Tätigkeit frisst Ihre Stunden, und wie übergeben wir sie einer Maschine, ohne die Kontrolle zu verlieren.',
-      imgAlt: 'Schema einer individuellen KI-Lösung von Inginet: Unternehmensdaten, KI-Agent, Branchensoftware und Kundenkanäle',
+      imgAlt: 'Ein Beherbergungsbetrieb nutzt die von Inginet entwickelte Branchensoftware mit KI-Automatisierungen',
       intro: {
         title: 'Beginnen wir mit einer unbequemen Frage: Was machen Sie jeden Tag noch von Hand?',
         text: 'In den meisten Unternehmen, die wir treffen, lautet die Antwort gleich: dieselben Anfragen beantworten, Daten aus einer E-Mail in ein Programm übertragen, zu 90 Prozent identische Angebote schreiben, ein Dokument suchen, das existiert, aber nicht auffindbar ist, Produkttexte übersetzen. Das sind alles Aufgaben, bei denen ein gut gebauter KI-Agent schneller und beständiger ist und sich nicht ablenken lässt. Schwierig ist nicht, „KI einzusetzen“: Schwierig ist zu erkennen, wo sie hingehört und wie man sie im Griff behält.',
@@ -216,7 +216,7 @@ export default {
       keywords: 'professionelle Websites erstellen, Onlineshop Entwicklung, individuelle Branchensoftware, Hotelsoftware, Channel Manager, Mietwagen Software, CRM nach Maß, individuelles CMS, Marktplatz Entwicklung, Unternehmens Apps, E-Rechnung Schnittstelle, App-Entwicklung für iOS und Android, Web-Apps und PWAs, individuelle Unternehmens-Apps',
       h1: 'Alles, was wir bauen — und für wen',
       lead: 'Jeder Punkt hier unten entstand aus einem Kunden, der ein Problem hatte und am Markt nichts Passendes fand. Wir haben jede Lösung einmal gebaut, hundertmal verbessert, und heute passen wir sie an Sie an.',
-      imgAlt: 'Illustration der Leistungen von Inginet: Websites, Onlineshops, individuelle Branchensoftware, CRM und eigene CMS',
+      imgAlt: 'Eine von Inginet entwickelte Website und ein Onlineshop, auf Notebook und Telefon',
       groups: [
         {
           title: 'Website und Onlinepräsenz',
@@ -286,7 +286,7 @@ export default {
       keywords: 'SEO Beratung, Google Ranking, technische SEO, lokale SEO, mehrsprachige SEO hreflang, ChatGPT Optimierung, Generative Engine Optimization, von KI zitiert werden, AI Overviews, strukturierte Daten schema.org, Bilder SEO',
       h1: 'Gefunden werden heißt heute zwei verschiedene Aufgaben',
       lead: 'Bis vor Kurzem reichte die erste Google-Seite. Heute kommt die Hälfte der Antworten direkt von einer künstlichen Intelligenz — und wenn Ihr Unternehmen nicht so beschrieben ist, dass die KI es versteht und zitiert, existieren Sie schlicht nicht. Wir erledigen beide Aufgaben.',
-      imgAlt: 'Schema der beiden Kanäle, um die sich Inginet kümmert: klassische Suchmaschinen und von künstlicher Intelligenz erzeugte Antworten',
+      imgAlt: 'Steigende Zugriffs- und Ranking-Kurven auf einem von Inginet betreuten Dashboard',
       twoTitle: 'Die zwei Kanäle, ohne Fachchinesisch',
       two: [
         { title: 'Klassische Suchmaschinen', text: 'Google und Bing schicken einen Menschen auf Ihre Website. Sie gewinnen, wenn Sie technisch sauber und schnell sind, thematisch stimmig aufgebaut sind und die Frage besser beantworten als andere.', bullets: ['Technische Analyse: Tempo, Indexierung, Fehler, Duplikate', 'Inhalte nach Thema und Suchabsicht strukturiert', 'Lokale SEO und Google-Unternehmensprofil', 'Interne Verlinkung, strukturierte Daten und saubere Sitemaps'] },
@@ -336,7 +336,7 @@ export default {
       keywords: 'Inginet über uns, Antonio De Donno, Softwarehaus Italien, Softwareentwicklung Apulien, Entwicklerteam, Geschichte Inginet',
       h1: 'Fünfunddreißig Jahre dasselbe Handwerk — und immer noch nicht langweilig',
       lead: 'Wir haben angefangen, als das Internet in Italien eine Kuriosität war und Websites von Hand geschrieben wurden. Seither haben wir jede technische Mode erlebt und gelernt zu erkennen, welche davon wirklich zählte. Die künstliche Intelligenz zählt diesmal wirklich.',
-      imgAlt: 'Das Team von Inginet bei der Arbeit an Software- und KI-Projekten am Standort Maglie in Süditalien',
+      imgAlt: 'Das Inginet-Team bei Drohnenaufnahmen entlang der Küste',
       founderTitle: 'Antonio De Donno, Gründer',
       founderText: 'Ich habe angefangen, Websites zu bauen, als Verbindungen in Kilobit gemessen wurden und niemand wusste, was eine Suchmaschine ist. Seither habe ich alles kommen und gehen sehen: die Portale, den E-Commerce-Boom, die sozialen Netzwerke, das Mobiltelefon und jetzt die künstliche Intelligenz. Ich habe genau eine Sache gelernt, aber die gilt für alle: Technik taugt dann etwas, wenn sie denen, die arbeiten, ein Problem abnimmt. Fügt sie eines hinzu, ist sie — so schön sie sein mag — verlorene Zeit. Nach diesem Maßstab entscheide ich, was ich Kunden vorschlage und wovon ich abrate, auch wenn Abraten bedeutet, weniger zu verdienen.',
       teamTitle: 'Das Team',

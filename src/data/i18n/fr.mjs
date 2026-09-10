@@ -78,7 +78,7 @@ export default {
         lead: 'Nous ne vendons pas « un site ». Nous regardons comment vous travaillez, nous trouvons où vous perdez du temps et de l’argent, et nous construisons le logiciel qui règle précisément ce problème : agents IA, logiciels de gestion sur mesure, CRM, CMS, e-commerce et portails. Ensuite, nous faisons en sorte qu’on vous trouve — sur Google et dans les réponses de l’intelligence artificielle.',
         ctaPrimary: 'Parlons de votre projet',
         ctaSecondary: 'Voir ce que nous avons construit',
-        imgAlt: 'Illustration de la plateforme Inginet : intelligence artificielle, développement logiciel et indexation pour les entreprises en Italie et en Europe',
+        imgAlt: 'L’équipe Inginet au travail sur des sites, des boutiques en ligne et des logiciels de gestion, la côte du sud de l’Italie derrière elle',
       },
       stats: [
         { value: '35', label: 'années de développement web et logiciel' },
@@ -172,7 +172,7 @@ export default {
       keywords: 'intelligence artificielle pour entreprises, agents IA sur mesure, chatbot d’entreprise sur ses propres données, RAG documents d’entreprise, automatisation des processus avec IA, IA dans l’ERP, assistant virtuel multilingue, machine learning PME, conseil en IA',
       h1: 'Une intelligence artificielle qui travaille, pas qui fait le spectacle',
       lead: 'L’IA ne sert à quelque chose que lorsqu’elle retire du travail répétitif aux personnes et rend du temps à l’entreprise. Nous partons toujours de là : quelle activité vous mange vos heures, et comment la confier à une machine sans perdre le contrôle.',
-      imgAlt: 'Schéma d’une solution d’intelligence artificielle sur mesure réalisée par Inginet : données de l’entreprise, agent IA, logiciel de gestion et canaux de contact',
+      imgAlt: 'Un établissement hôtelier utilise le logiciel de gestion avec automatisations d’intelligence artificielle développé par Inginet',
       intro: {
         title: 'Commençons par une question gênante : que refaites-vous encore à la main chaque jour ?',
         text: 'Dans la plupart des entreprises que nous rencontrons, la réponse est la même : répondre aux mêmes demandes, recopier des données d’un e-mail vers un logiciel, rédiger des devis identiques à 90 %, chercher un document qui existe mais reste introuvable, traduire des fiches produits. Autant de tâches où un agent IA bien construit est plus rapide, plus régulier et ne se déconcentre jamais. Le difficile n’est pas « d’utiliser l’IA » : c’est de savoir où la placer et comment la garder sous contrôle.',
@@ -216,7 +216,7 @@ export default {
       keywords: 'création de sites web professionnels, développement e-commerce, logiciel de gestion sur mesure, logiciel hôtelier, channel manager, logiciel de location de voitures, CRM personnalisé, CMS sur mesure, développement de places de marché, applications d’entreprise, intégration facturation électronique, développement d’applications iOS et Android, web apps et PWA, applications métier sur mesure',
       h1: 'Tout ce que nous construisons, et pour qui',
       lead: 'Chaque ligne ci-dessous est née d’un client qui avait un problème et ne trouvait rien d’adapté sur le marché. Nous les avons construites une fois, améliorées cent fois, et aujourd’hui nous les adaptons à vous.',
-      imgAlt: 'Illustration des services Inginet : création de sites web, e-commerce, logiciels de gestion sur mesure, CRM et CMS propriétaires',
+      imgAlt: 'Un site web et une boutique en ligne réalisés par Inginet, vus sur ordinateur portable et sur téléphone',
       groups: [
         {
           title: 'Sites web et présence en ligne',
@@ -286,7 +286,7 @@ export default {
       keywords: 'conseil SEO, positionnement sur Google, SEO technique, référencement local, SEO multilingue hreflang, optimisation ChatGPT, generative engine optimization, être cité par l’intelligence artificielle, AI Overviews, données structurées schema.org, SEO des images',
       h1: 'Se faire trouver aujourd’hui, ce sont deux métiers différents',
       lead: 'Hier encore, il suffisait d’être en première page de Google. Aujourd’hui la moitié des réponses vient directement d’une intelligence artificielle, et si votre entreprise n’est pas écrite d’une façon que l’IA comprend et cite, vous n’existez tout simplement pas. Nous faisons les deux métiers.',
-      imgAlt: 'Schéma des deux canaux d’indexation gérés par Inginet : moteurs de recherche traditionnels et réponses générées par l’intelligence artificielle',
+      imgAlt: 'Courbes de trafic et de positionnement en hausse sur un tableau de bord suivi par Inginet',
       twoTitle: 'Les deux canaux, sans détour',
       two: [
         { title: 'Moteurs de recherche traditionnels', text: 'Google et Bing envoient une personne sur votre site. Vous gagnez si vous êtes techniquement propre, rapide, cohérent par thème et si vos contenus répondent mieux que les autres à la même question.', bullets: ['Analyse technique : vitesse, indexation, erreurs, doublons', 'Contenus structurés par thème et intention de recherche', 'Référencement local et fiche Google Business Profile', 'Maillage interne, données structurées et sitemaps soignées'] },
@@ -336,7 +336,7 @@ export default {
       keywords: 'Inginet qui sommes-nous, Antonio De Donno, éditeur de logiciels Italie, société de développement Pouilles, équipe de développement web, histoire Inginet',
       h1: 'Trente-cinq ans dans le même métier, et toujours pas lassés',
       lead: 'Nous avons commencé quand internet en Italie était une curiosité et que les sites s’écrivaient à la main. Depuis, nous avons traversé toutes les modes technologiques et appris à reconnaître celles qui comptaient vraiment. L’intelligence artificielle, cette fois, compte vraiment.',
-      imgAlt: 'L’équipe Inginet au travail sur des projets de développement logiciel et d’intelligence artificielle au siège de Maglie, dans le sud de l’Italie',
+      imgAlt: 'L’équipe Inginet en tournage aérien par drone le long de la côte',
       founderTitle: 'Antonio De Donno, fondateur',
       founderText: 'J’ai commencé à construire des sites quand les connexions se mesuraient en kilobits et que personne ne savait ce qu’était un moteur de recherche. Depuis, j’ai vu tout passer : les portails, l’explosion de l’e-commerce, les réseaux sociaux, le mobile, et maintenant l’intelligence artificielle. Je n’ai appris qu’une seule chose, mais elle vaut pour toutes : la technologie sert quand elle enlève un problème à ceux qui travaillent. Si elle en ajoute un, aussi belle soit-elle, c’est du temps perdu. C’est le critère avec lequel je choisis ce que je propose aux clients et ce que je déconseille, même quand déconseiller veut dire facturer moins.',
       teamTitle: 'L’équipe',

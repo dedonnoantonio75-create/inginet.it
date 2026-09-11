@@ -442,6 +442,7 @@ export default {
         { h: 'External services and third-party content', p: 'This site embeds no videos, maps, remote fonts, advertising pixels or third-party analytics: the typefaces are hosted on our own servers and no call is made to external services while you browse. Links to our clients’ sites lead to third-party domains, which have their own notices.' },
         { h: 'Your rights', p: 'You may at any time request access, rectification, erasure, restriction and portability of your data, and object to processing, by writing to info@inginet.it. You also have the right to lodge a complaint with the Italian Data Protection Authority (www.garanteprivacy.it).' },
         { h: 'Security', p: 'The site is served exclusively over HTTPS. Messages you send us by email or WhatsApp are held in accounts protected by two-factor authentication.' },
+        { id: 'immagini', h: 'The images on this site', p: 'The photographs and logos on these pages belong to Inginet or to the clients who allowed us to show them: they are not royalty-free. If you would like to use one, write to info@inginet.it telling us where and how, and in most cases we will say yes and ask nothing in return. Client logos remain the property of their respective owners and appear here only to show work we have done.' },
       ],
     },
 

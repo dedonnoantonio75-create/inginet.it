@@ -539,7 +539,7 @@ function legalPage(p) {
 <section class="sec">
   <div class="wrap narrow prose">
     <p class="big">${esc(p.intro)}</p>
-    ${p.sections.map(s => `<h2>${esc(s.h)}</h2><p>${esc(s.p)}</p>`).join('')}
+    ${p.sections.map(s => `<h2${s.id ? ` id="${s.id}"` : ''}>${esc(s.h)}</h2><p>${esc(s.p)}</p>`).join('')}
   </div>
 </section>`;
 }
@@ -551,7 +551,7 @@ export const cookie = t => legalPage(t.pages.cookie);
 
 /* Una foto sola per pagina, dichiarata come ImageObject: i motori sanno che
    e l'immagine principale, e i modelli AI leggono didascalia e descrizione. */
-const FOTO_PAGINA = { home: 'hero', ai: 'ai', servizi: 'servizi', seo: 'seo', chisiamo: 'team' };
+const FOTO_PAGINA = { home: 'hero', ai: 'ai', servizi: 'servizi', seo: 'seo', clienti: 'clienti', chisiamo: 'team' };
 
 function imageSchema(key, t, lang) {
   const k = FOTO_PAGINA[key];
@@ -574,6 +574,11 @@ function imageSchema(key, t, lang) {
     creditText: site.brand,
     creator: { '@id': `${site.origin}/#organization` },
     copyrightNotice: `© ${site.brand}`,
+    /* Search Console li chiede per mostrare i diritti d'uso accanto alla foto
+       in Google Immagini: la prima spiega le condizioni, la seconda dice a chi
+       scrivere per usarla. */
+    license: `${absUrl(lang, 'privacy')}#immagini`,
+    acquireLicensePage: absUrl(lang, 'contatti'),
   }];
 }
 

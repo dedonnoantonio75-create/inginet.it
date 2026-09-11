@@ -442,6 +442,7 @@ export default {
         { h: 'Services externes et contenus tiers', p: 'Ce site n’intègre ni vidéos, ni cartes, ni polices distantes, ni pixels publicitaires, ni outils statistiques tiers : les polices de caractères sont hébergées sur nos serveurs et aucun appel vers des services externes n’est effectué pendant la navigation. Les liens vers les sites de nos clients mènent à des domaines tiers, dotés de leurs propres informations.' },
         { h: 'Vos droits', p: 'Vous pouvez à tout moment demander l’accès, la rectification, l’effacement, la limitation et la portabilité de vos données, et vous opposer au traitement, en écrivant à info@inginet.it. Vous avez également le droit d’introduire une réclamation auprès de l’autorité italienne de protection des données (www.garanteprivacy.it).' },
         { h: 'Sécurité', p: 'Le site est servi exclusivement en HTTPS. Les messages que vous nous envoyez par e-mail ou WhatsApp sont conservés dans des comptes protégés par authentification à deux facteurs.' },
+        { id: 'immagini', h: 'Les images de ce site', p: 'Les photographies et les logos présents sur ces pages appartiennent à Inginet ou aux clients qui nous ont autorisés à les montrer : ils ne sont pas libres de droits. Si vous souhaitez en utiliser un, écrivez à info@inginet.it en précisant où et comment, et dans la plupart des cas nous dirons oui sans rien demander en retour. Les logos des clients restent la propriété de leurs titulaires et ne figurent ici que pour illustrer un travail réalisé.' },
       ],
     },
 

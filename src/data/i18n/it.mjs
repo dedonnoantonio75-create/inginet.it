@@ -442,6 +442,7 @@ export default {
         { h: 'Servizi esterni e contenuti di terze parti', p: 'Questo sito non incorpora video, mappe, font remoti, pixel pubblicitari né strumenti statistici di terze parti: i caratteri tipografici sono ospitati sui nostri server e non viene effettuata alcuna chiamata verso servizi esterni durante la navigazione. I collegamenti ai siti dei nostri clienti portano a domini di terzi, che hanno proprie informative.' },
         { h: 'I tuoi diritti', p: 'Puoi chiedere in qualsiasi momento accesso, rettifica, cancellazione, limitazione e portabilità dei tuoi dati, e opporti al trattamento, scrivendo a info@inginet.it. Hai inoltre diritto di proporre reclamo al Garante per la protezione dei dati personali (www.garanteprivacy.it).' },
         { h: 'Sicurezza', p: 'Il sito è servito esclusivamente in HTTPS. Le comunicazioni che ci invii via email o WhatsApp sono conservate su account protetti da autenticazione a due fattori.' },
+        { id: 'immagini', h: 'Le immagini del sito', p: 'Le fotografie e i loghi che vedi su queste pagine sono di Inginet o dei clienti che ci hanno autorizzato a mostrarli: non sono libere da diritti. Se vuoi usarne una, scrivici a info@inginet.it dicendo dove e come, e nella maggior parte dei casi ti diciamo di sì senza chiederti nulla in cambio. I loghi dei clienti restano dei rispettivi proprietari e compaiono qui solo per indicare un lavoro svolto.' },
       ],
     },
 

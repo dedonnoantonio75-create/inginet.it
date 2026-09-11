@@ -442,6 +442,7 @@ export default {
         { h: 'Servicios externos y contenidos de terceros', p: 'Esta web no incorpora vídeos, mapas, fuentes remotas, píxeles publicitarios ni herramientas de estadísticas de terceros: las tipografías están alojadas en nuestros servidores y durante la navegación no se realiza ninguna llamada a servicios externos. Los enlaces a las webs de nuestros clientes llevan a dominios de terceros, con sus propias políticas.' },
         { h: 'Tus derechos', p: 'Puedes solicitar en cualquier momento acceso, rectificación, supresión, limitación y portabilidad de tus datos, y oponerte al tratamiento, escribiendo a info@inginet.it. También tienes derecho a presentar una reclamación ante la autoridad italiana de protección de datos (www.garanteprivacy.it).' },
         { h: 'Seguridad', p: 'La web se sirve exclusivamente por HTTPS. Los mensajes que nos envías por correo o WhatsApp se conservan en cuentas protegidas con autenticación de dos factores.' },
+        { id: 'immagini', h: 'Las imágenes de este sitio', p: 'Las fotografías y los logotipos de estas páginas pertenecen a Inginet o a los clientes que nos han autorizado a mostrarlos: no están libres de derechos. Si quieres usar alguna, escríbenos a info@inginet.it indicando dónde y cómo, y en la mayoría de los casos te diremos que sí sin pedirte nada a cambio. Los logotipos de los clientes siguen siendo de sus respectivos propietarios y aparecen aquí solo para mostrar un trabajo realizado.' },
       ],
     },
 

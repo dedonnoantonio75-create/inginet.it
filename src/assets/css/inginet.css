@@ -449,7 +449,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   position: fixed; right: 1.1rem; bottom: 1.1rem; z-index: 80;
   display: grid; place-items: center; width: 54px; height: 54px; border-radius: 50%;
   background: #25d366; color: #06301a; box-shadow: 0 14px 34px -12px rgba(37, 211, 102, .8);
-  transition: transform .2s;
+  transition: transform .2s, opacity .2s;
 }
 .wa-float:hover { transform: scale(1.08); }
 .wa-float .ico { width: 26px; height: 26px; }
@@ -590,8 +590,13 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .cc-panel { padding: 1.1rem; }
   .cc-actions .btn { flex: 1 1 100%; }
 }
-/* mentre il pannello e aperto su mobile, sposto il tasto WhatsApp per non coprirlo */
-@media (max-width: 640px) { body.cc-open .wa-float { transform: translateY(-9rem); } }
+/* Mentre il pannello e aperto su telefono il tasto WhatsApp sparisce, invece
+   di spostarsi: il pannello e alto 300px, 622 con le preferenze aperte, e
+   nessuno spostamento fisso lo scavalca. Un tasto mezzo coperto e peggio di
+   un tasto assente. Torna appena si fa la scelta. */
+@media (max-width: 640px) {
+  body.cc-open .wa-float { opacity: 0; pointer-events: none; transform: translateY(1rem); }
+}
 
 /* ---------------------------------------------- sezione gestionali (Servizi) */
 .sec-gest { background: var(--bg-2); border-block: 1px solid var(--line-soft); }

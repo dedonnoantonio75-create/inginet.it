@@ -5,6 +5,7 @@
    ========================================================================== */
 
 import fs from 'node:fs';
+import crypto from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -45,6 +46,17 @@ copyDir(p('src/assets/js'), p('assets/js'));
 
 /* ------------------------------------------------------- 3. pagine HTML */
 
+/* Data di modifica onesta. Se la sitemap dichiarasse oggi per tutte le pagine a
+   ogni ricostruzione, i motori imparerebbero che quella data non vuol dire
+   niente e smetterebbero di fidarsi. Qui si confronta l'impronta del
+   contenuto con quella dell'ultima volta: la data cambia solo se cambia la
+   pagina. Le impronte stanno in .lastmod.json, versionato col resto. */
+const SCHEDA = p('.lastmod.json');
+const storico = fs.existsSync(SCHEDA) ? JSON.parse(fs.readFileSync(SCHEDA, 'utf8')) : {};
+const oggi = new Date().toISOString().slice(0, 10);
+const modificata = {};
+let cambiate = 0;
+
 let n = 0;
 for (const l of languages) {
   const lang = l.code;
@@ -53,14 +65,27 @@ for (const l of languages) {
     const body = renderers[key](t, lang);
     const html = layout({ lang, key, t, body, extraSchema: extraSchemaFor(key, t, lang) });
     write(outPath(lang, key), html);
+    /* fuori dall'impronta le parti che cambiano da sole: la versione dei fogli
+       di stile e la data stessa, che non sono contenuto. */
+    const impronta = crypto.createHash('sha1')
+      .update(html.replace(/\?v=[a-f0-9]+/g, '').replace(/\d{4}-\d{2}-\d{2}/g, ''))
+      .digest('hex').slice(0, 12);
+    const prima = storico[absUrl(lang, key)];
+    if (prima && prima.impronta === impronta) {
+      modificata[absUrl(lang, key)] = prima;
+    } else {
+      modificata[absUrl(lang, key)] = { impronta, data: oggi };
+      cambiate++;
+    }
     n++;
   }
 }
+fs.writeFileSync(SCHEDA, JSON.stringify(modificata, null, 2) + '\n');
 
 /* ------------------------------------------------------- 4. sitemap */
 
 const PRIO = { home: '1.0', ai: '0.9', servizi: '0.9', seo: '0.9', clienti: '0.8', chisiamo: '0.7', contatti: '0.7', privacy: '0.3', cookie: '0.3' };
-const today = new Date().toISOString().slice(0, 10);
+const today = oggi;
 
 const urlEntries = [];
 for (const l of languages) {
@@ -70,7 +95,7 @@ for (const l of languages) {
       .join('\n');
     urlEntries.push(`  <url>
     <loc>${absUrl(l.code, key)}</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${modificata[absUrl(l.code, key)].data}</lastmod>
     <changefreq>${key === 'home' ? 'weekly' : 'monthly'}</changefreq>
     <priority>${PRIO[key]}</priority>
 ${alts}
@@ -323,6 +348,6 @@ console.log('\u2714 5 pagine di ringraziamento');
 write('CNAME', 'www.inginet.it\n');
 write('.nojekyll', '');
 
-console.log(`✔ ${n} pagine HTML generate (${languages.length} lingue × ${pages.length})`);
+console.log(`✔ ${n} pagine HTML generate (${languages.length} lingue × ${pages.length})` + (cambiate ? `  — cambiate oggi: ${cambiate}` : `  — nessuna cambiata, date invariate`));
 console.log('✔ sitemap.xml, sitemap-immagini.xml, sitemap-index.xml, robots.txt, llms.txt, manifest, 404');
 console.log('→ immagini social:  python tools/og.py   ·   icone e logo:  python tools/icone.py');

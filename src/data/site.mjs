@@ -123,6 +123,7 @@ export const clients = [
   { name: 'Dolphin Marine', url: 'https://www.dolphinmarine.it/', logo: 'dolphin-marine-cantiere-nautico-logo.png', sector: 'industria', tags: ['sito', 'catalogo'] },
   { name: 'Novitecna', url: 'https://www.novitecna.it/', logo: 'novitecna-aradeo-logo.png', sector: 'industria', tags: ['sito', 'assistenza'] },
   { name: 'Chirilli Stone & Pool', url: 'https://www.chirillistonepool.it/', logo: 'chirilli-stone-pool-cursi-logo.png', sector: 'industria', tags: ['sito', 'catalogo'] },
+  { name: 'Marra 360', url: 'https://www.marra360.it/', logo: 'marra-360-impresa-edile-minervino-di-lecce-logo.png', sector: 'industria', tags: ['sito', 'multilingua', 'seo'] },
   { name: 'Cardinale Concept', url: 'https://www.cardinaleconcept.it/', logo: 'cardinale-concept-logo.png', sector: 'retail', tags: ['sito', 'branding'] },
   { name: 'Classe A Elettrodomestici', url: 'https://www.classeaelettrodomestici.it/', logo: 'classe-a-elettrodomestici-logo.png', sector: 'retail', tags: ['e-commerce', 'seo'] },
   { name: 'Brunitta', url: 'https://www.brunitta.it/', logo: 'brunitta-logo.png', tile: 'dark', sector: 'retail', tags: ['e-commerce', 'multilingua', 'export'], featured: true },

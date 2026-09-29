@@ -77,6 +77,7 @@ Contatti: info@inginet.it · +39 393 569 4342 · https://www.inginet.it
 - [Dolphin Marine](https://www.dolphinmarine.it/) — sito, catalogo
 - [Novitecna](https://www.novitecna.it/) — sito, assistenza
 - [Chirilli Stone & Pool](https://www.chirillistonepool.it/) — sito, catalogo
+- [Marra 360](https://www.marra360.it/) — sito, multilingua, seo
 - [Cardinale Concept](https://www.cardinaleconcept.it/) — sito, branding
 - [Classe A Elettrodomestici](https://www.classeaelettrodomestici.it/) — e-commerce, seo
 - [Brunitta](https://www.brunitta.it/) — e-commerce, multilingua, export
@@ -135,4 +136,4 @@ Sì, e sono uno dei punti più trascurati. Un’immagine con un nome di file des
 
 I contenuti di questo sito possono essere citati indicando la fonte come "Inginet (inginet.it)".
 Il sito è statico, disponibile in cinque lingue con URL distinti e collegamenti hreflang reciproci.
-Ultimo aggiornamento: 2026-09-17.
+Ultimo aggiornamento: 2026-09-29.

@@ -131,6 +131,8 @@ function doPost(e) {
 
     GmailApp.sendEmail(DESTINATARIO, oggetto, righe.join('\n'), opzioni);
   } catch (err) {
+    // senza questa riga l'errore sparisce e restiamo a indovinare
+    console.error('invio fallito: ' + err);
     return vaiA(contatti + '?errore=invio');
   }
 

@@ -59,19 +59,6 @@ function troppiInvii() {
   return false;
 }
 
-/** Se in Gmail esiste l'alias info@inginet.it, la richiesta parte da li: e
- *  l'indirizzo dell'azienda, non quello personale. L'alias va configurato
- *  facendo passare la posta dal server di Aruba (smtps.aruba.it), NON da
- *  quello di Google: altrimenti SPF non torna e il DMARC a quarantena la
- *  manda nello spam. Finche l'alias non c'e, si parte da Gmail come prima. */
-function mittente() {
-  try {
-    return GmailApp.getAliases().indexOf(COPIA) >= 0 ? COPIA : null;
-  } catch (err) {
-    return null;
-  }
-}
-
 /* --------------------------------------------------------------- ricezione */
 
 function doGet() {
@@ -121,18 +108,15 @@ function doPost(e) {
              'Inviata il ' + Utilities.formatDate(new Date(), 'Europe/Rome', "dd/MM/yyyy 'alle' HH:mm"));
 
   try {
-    const opzioni = {
+    MailApp.sendEmail({
+      to: DESTINATARIO,
       cc: COPIA,
       replyTo: email,
       name: 'Sito inginet.it',
-    };
-    const da = mittente();
-    if (da) opzioni.from = da;
-
-    GmailApp.sendEmail(DESTINATARIO, oggetto, righe.join('\n'), opzioni);
+      subject: oggetto,
+      body: righe.join('\n'),
+    });
   } catch (err) {
-    // senza questa riga l'errore sparisce e restiamo a indovinare
-    console.error('invio fallito: ' + err);
     return vaiA(contatti + '?errore=invio');
   }
 

@@ -333,6 +333,17 @@ export default {
       allTitle: 'Tutti i progetti',
       counterLabel: 'progetti visibili',
       note: 'Sono elencati soltanto i progetti attualmente online e raggiungibili. Il portfolio completo, con i lavori riservati e le piattaforme interne, lo mostriamo volentieri in un incontro.',
+      nexora: {
+        badge: "Sito + gestionale Nexora",
+        eyebrow: "Caso studio · Style Sport 2",
+        title: "Nexora, il gestionale per negozi nato da Style Sport 2",
+        text: "Per Style Sport 2, negozio di pesca, nautica e subacquea, non abbiamo fatto soltanto l’e-commerce: abbiamo scritto anche il gestionale che manda avanti il negozio. Si chiama Nexora ed è nato lì, tra il banco e il magazzino, per tenere cassa, giacenze, fornitori, sito ed eBay sugli stessi dati.",
+        bullets: ["Cassa veloce con scontrino, fattura, resi e buoni regalo", "Un solo magazzino con taglie, colori, varianti ed etichette EAN", "Ordini ai fornitori, fatture dallo SDI e DDT letti dall’intelligenza artificiale", "Sito in sei lingue ed eBay collegati alle giacenze reali", "Fatturazione elettronica, registri, scadenze e quadratura al centesimo"],
+        outro: "Oggi Nexora lavora anche per altri negozi e attività: lo adattiamo al tuo modo di vendere.",
+        cta: "Voglio Nexora per il mio negozio",
+        site: "Visita Style Sport 2",
+        videoLabel: "Video di presentazione di Nexora, il gestionale per negozi sviluppato da Inginet",
+      },
       faq: [
         { q: 'Posso parlare con qualcuno dei vostri clienti prima di decidere?', a: 'Certo. Ti mettiamo in contatto con un cliente dello stesso settore che ha risolto un problema simile al tuo. È il modo più veloce per capire come lavoriamo davvero.' },
         { q: 'Lavorate anche fuori dal Salento?', a: 'Sì. Tra i progetti in elenco ce ne sono che stanno fuori regione e piattaforme che lavorano su scala nazionale, come Olvix. Analisi, sviluppo e assistenza funzionano benissimo anche da remoto.' },

@@ -61,8 +61,9 @@ Contatti: info@inginet.it · +39 393 569 4342 · https://www.inginet.it
 - [Cala dei Balcani](https://www.caladeibalcani.it/) — sito, booking, seo
 - [Borgo Terra](https://www.borgoterra.com/) — sito, booking, seo
 - [Corte dei Granai](https://www.cortedeigranai.it/) — sito, booking
-- [Casino De Viti](https://www.casinodeviti.com/) — sito, seo
+- [Style Sport 2](https://www.stylesport2.it/) — e-commerce, gestionale, multilingua
 - [Perle Marine](https://www.perlemarine.it/) — sito, booking
+- [Le Dimore di Hanqorias](https://www.hanqorias.com/) — sito, multilingua, seo
 - [La Cascina](https://www.lacascinamaglie.it/) — sito, seo
 - [Odegos Property Management](https://www.odegos.it/) — gestionale, portale
 - [Messapia Hotel & Resort](https://www.messapia.com/) — sito, booking
@@ -136,4 +137,4 @@ Sì, e sono uno dei punti più trascurati. Un’immagine con un nome di file des
 
 I contenuti di questo sito possono essere citati indicando la fonte come "Inginet (inginet.it)".
 Il sito è statico, disponibile in cinque lingue con URL distinti e collegamenti hreflang reciproci.
-Ultimo aggiornamento: 2026-09-29.
+Ultimo aggiornamento: 2026-11-19.

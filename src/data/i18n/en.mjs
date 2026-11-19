@@ -333,6 +333,17 @@ export default {
       allTitle: 'All projects',
       counterLabel: 'projects shown',
       note: 'Only projects currently online and reachable are listed. We are happy to show the full portfolio, including confidential work and internal platforms, in a meeting.',
+      nexora: {
+        badge: "Website + Nexora management software",
+        eyebrow: "Case study · Style Sport 2",
+        title: "Nexora, the retail management software born at Style Sport 2",
+        text: "For Style Sport 2, a fishing, boating and diving shop, we did not just build the online store: we also wrote the management software that runs the shop. It is called Nexora and it was born right there, between the counter and the stockroom, to keep till, stock, suppliers, website and eBay on the same data.",
+        bullets: ["Fast checkout with receipts, invoices, returns and gift cards", "One stock with sizes, colours, variants and EAN labels", "Supplier orders, invoices from the Italian SDI system and delivery notes read by AI", "Six-language website and eBay linked to real stock levels", "E-invoicing, registers, deadlines and books balanced to the cent"],
+        outro: "Today Nexora also works for other shops and businesses: we adapt it to the way you sell.",
+        cta: "I want Nexora for my shop",
+        site: "Visit Style Sport 2",
+        videoLabel: "Presentation video of Nexora, the retail management software developed by Inginet",
+      },
       faq: [
         { q: 'Can I speak to one of your clients before deciding?', a: 'Of course. We put you in touch with a client in your own sector who solved a problem similar to yours. It is the fastest way to understand how we really work.' },
         { q: 'Do you work outside your region?', a: 'Yes. Several of the projects listed are outside the region, and platforms such as Olvix operate nationwide. Analysis, development and support work perfectly well remotely.' },

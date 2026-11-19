@@ -354,9 +354,31 @@ export function clienti(t, lang) {
       <a class="card card-feat${c.tile === 'dark' ? ' feat-dark' : ''}" href="${esc(c.url)}" target="_blank" rel="noopener">
         <span class="feat-logo"><img src="/assets/img/clienti/${c.logo}" alt="${esc(c.name)} — progetto realizzato da Inginet" width="200" height="200" loading="lazy" decoding="async"></span>
         <h3>${esc(c.name)}</h3>
+        ${c.nexora ? `<span class="feat-badge">${icon('check')}${esc(p.nexora.badge)}</span>` : ''}
         <span class="ctile-tags">${c.tags.map(x => `<em>${esc(x)}</em>`).join('')}</span>
         <span class="card-link">${esc(t.common.visitSite)} ${icon('external')}</span>
       </a>`).join('')}
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-olvix" id="nexora">
+  <div class="wrap olvix-in">
+    <div class="olvix-txt">
+      <p class="eyebrow">${esc(p.nexora.eyebrow)}</p>
+      <h2>${esc(p.nexora.title)}</h2>
+      <p>${esc(p.nexora.text)}</p>
+      <ul class="ticks">${p.nexora.bullets.map(b => `<li>${icon('check')}<span>${esc(b)}</span></li>`).join('')}</ul>
+      <p>${esc(p.nexora.outro)}</p>
+      <div class="hero-cta">
+        ${btn(pageUrl(lang, 'contatti'), p.nexora.cta, { variant: 'primary' })}
+        ${btn('https://www.stylesport2.it/', p.nexora.site, { variant: 'ghost', external: true, ico: 'external' })}
+      </div>
+    </div>
+    <div class="nexora-video">
+      <video controls muted playsinline preload="none" width="1280" height="720" poster="/assets/video/nexora-gestionale-negozi-poster.jpg" aria-label="${esc(p.nexora.videoLabel)}">
+        <source src="/assets/video/nexora-gestionale-negozi-style-sport-2.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
@@ -586,6 +608,17 @@ export function extraSchemaFor(key, t, lang) {
   const img = imageSchema(key, t, lang);
   if (key === 'clienti') {
     return [...img, {
+      '@type': 'VideoObject',
+      '@id': absUrl(lang, 'clienti') + '#nexora-video',
+      name: t.pages.clienti.nexora.title,
+      description: t.pages.clienti.nexora.text,
+      thumbnailUrl: `${site.origin}/assets/video/nexora-gestionale-negozi-poster.jpg`,
+      contentUrl: `${site.origin}/assets/video/nexora-gestionale-negozi-style-sport-2.mp4`,
+      uploadDate: '2026-11-19',
+      duration: 'PT1M22S',
+      inLanguage: 'it',
+      publisher: { '@id': `${site.origin}/#organization` },
+    }, {
       '@type': 'ItemList',
       '@id': absUrl(lang, 'clienti') + '#portfolio',
       name: t.pages.clienti.h1,

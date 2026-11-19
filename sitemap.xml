@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.inginet.it/</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.inginet.it/"/>
@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://www.inginet.it/clienti/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.inginet.it/clienti/"/>
@@ -110,7 +110,7 @@
   </url>
   <url>
     <loc>https://www.inginet.it/en/</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.inginet.it/"/>
@@ -158,7 +158,7 @@
   </url>
   <url>
     <loc>https://www.inginet.it/en/clients/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.inginet.it/clienti/"/>
@@ -218,7 +218,7 @@
   </url>
   <url>
     <loc>https://www.inginet.it/de/</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.inginet.it/"/>
@@ -266,7 +266,7 @@
   </url>
   <url>
     <loc>https://www.inginet.it/de/kunden/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.inginet.it/clienti/"/>
@@ -326,7 +326,7 @@
   </url>
   <url>
     <loc>https://www.inginet.it/fr/</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.inginet.it/"/>
@@ -374,7 +374,7 @@
   </url>
   <url>
     <loc>https://www.inginet.it/fr/clients/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.inginet.it/clienti/"/>
@@ -434,7 +434,7 @@
   </url>
   <url>
     <loc>https://www.inginet.it/es/</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.inginet.it/"/>
@@ -482,7 +482,7 @@
   </url>
   <url>
     <loc>https://www.inginet.it/es/clientes/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.inginet.it/clienti/"/>

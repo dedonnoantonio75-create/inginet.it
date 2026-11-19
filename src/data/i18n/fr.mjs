@@ -333,6 +333,17 @@ export default {
       allTitle: 'Tous les projets',
       counterLabel: 'projets affichés',
       note: 'Seuls les projets actuellement en ligne et accessibles sont listés. Le portfolio complet, avec les travaux confidentiels et les plateformes internes, nous le montrons volontiers lors d’un rendez-vous.',
+      nexora: {
+        badge: "Site + logiciel de gestion Nexora",
+        eyebrow: "Étude de cas · Style Sport 2",
+        title: "Nexora, le logiciel de gestion pour magasins né chez Style Sport 2",
+        text: "Pour Style Sport 2, magasin de pêche, nautisme et plongée, nous n’avons pas seulement créé la boutique en ligne : nous avons aussi écrit le logiciel qui fait tourner le magasin. Il s’appelle Nexora et il est né là, entre le comptoir et la réserve, pour que caisse, stock, fournisseurs, site et eBay travaillent sur les mêmes données.",
+        bullets: ["Caisse rapide avec ticket, facture, retours et cartes cadeaux", "Un seul stock avec tailles, couleurs, variantes et étiquettes EAN", "Commandes fournisseurs, factures du SDI et bons de livraison lus par l’IA", "Site en six langues et eBay reliés au stock réel", "Facturation électronique, registres, échéances et comptes justes au centime"],
+        outro: "Aujourd’hui Nexora travaille aussi pour d’autres magasins et entreprises : nous l’adaptons à votre façon de vendre.",
+        cta: "Je veux Nexora pour mon magasin",
+        site: "Visiter Style Sport 2",
+        videoLabel: "Vidéo de présentation de Nexora, le logiciel de gestion pour magasins développé par Inginet",
+      },
       faq: [
         { q: 'Puis-je parler à l’un de vos clients avant de décider ?', a: 'Bien sûr. Nous vous mettons en relation avec un client du même secteur qui a résolu un problème proche du vôtre. C’est le moyen le plus rapide de comprendre comment nous travaillons vraiment.' },
         { q: 'Travaillez-vous aussi en dehors de votre région ?', a: 'Oui. Plusieurs des projets listés sont hors région, et des plateformes comme Olvix travaillent à l’échelle nationale. Analyse, développement et assistance fonctionnent très bien à distance.' },

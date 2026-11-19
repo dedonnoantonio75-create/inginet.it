@@ -333,6 +333,17 @@ export default {
       allTitle: 'Todos los proyectos',
       counterLabel: 'proyectos visibles',
       note: 'Solo se muestran los proyectos actualmente en línea y accesibles. El portafolio completo, con los trabajos reservados y las plataformas internas, lo enseñamos con mucho gusto en una reunión.',
+      nexora: {
+        badge: "Web + software de gestión Nexora",
+        eyebrow: "Caso de estudio · Style Sport 2",
+        title: "Nexora, el software de gestión para tiendas nacido en Style Sport 2",
+        text: "Para Style Sport 2, tienda de pesca, náutica y buceo, no hicimos solo la tienda online: también escribimos el software que hace funcionar la tienda. Se llama Nexora y nació allí, entre el mostrador y el almacén, para que caja, existencias, proveedores, web y eBay trabajen sobre los mismos datos.",
+        bullets: ["Caja rápida con ticket, factura, devoluciones y tarjetas regalo", "Un solo almacén con tallas, colores, variantes y etiquetas EAN", "Pedidos a proveedores, facturas del SDI y albaranes leídos por la IA", "Web en seis idiomas y eBay conectados al stock real", "Facturación electrónica, registros, vencimientos y cuadre al céntimo"],
+        outro: "Hoy Nexora trabaja también para otras tiendas y negocios: lo adaptamos a tu forma de vender.",
+        cta: "Quiero Nexora para mi tienda",
+        site: "Visitar Style Sport 2",
+        videoLabel: "Vídeo de presentación de Nexora, el software de gestión para tiendas desarrollado por Inginet",
+      },
       faq: [
         { q: '¿Puedo hablar con alguno de vuestros clientes antes de decidir?', a: 'Por supuesto. Te ponemos en contacto con un cliente del mismo sector que ha resuelto un problema parecido al tuyo. Es la forma más rápida de entender cómo trabajamos de verdad.' },
         { q: '¿Trabajáis también fuera de vuestra zona?', a: 'Sí. Varios de los proyectos de la lista están fuera de la región, y plataformas como Olvix trabajan a escala nacional. El análisis, el desarrollo y el soporte funcionan perfectamente en remoto.' },

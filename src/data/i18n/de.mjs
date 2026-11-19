@@ -333,6 +333,17 @@ export default {
       allTitle: 'Alle Projekte',
       counterLabel: 'sichtbare Projekte',
       note: 'Aufgeführt sind nur Projekte, die derzeit online und erreichbar sind. Das vollständige Portfolio mit vertraulichen Arbeiten und internen Plattformen zeigen wir gern in einem Gespräch.',
+      nexora: {
+        badge: "Website + Warenwirtschaft Nexora",
+        eyebrow: "Fallstudie · Style Sport 2",
+        title: "Nexora, die Warenwirtschaft für Geschäfte, entstanden bei Style Sport 2",
+        text: "Für Style Sport 2, ein Fachgeschäft für Angeln, Bootszubehör und Tauchen, haben wir nicht nur den Onlineshop gebaut, sondern auch die Software, mit der das Geschäft läuft. Sie heißt Nexora und ist genau dort entstanden, zwischen Ladentheke und Lager, damit Kasse, Bestand, Lieferanten, Website und eBay auf denselben Daten arbeiten.",
+        bullets: ["Schnelle Kasse mit Beleg, Rechnung, Retouren und Gutscheinen", "Ein einziges Lager mit Größen, Farben, Varianten und EAN-Etiketten", "Lieferantenbestellungen, Rechnungen aus dem SDI und Lieferscheine, die die KI liest", "Website in sechs Sprachen und eBay, verbunden mit dem echten Bestand", "E-Rechnung, Register, Fristen und Abschluss auf den Cent genau"],
+        outro: "Heute arbeitet Nexora auch für andere Geschäfte und Betriebe: Wir passen es an Ihre Art zu verkaufen an.",
+        cta: "Ich möchte Nexora für mein Geschäft",
+        site: "Style Sport 2 besuchen",
+        videoLabel: "Präsentationsvideo von Nexora, der von Inginet entwickelten Warenwirtschaft für Geschäfte",
+      },
       faq: [
         { q: 'Kann ich vor der Entscheidung mit einem Ihrer Kunden sprechen?', a: 'Selbstverständlich. Wir stellen den Kontakt zu einem Kunden aus Ihrer Branche her, der ein ähnliches Problem gelöst hat. Das ist der schnellste Weg zu verstehen, wie wir wirklich arbeiten.' },
         { q: 'Arbeiten Sie auch außerhalb Ihrer Region?', a: 'Ja. Mehrere der aufgeführten Projekte liegen außerhalb der Region, und Plattformen wie Olvix arbeiten landesweit. Analyse, Entwicklung und Betreuung funktionieren aus der Ferne hervorragend.' },

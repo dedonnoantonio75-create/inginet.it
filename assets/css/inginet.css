@@ -291,6 +291,13 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .chips { display: flex; flex-wrap: wrap; gap: .45rem; justify-content: center; }
 .chips li { padding: .32rem .72rem; border-radius: 999px; border: 1px solid rgba(19, 54, 96, .18); background: rgba(19, 54, 96, .07); font-size: .78rem; color: #133660; font-weight: 500; }
 
+.nexora-video video {
+  display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: var(--r-lg);
+  background: #0b2533; border: 1px solid var(--line); box-shadow: var(--shadow);
+}
+.feat-badge { display: inline-flex; align-items: center; gap: .4rem; font-size: .85rem; font-weight: 600; color: var(--ok); }
+.feat-badge .ico { width: 16px; height: 16px; }
+
 /* ------------------------------------------------------------- marquee */
 
 .marquee { position: relative; margin: 2.2rem 0 1.6rem; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }

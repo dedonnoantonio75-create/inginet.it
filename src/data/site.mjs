@@ -99,6 +99,7 @@ export const navPages = ['ai', 'servizi', 'seo', 'clienti', 'chisiamo', 'contatt
 /**
  * Portfolio clienti.
  * tile: 'light' (default) oppure 'dark' per i loghi bianchi che sparirebbero su fondo chiaro.
+ * nexora: true se usa il nostro gestionale Nexora (la scheda in primo piano lo dice).
  * Verificato a vista su provino chiaro e scuro il 09/09/2026.
  * Esclusi perché offline: euxeria.it, otrantobelvedere.it, maresidenze.it, ristoprime.com
  */
@@ -107,8 +108,9 @@ export const clients = [
   { name: 'Cala dei Balcani', url: 'https://www.caladeibalcani.it/', logo: 'cala-dei-balcani-logo.png', sector: 'ricettivo', tags: ['sito', 'booking', 'seo'] },
   { name: 'Borgo Terra', url: 'https://www.borgoterra.com/', logo: 'borgo-terra-logo.png', sector: 'ricettivo', tags: ['sito', 'booking', 'seo'] },
   { name: 'Corte dei Granai', url: 'https://www.cortedeigranai.it/', logo: 'corte-dei-granai-maglie-logo.png', sector: 'ricettivo', tags: ['sito', 'booking'] },
-  { name: 'Casino De Viti', url: 'https://www.casinodeviti.com/', logo: 'casino-de-viti-poggiardo-logo.png', sector: 'ricettivo', tags: ['sito', 'seo'] },
+  { name: 'Style Sport 2', url: 'https://www.stylesport2.it/', logo: 'style-sport-2-pesca-nautica-subacquea-logo.png', sector: 'retail', tags: ['e-commerce', 'gestionale', 'multilingua'], featured: true, nexora: true },
   { name: 'Perle Marine', url: 'https://www.perlemarine.it/', logo: 'perle-marine-logo.png', sector: 'ricettivo', tags: ['sito', 'booking'] },
+  { name: 'Le Dimore di Hanqorias', url: 'https://www.hanqorias.com/', logo: 'le-dimore-di-hanqorias-muro-leccese-logo.png', sector: 'ricettivo', tags: ['sito', 'multilingua', 'seo'] },
   { name: 'La Cascina', url: 'https://www.lacascinamaglie.it/', logo: 'la-cascina-maglie-logo.png', sector: 'ristorazione', tags: ['sito', 'seo'] },
   { name: 'Odegos Property Management', url: 'https://www.odegos.it/', logo: 'odegos-property-management-lecce-logo.png', sector: 'ricettivo', tags: ['gestionale', 'portale'] },
   { name: 'Messapia Hotel & Resort', url: 'https://www.messapia.com/', logo: 'messapia-logo.png', sector: 'ricettivo', tags: ['sito', 'booking'] },

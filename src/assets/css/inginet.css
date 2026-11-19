@@ -291,10 +291,12 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .chips { display: flex; flex-wrap: wrap; gap: .45rem; justify-content: center; }
 .chips li { padding: .32rem .72rem; border-radius: 999px; border: 1px solid rgba(19, 54, 96, .18); background: rgba(19, 54, 96, .07); font-size: .78rem; color: #133660; font-weight: 500; }
 
-.nexora-video video {
+.case-video video {
   display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: var(--r-lg);
   background: #0b2533; border: 1px solid var(--line); box-shadow: var(--shadow);
 }
+.case-rev { grid-template-columns: .9fr 1.1fr; }
+.case-rev .case-video { order: -1; }
 .feat-badge { display: inline-flex; align-items: center; gap: .4rem; font-size: .85rem; font-weight: 600; color: var(--ok); }
 .feat-badge .ico { width: 16px; height: 16px; }
 
@@ -481,6 +483,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .mainnav ul { flex-direction: column; gap: .2rem; }
   .mainnav a { padding: .8rem .9rem; font-size: 1rem; }
   .hero-in, .page-hero-in, .olvix-in, .split, .split-form { grid-template-columns: 1fr; }
+  .case-rev .case-video { order: 0; }
   .hero-art, .page-hero-art { order: -1; max-width: 460px; }
   .cards-3, .cards-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cta-box { grid-template-columns: 1fr; }

@@ -344,6 +344,16 @@ export default {
         site: "Style Sport 2 besuchen",
         videoLabel: "Präsentationsvideo von Nexora, der von Inginet entwickelten Warenwirtschaft für Geschäfte",
       },
+      olvix: {
+        eyebrow: "Unsere eigene Plattform · Olvix",
+        title: "Olvix, der Marktplatz, den wir von Grund auf gebaut haben",
+        text: "Olvix ist die landesweite Plattform, die wir selbst entworfen und programmiert haben, vom ersten bis zum letzten Modul. Unterkünfte, Vermietungen, Fahrdienste, Auktionen, Gastronomie, Geschäfte und Events laufen auf demselben System, jedes mit seiner eigenen Verwaltung. Im Video: das Modul für Restaurants und Pizzerien.",
+        bullets: ["Die Speisekarte wird aus einer Datei geladen: Gerichte, Preise und Allergene erkennt das System selbst", "Räume und Tische entstehen aus den Sitzplätzen, mit Öffnungszeiten und Online-Reservierung", "Bestellung per QR-Code am Tisch, bezahlt wird wie immer im Restaurant", "Küche, Bar und Pizzeria synchron, jede mit eigenem Tablet", "Kellner und Fahrer am Handy, Gedecke und Trinkgeld am Monatsende"],
+        outro: "Jedes Modul von Olvix lösen wir heraus und passen es an Ihren Betrieb an, mit Ihrer Marke und Ihren Daten.",
+        cta: "Ich möchte so eine Software",
+        site: "Olvix besuchen",
+        videoLabel: "Video des Gastronomie-Moduls von Olvix, der von Inginet entwickelten Plattform",
+      },
       faq: [
         { q: 'Kann ich vor der Entscheidung mit einem Ihrer Kunden sprechen?', a: 'Selbstverständlich. Wir stellen den Kontakt zu einem Kunden aus Ihrer Branche her, der ein ähnliches Problem gelöst hat. Das ist der schnellste Weg zu verstehen, wie wir wirklich arbeiten.' },
         { q: 'Arbeiten Sie auch außerhalb Ihrer Region?', a: 'Ja. Mehrere der aufgeführten Projekte liegen außerhalb der Region, und Plattformen wie Olvix arbeiten landesweit. Analyse, Entwicklung und Betreuung funktionieren aus der Ferne hervorragend.' },

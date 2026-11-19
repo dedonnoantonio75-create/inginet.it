@@ -344,6 +344,16 @@ export default {
         site: "Visita Style Sport 2",
         videoLabel: "Video di presentazione di Nexora, il gestionale per negozi sviluppato da Inginet",
       },
+      olvix: {
+        eyebrow: "Piattaforma nostra · Olvix",
+        title: "Olvix, il marketplace che abbiamo costruito da zero",
+        text: "Olvix è la piattaforma nazionale che abbiamo progettato e scritto noi, dal primo all’ultimo modulo. Alloggi, noleggi, NCC, aste, ristorazione, negozi ed eventi stanno sullo stesso sistema, ognuno con il suo gestionale. Nel video, il modulo per ristoranti e pizzerie.",
+        bullets: ["Il menu si carica da un file: piatti, prezzi e allergeni riconosciuti da soli", "Sale e tavoli generati dai posti, con orari e prenotazioni online", "Ordine dal QR sul tavolo, il cliente paga al ristorante come sempre", "Cucina, bar e pizzeria sincronizzati, ognuno con il suo tablet", "Camerieri e fattorini sul telefono, coperti e mance a fine mese"],
+        outro: "Ogni modulo di Olvix lo stacchiamo e lo adattiamo alla tua attività, con il tuo marchio e i tuoi dati.",
+        cta: "Voglio un gestionale così",
+        site: "Visita Olvix",
+        videoLabel: "Video del gestionale per la ristorazione di Olvix, la piattaforma sviluppata da Inginet",
+      },
       faq: [
         { q: 'Posso parlare con qualcuno dei vostri clienti prima di decidere?', a: 'Certo. Ti mettiamo in contatto con un cliente dello stesso settore che ha risolto un problema simile al tuo. È il modo più veloce per capire come lavoriamo davvero.' },
         { q: 'Lavorate anche fuori dal Salento?', a: 'Sì. Tra i progetti in elenco ce ne sono che stanno fuori regione e piattaforme che lavorano su scala nazionale, come Olvix. Analisi, sviluppo e assistenza funzionano benissimo anche da remoto.' },

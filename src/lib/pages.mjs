@@ -327,6 +327,38 @@ ${faqBlock(t.common.faqTitle, p.faq)}
 ${ctaBlock(t, lang)}`;
 }
 
+/* Casi studio con video nella pagina clienti: i testi stanno in
+   t.pages.clienti[key], i file in /assets/video/. Si alternano testo e video
+   ai due lati, e lo sfondo, perché due sezioni uguali di fila non si staccano. */
+const VIDEO_CASES = [
+  { key: 'nexora', site: 'https://www.stylesport2.it/', file: 'nexora-gestionale-negozi-style-sport-2', poster: 'nexora-gestionale-negozi-poster', duration: 'PT1M22S' },
+  { key: 'olvix', site: 'https://www.olvix.net/', file: 'olvix-gestionale-ristorazione', poster: 'olvix-gestionale-ristorazione-poster', duration: 'PT1M36S' },
+];
+
+function videoCase(v, c, lang, rev) {
+  return `
+<section class="sec ${rev ? '' : 'sec-olvix'}" id="${v.key}">
+  <div class="wrap olvix-in${rev ? ' case-rev' : ''}">
+    <div class="olvix-txt">
+      <p class="eyebrow">${esc(c.eyebrow)}</p>
+      <h2>${esc(c.title)}</h2>
+      <p>${esc(c.text)}</p>
+      <ul class="ticks">${c.bullets.map(b => `<li>${icon('check')}<span>${esc(b)}</span></li>`).join('')}</ul>
+      <p>${esc(c.outro)}</p>
+      <div class="hero-cta">
+        ${btn(pageUrl(lang, 'contatti'), c.cta, { variant: 'primary' })}
+        ${btn(v.site, c.site, { variant: 'ghost', external: true, ico: 'external' })}
+      </div>
+    </div>
+    <div class="case-video">
+      <video controls muted playsinline preload="none" width="1280" height="720" poster="/assets/video/${v.poster}.jpg" aria-label="${esc(c.videoLabel)}">
+        <source src="/assets/video/${v.file}.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>`;
+}
+
 /* -------------------------------------------------------------- CLIENTI */
 
 export function clienti(t, lang) {
@@ -362,26 +394,7 @@ export function clienti(t, lang) {
   </div>
 </section>
 
-<section class="sec sec-olvix" id="nexora">
-  <div class="wrap olvix-in">
-    <div class="olvix-txt">
-      <p class="eyebrow">${esc(p.nexora.eyebrow)}</p>
-      <h2>${esc(p.nexora.title)}</h2>
-      <p>${esc(p.nexora.text)}</p>
-      <ul class="ticks">${p.nexora.bullets.map(b => `<li>${icon('check')}<span>${esc(b)}</span></li>`).join('')}</ul>
-      <p>${esc(p.nexora.outro)}</p>
-      <div class="hero-cta">
-        ${btn(pageUrl(lang, 'contatti'), p.nexora.cta, { variant: 'primary' })}
-        ${btn('https://www.stylesport2.it/', p.nexora.site, { variant: 'ghost', external: true, ico: 'external' })}
-      </div>
-    </div>
-    <div class="nexora-video">
-      <video controls muted playsinline preload="none" width="1280" height="720" poster="/assets/video/nexora-gestionale-negozi-poster.jpg" aria-label="${esc(p.nexora.videoLabel)}">
-        <source src="/assets/video/nexora-gestionale-negozi-style-sport-2.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
-</section>
+${VIDEO_CASES.map((v, i) => videoCase(v, p[v.key], lang, i % 2 === 1)).join('')}
 
 <section class="sec sec-alt" id="tutti">
   <div class="wrap">
@@ -607,18 +620,18 @@ function imageSchema(key, t, lang) {
 export function extraSchemaFor(key, t, lang) {
   const img = imageSchema(key, t, lang);
   if (key === 'clienti') {
-    return [...img, {
+    return [...img, ...VIDEO_CASES.map(v => ({
       '@type': 'VideoObject',
-      '@id': absUrl(lang, 'clienti') + '#nexora-video',
-      name: t.pages.clienti.nexora.title,
-      description: t.pages.clienti.nexora.text,
-      thumbnailUrl: `${site.origin}/assets/video/nexora-gestionale-negozi-poster.jpg`,
-      contentUrl: `${site.origin}/assets/video/nexora-gestionale-negozi-style-sport-2.mp4`,
+      '@id': absUrl(lang, 'clienti') + '#' + v.key + '-video',
+      name: t.pages.clienti[v.key].title,
+      description: t.pages.clienti[v.key].text,
+      thumbnailUrl: `${site.origin}/assets/video/${v.poster}.jpg`,
+      contentUrl: `${site.origin}/assets/video/${v.file}.mp4`,
       uploadDate: '2026-11-19',
-      duration: 'PT1M22S',
+      duration: v.duration,
       inLanguage: 'it',
       publisher: { '@id': `${site.origin}/#organization` },
-    }, {
+    })), {
       '@type': 'ItemList',
       '@id': absUrl(lang, 'clienti') + '#portfolio',
       name: t.pages.clienti.h1,

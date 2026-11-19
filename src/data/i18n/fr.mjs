@@ -344,6 +344,16 @@ export default {
         site: "Visiter Style Sport 2",
         videoLabel: "Vidéo de présentation de Nexora, le logiciel de gestion pour magasins développé par Inginet",
       },
+      olvix: {
+        eyebrow: "Notre plateforme · Olvix",
+        title: "Olvix, la marketplace que nous avons construite de zéro",
+        text: "Olvix est la plateforme nationale que nous avons conçue et écrite nous-mêmes, du premier au dernier module. Hébergements, locations, VTC, enchères, restauration, magasins et événements tournent sur le même système, chacun avec son logiciel de gestion. Dans la vidéo, le module pour restaurants et pizzerias.",
+        bullets: ["Le menu se charge depuis un fichier : plats, prix et allergènes reconnus tout seuls", "Salles et tables générées à partir des places, avec horaires et réservations en ligne", "Commande par QR code sur la table, le client paie au restaurant comme d’habitude", "Cuisine, bar et pizzeria synchronisés, chacun avec sa tablette", "Serveurs et livreurs sur leur téléphone, couverts et pourboires en fin de mois"],
+        outro: "Chaque module d’Olvix, nous le détachons et l’adaptons à votre activité, avec votre marque et vos données.",
+        cta: "Je veux un logiciel comme ça",
+        site: "Visiter Olvix",
+        videoLabel: "Vidéo du module restauration d’Olvix, la plateforme développée par Inginet",
+      },
       faq: [
         { q: 'Puis-je parler à l’un de vos clients avant de décider ?', a: 'Bien sûr. Nous vous mettons en relation avec un client du même secteur qui a résolu un problème proche du vôtre. C’est le moyen le plus rapide de comprendre comment nous travaillons vraiment.' },
         { q: 'Travaillez-vous aussi en dehors de votre région ?', a: 'Oui. Plusieurs des projets listés sont hors région, et des plateformes comme Olvix travaillent à l’échelle nationale. Analyse, développement et assistance fonctionnent très bien à distance.' },

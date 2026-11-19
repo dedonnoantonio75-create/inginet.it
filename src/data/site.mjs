@@ -132,6 +132,13 @@ export const clients = [
   { name: 'Vivaio del Sud', url: 'https://www.vivaiodelsud.com/', logo: 'vivaio-del-sud-logo.png', sector: 'retail', tags: ['e-commerce', 'catalogo'] },
   { name: 'Cardia360', url: 'https://www.cardia360.com/', logo: 'cardia360-logo.png', sector: 'salute', tags: ['gestionale', 'crm', 'sito'], featured: true },
   { name: 'Netpollwork', url: 'https://www.netpollwork.it/', logo: 'netpollwork-logo.png', sector: 'servizi', tags: ['portale', 'software'] },
+  { name: 'Antica Masseria Rottacapozza', url: 'https://www.masseriarottacapozza.it/', logo: 'antica-masseria-rottacapozza-ugento-logo.png', sector: 'ricettivo', tags: ['sito', 'multilingua', 'seo'] },
+  { name: 'Rottacapozza Luxury Suite', url: 'https://www.rottacapozzaluxurysuite.it/', logo: 'rottacapozza-luxury-suite-torre-mozza-logo.png', sector: 'ricettivo', tags: ['sito', 'booking', 'seo'] },
+  { name: 'Masseria Baroni di Montesardo', url: 'https://www.masseriabaronidimontesardo.it/', logo: 'masseria-baroni-di-montesardo-lido-marini-logo.png', sector: 'ricettivo', tags: ['sito', 'eventi', 'seo'] },
+  { name: 'Tenuta Sidore', url: 'https://www.tenutasidore.it/', logo: 'tenuta-sidore-country-house-salento-logo.png', sector: 'ricettivo', tags: ['sito', 'booking', 'seo'] },
+  { name: 'Easy Salento Vacanze', url: 'https://www.easysalentovacanze.it/', logo: 'easy-salento-vacanze-santa-cesarea-terme-logo.png', sector: 'ricettivo', tags: ['sito', 'booking', 'seo'] },
+  { name: 'Antico Camino', url: 'https://www.anticocamino.it/', logo: 'antico-camino-bed-and-breakfast-muro-leccese-logo.png', tile: 'dark', sector: 'ricettivo', tags: ['sito', 'booking', 'seo'] },
+  { name: 'Petrol Grill Area', url: 'https://www.petrolgrillarea.it/', logo: 'petrol-grill-area-motel-s16-muro-leccese-logo.png', sector: 'ristorazione', tags: ['sito', 'motel', 'ristoro'] },
 ];
 
 /* Le piattaforme che mostriamo nella sezione "gestionali": sono nostre o
